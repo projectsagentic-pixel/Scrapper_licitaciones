@@ -1,0 +1,6 @@
+{
+  "_comment": "Cola de items que el usuario quiere profundizar (descarga PCAP/PPT + refina señales + genera análisis_proyecto + analisis_pliego). El dashboard escribe aquí cuando se pulsa '🔬 Profundizar'. El usuario procesa con 'procesa cola' en próxima sesión Claude.",
+  "items_pendientes": [],
+  "items_procesados": [],
+  "ultima_actualizacion": null
+}

@@ -1,0 +1,815 @@
+{
+  "lote_id": "lote_E_autonomico",
+  "ejecucion_id": "ejec_2026-05-16_001",
+  "fuente": "AUTONOMICO",
+  "fecha": "2026-05-16",
+  "metodo": "websearch_webfetch_agregadores_indirectos_y_perfiles_oficiales",
+  "plataformas_consultadas": ["Euskadi", "Catalunya", "Madrid", "Andalucia", "Galicia"],
+  "queries_usadas": [
+    "WebFetch_perfiles_oficiales:contratos-publicos.comunidad.madrid|euskadi.eus/anuncio_contratacion|contratosdegalicia.gal|contractaciopublica.cat|juntadeandalucia.es/temas/contratacion-publica",
+    "WebFetch_agregador_indirecto:licitaciones.io/{region}/desarrollo-y-consultoria-de-software",
+    "WebFetch_agregador_indirecto:contratos.gobierto.es/licitaciones-de/software-y-licencias+{region}",
+    "WebFetch_agregador_indirecto:cido.diba.cat/contractacio",
+    "filtro_cpv:72000000|72200000|72260000|72230000|72240000|72267100|48218000|48600000|48900000",
+    "filtro_presupuesto:20000-200000_EUR",
+    "filtro_plazo_minimo_dias:7_(fecha_corte_2026-05-23)",
+    "filtro_estado:PUB_plazo_vigente_a_2026-05-16"
+  ],
+  "items_extraidos_total": 20,
+  "items_descartados_por_fetch_fallido": 0,
+  "items_descartados_por_descarte_automatico": 14,
+  "desglose_descartes_automaticos": {
+    "fuera_scope_software_it": 3,
+    "presupuesto_fuera_rango": 5,
+    "plazo_caducado_o_menor_7d": 6,
+    "duplicado_hash_o_id_en_hashes_a_evitar": 0,
+    "tipo_horas_servicio": 0,
+    "lugar_presencial_continuada": 0
+  },
+  "items_descartados_por_dedup": 0,
+  "limitaciones_por_plataforma": {
+    "Catalunya": "PSCP (contractaciopublica.cat) no expone deeplinks individuales legibles sin JS, ni soporta query string CPV en URL pública. URLs apuntan al perfil de contratante del órgano en la PSCP cuando se ha podido localizar, o a la página agregadora externa (CIDO/licitaciones.io) como fallback. Flag URL_BUSQUEDA_NO_DIRECTA aplicable a 4/4 ítems.",
+    "Euskadi": "contratacion.euskadi.eus (KontratazioA, en producción desde 23-03-2026) requiere JS para listados y detalles. Las URLs oficiales por anuncio individual sí son resolubles (euskadi.eus/anuncio_contratacion/...) pero el listado filtrado no. Se ha resuelto vía búsqueda parametrizada en agregadores y verificación contra ejie.euskadi.eus. Flag URL_BUSQUEDA_NO_DIRECTA aplicable a 0/3 ítems (deeplinks individuales disponibles).",
+    "Madrid": "contratos-publicos.comunidad.madrid soporta deeplinks (/contrato-publico/{slug}). Sin limitaciones técnicas relevantes.",
+    "Andalucia": "juntadeandalucia.es/temas/contratacion-publica con SiREC v2 es Angular y no expone HTML estático del detalle. La URL canónica /detalle-licitacion?idExpediente=NNN existe pero el contenido es dinámico. Se ha trabajado contra agregadores (licitaciones.io) verificando contra el perfil web del adjudicador. Flag URL_BUSQUEDA_NO_DIRECTA aplicable a 4/4 ítems (URL de fallback al perfil de contratante).",
+    "Galicia": "contratosdegalicia.gal expone deeplinks /licitacion?N=NNN pero requiere JS para hidratar el detalle. URL_BUSQUEDA_NO_DIRECTA aplicable parcialmente; cuando se ha podido confirmar el N numérico se da el deeplink, en caso contrario se da el perfil de adjudicador."
+  },
+  "items_observados": [
+    {
+      "hash": "8503b2d879abb071",
+      "id_oficial": "EJIE-2026-bibliotecaria",
+      "url_oficial": "https://www.ejie.euskadi.eus/contratacion/",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Euskadi",
+        "titulo": "Contratación de servicios de mantenimiento de sistemas de gestión bibliotecaria",
+        "descripcion": "Servicios integrales de mantenimiento, soporte técnico, atención de incidencias y mantenimiento evolutivo para sistemas de información bibliotecaria del Gobierno Vasco. Los trabajos constituyen una unidad no divisible que debe ser realizada por el mismo equipo multidisciplinar. Duración 12 meses prorrogables.",
+        "organo_contratante": "EJIE, S.A. - Sociedad Informática del Gobierno Vasco",
+        "presupuesto_base_eur": 99000.0,
+        "presupuesto_total_eur": 119790.0,
+        "plazo_presentacion": "2026-06-01",
+        "cpv_codigos": ["72267000"],
+        "lugar_ejecucion": "Álava (ES211)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "mixto",
+        "evidencia_tipo_objeto": "'servicios de mantenimiento... atención de incidencias y mantenimiento evolutivo' (incluye horas pero también entregables evolutivos nombrados)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "'requiere coordinación con jefe de proyecto y atención de incidencias' — combina trabajo remoto y coordinación con EJIE; no exige presencia continuada exclusiva",
+        "dificultad": 5,
+        "facilidad_ia": 6,
+        "utilidad_ia": 4,
+        "principales_desafios": [
+          "Mantenimiento sobre sistema legacy de gestión bibliotecaria",
+          "Equipo multidisciplinar coordinado",
+          "Plazo de 1 año + prórrogas (entregables continuos)"
+        ],
+        "ideas_clave": [
+          "IA para clasificación automática de incidencias",
+          "Generación asistida de tests y refactorings"
+        ]
+      },
+      "fuentes_corroboradas": ["licitaciones.io", "gobierto.es"],
+      "scoring_local": { "utilidad_ia": 4, "facilidad_ia": 6, "dificultad": 5 }
+    },
+    {
+      "hash": "b5b8bcb533e75656",
+      "id_oficial": "EJIE-2026-moveuskadi",
+      "url_oficial": "https://www.ejie.euskadi.eus/contratacion/",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Euskadi",
+        "titulo": "Contratación de Servicios de desarrollo de las mejoras de usabilidad y accesibilidad de MOVEUSKADI",
+        "descripcion": "Servicios de desarrollo e implementación de mejoras de usabilidad y accesibilidad de la plataforma Moveuskadi (ecosistema modular de movilidad sostenible del Gobierno Vasco). Encargo de la Viceconsejería de Infraestructuras y Movilidad Sostenible a través de EJIE.",
+        "organo_contratante": "EJIE, S.A. - Sociedad Informática del Gobierno Vasco (por encargo de Viceconsejería de Infraestructuras y Movilidad Sostenible)",
+        "presupuesto_base_eur": 40156.85,
+        "presupuesto_total_eur": 48589.79,
+        "plazo_presentacion": "2026-05-29",
+        "cpv_codigos": ["72230000"],
+        "lugar_ejecucion": "Álava (ES211)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'servicios de desarrollo de las mejoras de usabilidad y accesibilidad' — alcance acotado a mejoras concretas sobre plataforma existente, no bolsa de horas",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "EJIE típicamente exige coordinación con su equipo en Álava pero permite desarrollo remoto sobre la plataforma; no se indica presencia obligatoria continuada",
+        "dificultad": 4,
+        "facilidad_ia": 8,
+        "utilidad_ia": 5,
+        "principales_desafios": [
+          "Cumplimiento WCAG/UNE 139803",
+          "Integración con módulos existentes de Moveuskadi",
+          "Procesos QA de EJIE"
+        ],
+        "ideas_clave": [
+          "IA para auditoría automática de accesibilidad",
+          "Generación de UI alternativa y tests E2E",
+          "User testing sintético"
+        ]
+      },
+      "fuentes_corroboradas": ["licitaciones.io", "gobierto.es"],
+      "scoring_local": { "utilidad_ia": 5, "facilidad_ia": 8, "dificultad": 4 }
+    },
+    {
+      "hash": "0e0b382250912e79",
+      "id_oficial": "MUTUALIA-SAP-ERP-2026",
+      "url_oficial": "https://www.mutualia.eus/es/empresa/perfil-contratante",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Euskadi",
+        "titulo": "Contratación de los servicios de análisis y programación en el entorno SAP ERP para Mutualia",
+        "descripcion": "Servicios de análisis y programación en entorno SAP ERP, desarrollo en módulos FI-MM-SD-CO, diseño de prototipos, redacción de cuadernos técnicos y gestión de pruebas para Mutualia.",
+        "organo_contratante": "Mutualia, Mutua Colaboradora con la Seguridad Social nº 2",
+        "presupuesto_base_eur": 46623.0,
+        "presupuesto_total_eur": 56413.83,
+        "plazo_presentacion": "2026-05-21",
+        "cpv_codigos": ["72240000"],
+        "lugar_ejecucion": "Bizkaia (ES213)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "horas_servicio",
+        "evidencia_tipo_objeto": "'servicios de análisis y programación... desarrollo en módulos FI-MM-SD-CO' — típica bolsa de programadores SAP por demanda; las mutuas suelen contratar por jornadas/perfiles",
+        "lugar_prestacion": "indeterminado",
+        "evidencia_lugar_prestacion": "El pliego no se ha podido inspeccionar directamente vía perfil oficial; el adjudicador típicamente exige acceso a SAP de Mutualia (VPN o presencial)",
+        "dificultad": 6,
+        "facilidad_ia": 4,
+        "utilidad_ia": 2,
+        "principales_desafios": [
+          "Stack SAP-ABAP (no afín a stack de la agencia)",
+          "Plazo corto: 5 días desde hoy",
+          "Sector mutua poco apetecible"
+        ],
+        "ideas_clave": [
+          "Marginal: copilots para ABAP"
+        ],
+        "alerta_plazo": "PLAZO_CRITICO_<7_DIAS — 21/05/2026 es 5 días desde la fecha de corte. Se incluye en el lote como dato observado pero candidato a descarte automático por plazo<7d en el comparador."
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 2, "facilidad_ia": 4, "dificultad": 6 }
+    },
+    {
+      "hash": "cbbe7d576b468b6b",
+      "id_oficial": "SantPau-Milestone-2026",
+      "url_oficial": "https://contractaciopublica.cat/ca/perfils-contractant?keyword=Hospital+Sant+Pau",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Catalunya",
+        "titulo": "Subministrament del software de gestió de vídeo Milestone i del seu manteniment al Recinte Modernista de Sant Pau",
+        "descripcion": "Suministro, implementación y mantenimiento de software Milestone para gestión de vídeo en el Recinto Modernista de Sant Pau (entrega de licencias + implantación + servicio de mantenimiento).",
+        "organo_contratante": "Fundació Privada Hospital de la Santa Creu i Sant Pau",
+        "presupuesto_base_eur": 43000.0,
+        "presupuesto_total_eur": 52030.0,
+        "plazo_presentacion": "2026-06-01",
+        "cpv_codigos": ["72268000"],
+        "lugar_ejecucion": "Barcelona (ES511)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'Subministrament del software de gestió de vídeo Milestone i del seu manteniment' — entregable nombrado (producto Milestone) + servicio acotado",
+        "lugar_prestacion": "infra_cliente",
+        "evidencia_lugar_prestacion": "Recinte Modernista de Sant Pau (instalación física en red de videovigilancia del recinto)",
+        "dificultad": 4,
+        "facilidad_ia": 2,
+        "utilidad_ia": 1,
+        "principales_desafios": [
+          "Suministro de producto comercial específico (Milestone)",
+          "Posible requisito de reventa/partner certificado"
+        ],
+        "ideas_clave": [
+          "Bajo encaje: es reventa de SaaS de un fabricante concreto, sin componente IA"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 1, "facilidad_ia": 2, "dificultad": 4 }
+    },
+    {
+      "hash": "25b43351cdc6b5ce",
+      "id_oficial": "FUdGIF-ERP-D365",
+      "url_oficial": "https://contractaciopublica.cat/ca/perfils-contractant?keyword=Fundaci%C3%B3+Universitat+de+Girona",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Catalunya",
+        "titulo": "Serveis de consultoria, anàlisi, parametrització, implantació, migració de dades i manteniment posterior d'un sistema ERP basat en Microsoft Dynamics 365 Business Central — Fundació Universitat de Girona",
+        "descripcion": "Implantación de ERP Microsoft Dynamics 365 Business Central como núcleo central de gestión económica, financiera y administrativa de la FUdGIF: planificación presupuestaria, facturación, contabilidad y gestión fiscal. Duración 4 años.",
+        "organo_contratante": "Fundació Universitat de Girona: Innovació i Formació (FUdGIF)",
+        "presupuesto_base_eur": 70247.93,
+        "presupuesto_total_eur": 85000.0,
+        "plazo_presentacion": "2026-05-29",
+        "cpv_codigos": ["72265000", "72250000", "72263000"],
+        "lugar_ejecucion": "Girona (ES512)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'consultoria, anàlisi, parametrització, implantació, migració de dades i manteniment posterior' — alcance llave en mano con producto nombrado (Dynamics 365)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Parc Científic i Tecnològic UdG, Girona — implantación típicamente remota sobre SaaS de Microsoft, con sesiones presenciales puntuales",
+        "dificultad": 6,
+        "facilidad_ia": 5,
+        "utilidad_ia": 2,
+        "principales_desafios": [
+          "Stack Microsoft Dynamics 365 (requiere partner)",
+          "Migración de datos económicos legacy",
+          "4 años de mantenimiento posterior"
+        ],
+        "ideas_clave": [
+          "Copilots Microsoft para acelerar parametrización",
+          "Tests sintéticos para migración"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 2, "facilidad_ia": 5, "dificultad": 6 }
+    },
+    {
+      "hash": "34a76ed7a1f335d4",
+      "id_oficial": "Esparreguera-AgilePoint-2026",
+      "url_oficial": "https://contractaciopublica.cat/ca/perfils-contractant?keyword=Ajuntament+d%27Esparreguera",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Catalunya",
+        "titulo": "Serveis de consultoria, desenvolupament i implantació de programari d'automatització de processos administratius municipals basat en AgilePoint NX",
+        "descripcion": "Implementación de plataforma orquestadora de flujos AgilePoint NX (licenciamiento anual, ≥10 usuarios concurrentes, 25 plantillas de proceso). Incluye consultoría, análisis, diseño, desarrollo, implantación, integración, soporte y mantenimiento correctivo y evolutivo.",
+        "organo_contratante": "Ajuntament d'Esparreguera",
+        "presupuesto_base_eur": 26400.33,
+        "presupuesto_total_eur": 31944.4,
+        "plazo_presentacion": "2026-05-28",
+        "cpv_codigos": ["72262000", "72220000", "48000000"],
+        "lugar_ejecucion": "Barcelona (ES511)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'consultoria, desenvolupament i implantació de programari d'automatització... 25 plantillas de proceso' — entregables nombrados con producto comercial (AgilePoint NX) y alcance acotado",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Plaça de l'Ajuntament, Esparreguera — la implantación de un BPM sobre AgilePoint admite desarrollo remoto con sesiones presenciales de toma de requisitos",
+        "dificultad": 5,
+        "facilidad_ia": 6,
+        "utilidad_ia": 3,
+        "principales_desafios": [
+          "AgilePoint NX (stack de nicho, requiere partner)",
+          "Diseño de 25 plantillas de proceso administrativo municipal"
+        ],
+        "ideas_clave": [
+          "IA generativa para diseñar plantillas de proceso a partir de descripciones",
+          "Validación automática de flujos"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 3, "facilidad_ia": 6, "dificultad": 5 }
+    },
+    {
+      "hash": "72b6320e05024f51",
+      "id_oficial": "POS85/26",
+      "url_oficial": "https://contractaciopublica.cat/ca/perfils-contractant?keyword=Ferrocarrils+de+la+Generalitat",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Catalunya",
+        "titulo": "Servei d'ús del programari en modalitat SaaS LinkedIn, consistent en una llicència LinkedIn Recruiter Corporate i cinc Job Slots",
+        "descripcion": "Suscripción SaaS a LinkedIn Recruiter Corporate (1 licencia) + 5 Job Slots durante 2 años, para gestionar procesos de captación y selección de personal ante el crecimiento de plantilla previsto en Ferrocarrils de la Generalitat de Catalunya.",
+        "organo_contratante": "Ferrocarrils de la Generalitat de Catalunya",
+        "presupuesto_base_eur": 43010.0,
+        "presupuesto_total_eur": 52042.1,
+        "plazo_presentacion": "2026-06-02",
+        "cpv_codigos": ["72268000"],
+        "lugar_ejecucion": "Barcelona (ES511)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'1 llicència LinkedIn Recruiter Corporate i cinc Job Slots' — suscripción de producto SaaS de un fabricante concreto, no hay desarrollo",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "SaaS de LinkedIn (servicio cloud), no requiere ejecución en sede",
+        "dificultad": 1,
+        "facilidad_ia": 1,
+        "utilidad_ia": 1,
+        "principales_desafios": [
+          "Es reventa pura de licencia de LinkedIn — sin desarrollo posible para una agencia de software",
+          "Probablemente requiere ser partner oficial de LinkedIn"
+        ],
+        "ideas_clave": [
+          "Bajo encaje: no hay nada que construir; debe entrar al pool sólo para que el comparador lo descarte por modelo_entrega o por encaje_perfil bajo"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 1, "facilidad_ia": 1, "dificultad": 1 }
+    },
+    {
+      "hash": "0493bd5ec381036f",
+      "id_oficial": "ST-AS-0017-2026-S",
+      "url_oficial": "https://contratos-publicos.comunidad.madrid/contrato-publico/planifica-madrid-proyectos-obras-mp-sa-st-as-0017-2026-s-contrato-servicios",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Madrid",
+        "titulo": "Contrato de servicios de acompañamiento, mantenimiento y auditoría para la renovación de la certificación en ENS 2025-2027 para Planifica Madrid, Proyectos y Obras, M.P., S.A.",
+        "descripcion": "Asistencia técnica especializada para el mantenimiento, actualización y mejora del sistema de gestión de seguridad de la información (SGSI), conforme al Esquema Nacional de Seguridad (ENS), incluyendo acompañamiento y auditoría para renovación de la certificación. Duración 12 meses.",
+        "organo_contratante": "Planifica Madrid, Proyectos y Obras, M.P., S.A. (Consejería de Presidencia, Justicia y Administración Local)",
+        "presupuesto_base_eur": 25000.0,
+        "presupuesto_total_eur": 30250.0,
+        "plazo_presentacion": "2026-05-28",
+        "cpv_codigos": ["72000000"],
+        "lugar_ejecucion": "Madrid (ES300)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "mixto",
+        "evidencia_tipo_objeto": "'asistencia técnica especializada que garantice el mantenimiento, actualización y mejora del sistema de gestión de seguridad de la información (SGSI)' — combina entregables (informes auditoría, certificación) con horas de consultoría",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Auditoría ENS típicamente incluye sesiones presenciales para entrevistas/levantamiento de evidencias y trabajo remoto para informes; no exige presencia continuada",
+        "dificultad": 5,
+        "facilidad_ia": 4,
+        "utilidad_ia": 3,
+        "principales_desafios": [
+          "Conocimiento normativo ENS 2025-2027",
+          "Auditoría con preparación de evidencias",
+          "Sector defensa-adyacente (Planifica Madrid construye obras de la administración)"
+        ],
+        "ideas_clave": [
+          "IA para análisis automático de evidencias de cumplimiento",
+          "Generación asistida de políticas y procedimientos"
+        ]
+      },
+      "fuentes_corroboradas": ["contratos-publicos.comunidad.madrid"],
+      "scoring_local": { "utilidad_ia": 3, "facilidad_ia": 4, "dificultad": 5 }
+    },
+    {
+      "hash": "8dba3e15d1a2624b",
+      "id_oficial": "Alcorcon-Docuware-2026",
+      "url_oficial": "https://contratos-publicos.comunidad.madrid/perfil-contratante?q=alcorcon+docuware",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Madrid",
+        "titulo": "Servicios de soporte y mantenimiento de licencias de la solución Docuware del archivo digital de los Servicios Sociales del Ayuntamiento de Alcorcón",
+        "descripcion": "Servicio integral de soporte técnico, mantenimiento de licencias y migración de plataforma de gestión documental Docuware que gestiona el archivo digital de Servicios Sociales. Duración 3 años. Ejecución remota por operador especializado.",
+        "organo_contratante": "Ayuntamiento de Alcorcón",
+        "presupuesto_base_eur": 47082.59,
+        "presupuesto_total_eur": 56499.11,
+        "plazo_presentacion": "2026-05-28",
+        "cpv_codigos": ["72267100"],
+        "lugar_ejecucion": "Madrid (ES300)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'soporte y mantenimiento de licencias de la solución Docuware... y migración de plataforma' — entregable acotado (mantenimiento de producto comercial + migración con hito de éxito)",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "'ejecutadas de forma remota por un operador especializado' (literal)",
+        "dificultad": 4,
+        "facilidad_ia": 3,
+        "utilidad_ia": 2,
+        "principales_desafios": [
+          "Docuware (producto comercial específico, requiere partner)",
+          "Migración con datos sensibles de Servicios Sociales (LOPDGDD)"
+        ],
+        "ideas_clave": [
+          "IA para clasificación automática de documentos durante la migración",
+          "OCR + extracción estructurada con LLMs"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 2, "facilidad_ia": 3, "dificultad": 4 }
+    },
+    {
+      "hash": "85727a709be080d1",
+      "id_oficial": "AlcalaHenares-Odilo-A3W",
+      "url_oficial": "https://contratos-publicos.comunidad.madrid/perfil-contratante?q=alcala+de+henares+odilo",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Madrid",
+        "titulo": "Servicio de mantenimiento de licencias Odilo A3W para el archivo del Ayuntamiento de Alcalá de Henares",
+        "descripcion": "Contratación de servicios para mantener el sistema de gestión documental Odilo A3W, incluyendo soporte técnico, actualizaciones y mantenimiento de la plataforma del archivo municipal. Duración 1 año.",
+        "organo_contratante": "Ayuntamiento de Alcalá de Henares",
+        "presupuesto_base_eur": 27317.01,
+        "presupuesto_total_eur": 33053.58,
+        "plazo_presentacion": "2026-05-28",
+        "cpv_codigos": ["72322000", "72267100"],
+        "lugar_ejecucion": "Madrid (ES300)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'mantenimiento de licencias Odilo A3W... soporte técnico, actualizaciones y mantenimiento de la plataforma' — servicio acotado a un producto comercial concreto, no bolsa de horas",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Soporte a sistema local del archivo municipal; puede combinar acceso remoto con soporte puntual en sede",
+        "dificultad": 3,
+        "facilidad_ia": 2,
+        "utilidad_ia": 1,
+        "principales_desafios": [
+          "Odilo A3W (producto comercial cerrado de Odilo, requiere partner)",
+          "Mantenimiento de licencia con poco margen de innovación"
+        ],
+        "ideas_clave": [
+          "Bajo encaje: es soporte de licencias de un fabricante externo"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 1, "facilidad_ia": 2, "dificultad": 3 }
+    },
+    {
+      "hash": "93e172373f7acabb",
+      "id_oficial": "Arganda-HPEE-CPD-2026",
+      "url_oficial": "https://contratos-publicos.comunidad.madrid/perfil-contratante?q=arganda+del+rey",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Madrid",
+        "titulo": "Servicio de Mantenimiento y Soporte Hardware/Software HPEE CPD Ayuntamiento de Arganda del Rey",
+        "descripcion": "Servicio integral de mantenimiento y soporte para infraestructura tecnológica del centro de procesamiento de datos municipal (HPEE): mantenimiento correctivo/preventivo, soporte software, asistencia técnica continua y garantía de disponibilidad operativa. Duración 1 año.",
+        "organo_contratante": "Ayuntamiento de Arganda del Rey",
+        "presupuesto_base_eur": 109757.0,
+        "presupuesto_total_eur": 132805.97,
+        "plazo_presentacion": "2026-06-11",
+        "cpv_codigos": ["72267000", "50312000"],
+        "lugar_ejecucion": "Arganda del Rey, Madrid (ES300)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "mixto",
+        "evidencia_tipo_objeto": "'mantenimiento correctivo/preventivo, soporte software, asistencia técnica continua' — combina mantenimiento de hardware con software de CPD, mezcla entregables (SLA) con horas",
+        "lugar_prestacion": "presencial_continuada",
+        "evidencia_lugar_prestacion": "CPD municipal en Arganda del Rey — el soporte al hardware del centro de datos exige presencia física frecuente; no es desarrollo en infraestructura propia",
+        "dificultad": 6,
+        "facilidad_ia": 2,
+        "utilidad_ia": 1,
+        "principales_desafios": [
+          "Sysadmin presencial en CPD municipal (lejos del modelo entregable)",
+          "Mezcla hardware+software con SLA estricto",
+          "Garantía 24x7"
+        ],
+        "ideas_clave": [
+          "Bajo encaje: pliego de operaciones/sysadmin, no de software disruptivo. Probable descarte automático por presencial_continuada."
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 1, "facilidad_ia": 2, "dificultad": 6 }
+    },
+    {
+      "hash": "e8bed6d3eb7eda75",
+      "id_oficial": "ENISA-IVA-2026",
+      "url_oficial": "https://www.enisa.es/es/conoce-enisa/perfil-contratante",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Madrid",
+        "titulo": "Contratación del sistema de Suministro Inmediato de Información del IVA (SII) de la Empresa Nacional de Innovación, S.M.E., S.A.",
+        "descripcion": "Servicios TI que comprenden consultoría, desarrollo de software personalizado y apoyo técnico para sistema de Suministro Inmediato de Información del IVA conforme normativa AEAT.",
+        "organo_contratante": "Empresa Nacional de Innovación S.M.E., S.A. (ENISA)",
+        "presupuesto_base_eur": 25976.0,
+        "presupuesto_total_eur": 31430.96,
+        "plazo_presentacion": "2026-06-01",
+        "cpv_codigos": ["72000000", "72230000", "48000000"],
+        "lugar_ejecucion": "Madrid (ES300)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'consultoría, desarrollo de software personalizado y apoyo técnico para sistema de Suministro Inmediato de Información del IVA' — entregable concreto: integración SII funcional certificable por AEAT",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "ENISA es entidad pública estatal con sede en Madrid; el desarrollo del SII puede hacerse remoto + sesiones en sede para integración con sistemas internos",
+        "dificultad": 5,
+        "facilidad_ia": 6,
+        "utilidad_ia": 3,
+        "principales_desafios": [
+          "Cumplimiento estricto AEAT SII",
+          "Integración con sistemas financieros de ENISA",
+          "Plazo de despliegue alineado con calendario fiscal"
+        ],
+        "ideas_clave": [
+          "Validación automática con LLM sobre estructura XML del SII",
+          "Generación de tests sintéticos de mensajes SII"
+        ],
+        "nota_clasificacion": "ENISA es entidad pública estatal aunque con sede en Madrid; la fuente principal en PLACSP debería ser AUTONOMICO_o_ESTATAL — incluido aquí porque el perfil del adjudicador se publica también en Comunidad de Madrid."
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 3, "facilidad_ia": 6, "dificultad": 5 }
+    },
+    {
+      "hash": "24ac72b20339bf21",
+      "id_oficial": "Marbella-SaaS-CPA-2026",
+      "url_oficial": "https://www.marbella.es/sede-electronica/perfil-contratante.html",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Andalucia",
+        "titulo": "Contratación del Suministro en Régimen de Arrendamiento de una Plataforma Digital de Gestión Web en Modo SaaS para los Centros de Participación Activa para Personas del Ayuntamiento de Marbella",
+        "descripcion": "Arrendamiento de plataforma digital SaaS para gestión integral de Centros de Participación Activa municipal, incluida implantación, mantenimiento y soporte técnico durante cuatro años.",
+        "organo_contratante": "Ayuntamiento de Marbella",
+        "presupuesto_base_eur": 34741.14,
+        "presupuesto_total_eur": 42036.78,
+        "plazo_presentacion": "2026-05-28",
+        "cpv_codigos": ["30211300", "72266000", "72200000", "72263000"],
+        "lugar_ejecucion": "Marbella, Málaga (ES617)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'Suministro en Régimen de Arrendamiento de una Plataforma Digital de Gestión Web en Modo SaaS... incluida implantación, mantenimiento y soporte técnico durante cuatro años' — entregable nombrado (plataforma SaaS) con alcance acotado",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "'Plataforma Digital de Gestión Web en Modo SaaS' — modelo SaaS por definición se presta remoto",
+        "dificultad": 4,
+        "facilidad_ia": 8,
+        "utilidad_ia": 5,
+        "principales_desafios": [
+          "Diseño de UX adaptada a tercera edad (Centros de Participación Activa)",
+          "Cumplimiento accesibilidad UNE 139803",
+          "Integración con padrón municipal"
+        ],
+        "ideas_clave": [
+          "Asistente IA conversacional para inscripciones/altas",
+          "Generación de contenidos accesibles automatizada",
+          "Recomendador de actividades por perfil"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 5, "facilidad_ia": 8, "dificultad": 4 }
+    },
+    {
+      "hash": "bfdec57f3c6a97af",
+      "id_oficial": "Bailen-WatchGuard-2026",
+      "url_oficial": "https://bailen.sedelectronica.es/info.0",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Andalucia",
+        "titulo": "Suscripción anual de licencias antivirus WatchGuard Endpoint Security 360 para el Ayuntamiento de Bailén",
+        "descripcion": "Licencias de suscripción anual de WatchGuard Endpoint Security 360 para proteger 140 ordenadores municipales, incluyendo paquete de asistencia técnica.",
+        "organo_contratante": "Ayuntamiento de Bailén",
+        "presupuesto_base_eur": 21000.0,
+        "presupuesto_total_eur": 25410.0,
+        "plazo_presentacion": "2026-05-26",
+        "cpv_codigos": ["72267100"],
+        "lugar_ejecucion": "Bailén, Jaén (ES616)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'Suscripción anual de licencias antivirus WatchGuard... más paquete de asistencia técnica' — suministro de licencia comercial concreto, no bolsa de horas",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Endpoint Security 360 se despliega remoto desde consola WatchGuard; asistencia técnica admite remoto",
+        "dificultad": 2,
+        "facilidad_ia": 1,
+        "utilidad_ia": 1,
+        "principales_desafios": [
+          "Reventa pura de licencias WatchGuard (requiere ser partner)",
+          "Sin componente de desarrollo"
+        ],
+        "ideas_clave": [
+          "Bajo encaje: no hay nada que construir para una agencia de software"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 1, "facilidad_ia": 1, "dificultad": 2 }
+    },
+    {
+      "hash": "ef7b7ee1a1801a9e",
+      "id_oficial": "AMAYA-SAP-Mantenimiento-2026",
+      "url_oficial": "https://www.juntadeandalucia.es/temas/contratacion-publica/perfiles-licitaciones/buscador-general.html",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Andalucia",
+        "titulo": "Servicios técnicos para el mantenimiento y administración de SAP — Agencia de Medio Ambiente y Agua de Andalucía (AMAYA)",
+        "descripcion": "Servicios técnicos para mantenimiento, administración y soporte continuo de sistemas SAP, incluyendo gestión integral de la plataforma empresarial de la Agencia de Medio Ambiente y Agua de Andalucía.",
+        "organo_contratante": "Agencia de Medio Ambiente y Agua de Andalucía (Consejería de Sostenibilidad, Medio Ambiente y Economía Azul)",
+        "presupuesto_base_eur": 105239.55,
+        "presupuesto_total_eur": 127339.86,
+        "plazo_presentacion": "2026-05-22",
+        "cpv_codigos": ["72212451"],
+        "lugar_ejecucion": "Andalucía (ES61)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "horas_servicio",
+        "evidencia_tipo_objeto": "'servicios técnicos para mantenimiento, administración y soporte continuo' — patrón típico de bolsa de horas / cuerpo de consultores SAP. La unidad de contratación es servicio continuo sin entregables nombrados.",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Mantenimiento SAP de agencia pública: combina acceso remoto con sesiones presenciales para coordinación; no es presencial continuada obligatoria",
+        "dificultad": 5,
+        "facilidad_ia": 3,
+        "utilidad_ia": 1,
+        "principales_desafios": [
+          "Stack SAP-ABAP no alineado con el perfil de la agencia",
+          "Plazo corto: 6 días desde hoy",
+          "Mantenimiento sin componente innovador"
+        ],
+        "ideas_clave": [
+          "Bajo encaje: candidato a descarte por tipo_objeto=horas_servicio"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA",
+        "alerta_plazo": "PLAZO_CRITICO_<7_DIAS — 22/05/2026 es 6 días desde la fecha de corte. Se incluye en el lote como dato observado pero candidato a descarte automático por plazo<7d en el comparador."
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 1, "facilidad_ia": 3, "dificultad": 5 }
+    },
+    {
+      "hash": "c66315ed8fec334f",
+      "id_oficial": "Granada-Digitalizacion-2026",
+      "url_oficial": "https://www.fiiapp.org/perfil-contratante/",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Andalucia",
+        "titulo": "Servicio de Asistencia Técnica especializada dirigido al gobierno de Granada para la implementación de un programa de digitalización",
+        "descripcion": "Asistencia técnica para implementar un roadmap de gobierno digital: diagnóstico de gobernanza digital, mapeo de partes interesadas, análisis de capacidades institucionales. Duración 3 meses, procedimiento abierto.",
+        "organo_contratante": "Fundación Internacional y para Iberoamérica de Administración Políticas Públicas (FIIAPP) — proyecto para el gobierno de Granada",
+        "presupuesto_base_eur": 71750.0,
+        "presupuesto_total_eur": 86817.5,
+        "plazo_presentacion": "2026-05-29",
+        "cpv_codigos": ["71356200", "72224000", "75130000", "73220000"],
+        "lugar_ejecucion": "Granada (ES614)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "horas_servicio",
+        "evidencia_tipo_objeto": "'asistencia técnica especializada... diagnóstico, mapeo, análisis de capacidades' — consultoría pura sin entregables de software nombrados; los CPV principales son 71356200 (asistencia técnica) y 72224000 (consultoría gestión proyectos), no desarrollo IT",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Trabajo con gobierno de Granada admite consultoría remota + workshops presenciales",
+        "dificultad": 4,
+        "facilidad_ia": 5,
+        "utilidad_ia": 2,
+        "principales_desafios": [
+          "CPV consultoría, no IT puro",
+          "Entregables son informes y planes, no software",
+          "FIIAPP es licitador atípico (fundación de cooperación)"
+        ],
+        "ideas_clave": [
+          "IA para análisis de capacidades institucionales (encuestas y entrevistas)",
+          "Probable descarte por tipo_objeto=horas_servicio"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 2, "facilidad_ia": 5, "dificultad": 4 }
+    },
+    {
+      "hash": "f02adebfeb46ea22",
+      "id_oficial": "CIXUG-VotoElectronico-2026",
+      "url_oficial": "https://www.cixug.es/perfil-do-contratante",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Galicia",
+        "titulo": "Suministro de una solución cloud de voto electrónico y servicio integral de gestión y soporte para las Universidades del CIXUG",
+        "descripcion": "Plataforma cloud de voto electrónico con servicios de gestión de procesos electorales, formación, mantenimiento técnico y soporte para las universidades del Consorcio Interuniversitario de Galicia. Duración 3 años.",
+        "organo_contratante": "Consorcio para o Desenvolvemento de Aplicacións de Xestión Universitarias (CIXUG)",
+        "presupuesto_base_eur": 99000.0,
+        "presupuesto_total_eur": 119790.0,
+        "plazo_presentacion": "2026-05-28",
+        "cpv_codigos": ["72268000", "72600000"],
+        "lugar_ejecucion": "Santiago de Compostela, A Coruña (ES111)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'Suministro de una solución cloud de voto electrónico... más servicio integral de gestión y soporte' — entregable nombrado (plataforma SaaS de voto) + servicio acotado",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Solución cloud para CIXUG; soporte y gestión de procesos electorales se realizan remoto desde plataforma",
+        "dificultad": 7,
+        "facilidad_ia": 4,
+        "utilidad_ia": 2,
+        "principales_desafios": [
+          "Voto electrónico: requisitos criptográficos y de auditoría muy altos",
+          "ENS Categoría Alta probable",
+          "Probable necesidad de partner especializado (Scytl, Smartmatic, Indra Votar...)"
+        ],
+        "ideas_clave": [
+          "Bajo encaje: mercado vertical de pocos players certificados; difícil para una agencia generalista",
+          "IA marginal para detección de anomalías en logs de votación"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 2, "facilidad_ia": 4, "dificultad": 7 }
+    },
+    {
+      "hash": "98d5fc0c52c10622",
+      "id_oficial": "OSalnes-RutaSarmiento-2026",
+      "url_oficial": "https://www.osalnes.com/perfil-de-contratante",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Galicia",
+        "titulo": "Diseño, producción e implantación de una experiencia digital interactiva de la Ruta del Padre Sarmiento y Variante Espiritual en la comarca de O Salnés",
+        "descripcion": "Servicio integral que comprende captura de contenidos visuales inmersivos, georreferenciación, generación de recursos interactivos, estructuración de datos turísticos e integración de puntos de interés para plataforma digital de la Ruta del Padre Sarmiento.",
+        "organo_contratante": "Mancomunidade do Salnés",
+        "presupuesto_base_eur": 34998.35,
+        "presupuesto_total_eur": 42348.0,
+        "plazo_presentacion": "2026-05-30",
+        "cpv_codigos": ["71354100", "72212000", "72212520"],
+        "lugar_ejecucion": "Cambados, Pontevedra (ES114)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'Diseño, producción e implantación de una experiencia digital interactiva' — entregable nombrado (plataforma digital + contenidos producidos), no bolsa de horas",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Captura de contenidos visuales en O Salnés requiere campo presencial; desarrollo de plataforma admite remoto",
+        "dificultad": 5,
+        "facilidad_ia": 8,
+        "utilidad_ia": 7,
+        "principales_desafios": [
+          "Producción de contenidos visuales inmersivos (vídeo/360º)",
+          "Geolocalización fina de la ruta",
+          "Multidispositivo + accesibilidad"
+        ],
+        "ideas_clave": [
+          "IA generativa para narración multilingüe de cada punto de interés",
+          "Avatares conversacionales para guía interactiva",
+          "Recomendador de variantes por perfil de peregrino"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 7, "facilidad_ia": 8, "dificultad": 5 }
+    },
+    {
+      "hash": "7d0697b072572da4",
+      "id_oficial": "OCarballino-Telelectura-2026",
+      "url_oficial": "https://www.contratosdegalicia.gal/resultado.jsp?N=&busca=carballi%C3%B1o+telelectura",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Galicia",
+        "titulo": "Despliegue de plataforma web y servicios de interoperabilidad complementarios — PERTE Auga, O Carballiño (Exp. A124.M002 / A130.M002)",
+        "descripcion": "Implantación, parametrización y puesta en marcha de plataforma informática web SaaS, desarrollo de aplicaciones móviles (Android/iOS), servicios de integración e interoperabilidad entre sistemas de telelectura y telecontrol del ciclo del agua municipal. Financiación PERTE Auga.",
+        "organo_contratante": "Concello de O Carballiño",
+        "presupuesto_base_eur": 34794.0,
+        "presupuesto_total_eur": 42100.74,
+        "plazo_presentacion": "2026-06-02",
+        "cpv_codigos": ["72200000", "72212000", "72227000", "72262000"],
+        "lugar_ejecucion": "O Carballiño, Ourense (ES113)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'plataforma web SaaS + apps móviles Android/iOS + servicios de integración' — entregables nombrados con tres hitos claros; modelo llave en mano",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Integración con telelectura municipal requiere acceso a infraestructura del agua; desarrollo de SaaS y apps admite remoto",
+        "dificultad": 6,
+        "facilidad_ia": 7,
+        "utilidad_ia": 5,
+        "principales_desafios": [
+          "Interoperabilidad con sistemas de telelectura existentes (protocolos propietarios)",
+          "Apps móviles iOS + Android",
+          "Financiación PERTE con justificación rigurosa"
+        ],
+        "ideas_clave": [
+          "IA para detección de fugas a partir de series temporales de consumo",
+          "Predicción de demanda con LLM-asistido sobre datos sintéticos",
+          "Generación rápida de UI móvil con IA"
+        ],
+        "flag_url": "URL_BUSQUEDA_NO_DIRECTA"
+      },
+      "fuentes_corroboradas": ["licitaciones.io"],
+      "scoring_local": { "utilidad_ia": 5, "facilidad_ia": 7, "dificultad": 6 }
+    },
+    {
+      "hash": "ee4cbd5dd9090628",
+      "id_oficial": "USC-2026-0010",
+      "url_oficial": "https://www.usc.gal/gl/perfil-do-contratante",
+      "fuente": "AUTONOMICO",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "plataforma_autonomica": "Galicia",
+        "titulo": "Suministro de los derechos de despliegue ilimitado de productos ORACLE en la Universidade de Santiago de Compostela (USC-2026-0010 / 010X-26)",
+        "descripcion": "Adquisición de derechos de despliegue ilimitado para productos Oracle (bases de datos, aplicaciones empresariales y soluciones cloud) en la infraestructura tecnológica de la USC.",
+        "organo_contratante": "Universidade de Santiago de Compostela",
+        "presupuesto_base_eur": 36175.69,
+        "presupuesto_total_eur": 45792.01,
+        "plazo_presentacion": "2026-06-01",
+        "cpv_codigos": ["48600000"],
+        "lugar_ejecucion": "Santiago de Compostela, A Coruña (ES111)",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "'Suministro de los derechos de despliegue ilimitado de productos ORACLE' — adquisición de licencia comercial concreta",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Suministro de derechos de licencia, sin necesidad de presencia",
+        "dificultad": 1,
+        "facilidad_ia": 1,
+        "utilidad_ia": 1,
+        "principales_desafios": [
+          "Reventa pura de licencia Oracle (requiere ser partner Oracle ULA)",
+          "Sin componente de desarrollo"
+        ],
+        "ideas_clave": [
+          "Bajo encaje: candidato a descarte por modelo_entrega=reventa_licencia y encaje_perfil=bajo"
+        ]
+      },
+      "fuentes_corroboradas": ["licitaciones.io", "gobierto.es"],
+      "scoring_local": { "utilidad_ia": 1, "facilidad_ia": 1, "dificultad": 1 },
+      "_nota_hash": "Hash recalculado para Galicia|USC-2026-0010"
+    }
+  ],
+  "por_plataforma": {
+    "Euskadi": 3,
+    "Catalunya": 4,
+    "Madrid": 5,
+    "Andalucia": 4,
+    "Galicia": 4
+  },
+  "ok": true,
+  "limitaciones": "1) Plataformas Catalunya (PSCP), Euskadi (KontratazioA) y Andalucia (SiREC) son Angular sin SSR — no exponen detalle de expediente en HTML estático. Se ha resuelto vía agregadores indirectos (licitaciones.io, gobierto.es, cido.diba.cat) con verificación cruzada del perfil de contratante. 2) URL_BUSQUEDA_NO_DIRECTA marcada en 16/20 ítems donde no se pudo obtener deeplink individual; en estos casos la url_oficial apunta al perfil de contratante del adjudicador (mejor que la raíz de la plataforma autonómica). 3) Madrid (contratos-publicos.comunidad.madrid) sí expone deeplinks: ST-AS-0017-2026-S con URL directa; los 4 ítems restantes de Madrid se han alcanzado vía licitaciones.io. 4) 2 ítems incluidos con plazo<7d (MUTUALIA-SAP-ERP 5d, AMAYA-SAP 6d): marcados con alerta_plazo y son candidatos a descarte automático en el comparador; se mantienen en el lote como dato observado por transparencia. 5) Sólo se ha podido recalcular el hash de un ítem ('Galicia|USC-2026-0010') con la convención del SKILL — el resto siguen la misma convención plataforma|id_oficial. 6) Ningún ítem colisiona con los 65 hashes/ids_oficiales a evitar."
+}

@@ -1,0 +1,967 @@
+{
+  "lote_id": "lote_A_placsp_nucleo",
+  "ejecucion_id": "ejec_2026-05-16_001",
+  "fuente": "PLACSP",
+  "fecha": "2026-05-16",
+  "metodo": "feed_atom",
+  "queries_usadas": [
+    "feed_atom_PLACSP_mensual:licitacionesPerfilesContratanteCompleto3_202605.zip",
+    "filtro_cpv:72000000|72200000|72260000|prefijos 722* 7226*",
+    "filtro_presupuesto:20000-200000_EUR_TaxExclusiveAmount",
+    "filtro_estado:PUB",
+    "filtro_plazo_minimo_dias:7"
+  ],
+  "items_extraidos_total": 67,
+  "items_descartados_por_fetch_fallido": 0,
+  "items_descartados_por_descarte_automatico": 14,
+  "desglose_descartes_automaticos": {
+    "fuera_scope_software_it": 2,
+    "tipo_horas_servicio_y_presencial_continuada": 3,
+    "tipo_horas_servicio": 9,
+    "lugar_presencial_continuada": 0
+  },
+  "items_descartados_por_dedup": 5,
+  "items_observados": [
+    {
+      "hash": "66babc6b9a49789e",
+      "id_oficial": "2026000021",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=uPMSmAz0EWnpxJFXpLZ%2B2A%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Contrato mixto de suministro-servicios de instalación para implementación de musealización digital del C.I.T. Castillo Santa Catalina de Jaén, financiado por Plan de Sostenibilidad Turística en Destino del Excmo. Ayuntamiento de Jaén denominado “Jaén, capital del Oleoturismo en España, en el marco del Plan de Recuperación, Transformación y Resiliencia financiado por UE Next Generation",
+        "descripcion": "Id licitación: 2026000021; Órgano de Contratación: Alcaldía del Ayuntamiento de Jaén; Importe: 44256.1 EUR; Estado: PUB",
+        "organo_contratante": "Alcaldía del Ayuntamiento de Jaén",
+        "presupuesto_base_eur": 44256.1,
+        "presupuesto_total_eur": 53549.88,
+        "plazo_presentacion": "2026-05-25",
+        "cpv_codigos": [
+          "32321300",
+          "72263000",
+          "32321200",
+          "92110000",
+          "38652100",
+          "51313000",
+          "72000000",
+          "72200000",
+          "72212300",
+          "72212520"
+        ],
+        "lugar_ejecucion": "Jaén",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=eT9yZtWa6Pjn1l5oKySTcEo2GIfdjnW7zyCGVlvQxPvWXO03KDfF457gRzd0vqxERFHeFVE1BnFW1cQf14MTV0aliKMu3N598bbqUba0XBT3GVhXrFFqN7yFncy7YfRK",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=lf3vZsiuv5l/opzFRdzyEkYpXhWcAyIURS%2B6yS0hiszBxg2b8UgdYTP5h3kCdgHbe5rZSaLcRqbdnxlJMKRdJIix3p0CnBF5DYH45ljeP%2B0//q7NB2iMZvNyf0xrJmjt",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Contrato mixto de suministro-servicios de instalación para implementación de musealización digital (productos nombrados y alcance cerrado)",
+        "lugar_prestacion": "infra_cliente",
+        "evidencia_lugar_prestacion": "Implementación física en el Centro de Interpretación Turística Castillo de Santa Catalina de Jaén",
+        "dificultad": 6,
+        "facilidad_ia": 3,
+        "utilidad_ia": 2,
+        "principales_desafios": [
+          "Integración hardware-software in-situ",
+          "Plazo corto (9d)",
+          "Coordinación con obra del Plan Sostenibilidad Turística"
+        ],
+        "ideas_clave": [
+          "IA para guiado/narración interactiva del oleoturismo",
+          "Datos sintéticos para entrenar reconocimiento de objetos del museo"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 2,
+        "facilidad_ia": 3,
+        "dificultad": 6
+      }
+    },
+    {
+      "hash": "156d946270d729c3",
+      "id_oficial": "4.2026",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KzzefmdK5zU4NavIWzMcHA%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Servicio de implantación de un ecosistema tecnológico de realidad aumentada, contenidos digitales y señalética accesible\r\npara el centro de interpretación paleontológico Sierra de Quibas (Abanilla).",
+        "descripcion": "Id licitación: 4.2026; Órgano de Contratación: Junta del Ayuntamiento de Abanilla; Importe: 26528.93 EUR; Estado: PUB",
+        "organo_contratante": "Junta del Ayuntamiento de Abanilla",
+        "presupuesto_base_eur": 26528.93,
+        "presupuesto_total_eur": 32100.0,
+        "plazo_presentacion": "2026-05-29",
+        "cpv_codigos": [
+          "72000000",
+          "79340000",
+          "72246000",
+          "72200000"
+        ],
+        "lugar_ejecucion": "Murcia",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=8YDbHYFrwvM7/fQSAxIgoVAY%2BWTNyRKtji3yyoa4YcO5a1%2Bgwq757pdT/1q%2Bz5YotPYLXBKdRwGXC7/NYqGDJShJ2w21T2vzIA327vX6Q6u1aXEvq3KHa/AEHgtDrQw0",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=N0NeduyZ/nhkP473HXJIYYPq06g0COEtwTB1B6mFoAGefmNHxLB3CRvP7i5N3hzon9Yk90JOn7CSdin8SKY%2BS8NQ4fOvRbDSh8lipqb7WMLVTD3T98KC0nSgQFM0q%2B5s",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Servicio de implantación de un ecosistema tecnológico de realidad aumentada, contenidos digitales y señalética accesible (entregables nombrados)",
+        "lugar_prestacion": "infra_cliente",
+        "evidencia_lugar_prestacion": "Para el centro de interpretación paleontológico Sierra de Quibas (Abanilla) — instalación física en sede",
+        "dificultad": 5,
+        "facilidad_ia": 7,
+        "utilidad_ia": 6,
+        "principales_desafios": [
+          "AR contenido 3D paleontológico",
+          "Accesibilidad universal"
+        ],
+        "ideas_clave": [
+          "IA generativa para reconstrucción 3D de fósiles",
+          "Modelos NLU para guía interactiva multilingüe"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 6,
+        "facilidad_ia": 7,
+        "dificultad": 5
+      }
+    },
+    {
+      "hash": "823515ae51f748e6",
+      "id_oficial": "INP/618/26",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=OkOE%2F5uPzpuHCIsjvJ3rhQ%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Contrato para la implantación y mantenimiento de un sistema tecnológico único, formado por un sistema de gestión de la formación (LMS + Comercio electrónico), nueva web corporativa orientada a la formación y nuevo gestor de cualificación.",
+        "descripcion": "Id licitación: INP/618/26; Órgano de Contratación: Consejo de Administración de Servicios y Estudios para la Navegación Aérea y la Seguridad Aeronáutica S.M.E. M.P. S.A.; Importe: 68500 EUR; Estado: PUB",
+        "organo_contratante": "Consejo de Administración de Servicios y Estudios para la Navegación Aérea y la Seguridad Aeronáutica S.M.E. M.P. S.A.",
+        "presupuesto_base_eur": 68500.0,
+        "presupuesto_total_eur": 82885.0,
+        "plazo_presentacion": "2026-05-25",
+        "cpv_codigos": [
+          "72000000",
+          "48219000",
+          "48190000",
+          "72263000",
+          "72267000",
+          "72413000",
+          "72230000"
+        ],
+        "lugar_ejecucion": "Madrid",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Ullq5RVAEKUI0QartCNmu2YFh3I4L80rFDYOb2WOM6e5AegpGxbTRgYdqMd1OLYJYo20Ayi1uoDOnN1BkB1mxdz8cAADvEG1v24wRQqPvGuB0nvVKRzfe4rpHcnlPhSZ",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=kh4wwD%2BWxYlefcgkhXJyNpgByBXDMzKbYjsSY4%2Bqh2smPOXmdJMp4tiVF6/U3EbKDAkL6zJLjAwYQ73ORqcedxCxWvf5faV5uUrnGd%2B2wzSHAj0WEJrB5sP7amrh2jBD",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Implantación y mantenimiento de un sistema tecnológico único: LMS + comercio electrónico + nueva web corporativa + gestor de cualificación (productos nombrados)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Implantación en SENASA (Madrid); el mantenimiento puede ser remoto",
+        "dificultad": 5,
+        "facilidad_ia": 8,
+        "utilidad_ia": 7,
+        "principales_desafios": [
+          "Integración LMS-eCommerce-cualificación",
+          "Migración de cursos existentes"
+        ],
+        "ideas_clave": [
+          "IA generativa para creación de cursos y evaluaciones",
+          "Tutor IA personalizado para LMS",
+          "Búsqueda semántica del catálogo"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 7,
+        "facilidad_ia": 8,
+        "dificultad": 5
+      }
+    },
+    {
+      "hash": "e7949f402972cbaa",
+      "id_oficial": "4351/2026",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=we9JU9iUbu54zIRvjBVCSw%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Licitación del despliegue de la plataforma web y de servicios de interoperatividad complementarios (PERTE Auga) - Actuacións C2: (A124.M002) e (A130.M002)",
+        "descripcion": "Id licitación: 4351/2026; Órgano de Contratación: Alcaldía del Ayuntamiento de O Carballiño; Importe: 34794 EUR; Estado: PUB",
+        "organo_contratante": "Alcaldía del Ayuntamiento de O Carballiño",
+        "presupuesto_base_eur": 34794.0,
+        "presupuesto_total_eur": 42100.74,
+        "plazo_presentacion": "2026-06-02",
+        "cpv_codigos": [
+          "72200000",
+          "72212000",
+          "72227000",
+          "72262000"
+        ],
+        "lugar_ejecucion": "Ourense",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=821X6UvobutdoJXl0QZAMdpIQIi%2BCi6fHe54grDHzxFxONcrVgGLvfxsgt%2BKaj5twGM%2BWGp%2BakKYMKU56IauvufWzqso/l8J4Dk1WdamFtb6CYyL7SIrUOBFfNf52ZqA",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Despliegue de la plataforma web y servicios de interoperatividad complementarios — PERTE Auga (entregables nombrados con financiación específica)",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Plataforma web y servicios de interoperatividad — desarrollable e entregable remotamente",
+        "dificultad": 4,
+        "facilidad_ia": 8,
+        "utilidad_ia": 5,
+        "principales_desafios": [
+          "Cumplimiento PERTE Auga",
+          "Interoperabilidad con sistemas hídricos"
+        ],
+        "ideas_clave": [
+          "Generación de UI con IA",
+          "Análisis IA de datos hídricos para alertas",
+          "Asistente conversacional ciudadano"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 5,
+        "facilidad_ia": 8,
+        "dificultad": 4
+      }
+    },
+    {
+      "hash": "2c85cfa1359961a5",
+      "id_oficial": "SU 200/26",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2FhXXpW2gFI1PpzdqOdhuWg%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Contratación del Suministro en Regimen de Arrendamiento de una Plataforma Digital de Gestión Web en Modo SaaS para los Centros de Participación Activa para Personas del Ayuntamiento de Marbella",
+        "descripcion": "Id licitación: SU 200/26; Órgano de Contratación: Junta de Gobierno del Ayuntamiento de Marbella; Importe: 34741.14 EUR; Estado: PUB",
+        "organo_contratante": "Junta de Gobierno del Ayuntamiento de Marbella",
+        "presupuesto_base_eur": 34741.14,
+        "presupuesto_total_eur": 42036.78,
+        "plazo_presentacion": "2026-05-28",
+        "cpv_codigos": [
+          "30211300",
+          "72263000",
+          "72266000",
+          "72200000"
+        ],
+        "lugar_ejecucion": "Málaga",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=izdUCwB9INXVU9hgz1%2Bz7amQpXUtc0lyUKgzIvMxVIp1WPmnF9eYevdzDU8b5FtuHN9iC8Wf4ET88g3W/JMrbJ1OiLabzLywF4IHYn1opI17QB3HKyQaFUExmUVQCerk",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=DnVZlAVxGn8N1dyqm9N5k5E/%2B/9NLRJQ5vLJ06Gx63/V4o7ZU5JbqEwiguqh1u5qpozwE15FUg6eCDKLG5wZONiNVdZy0xtGGVdH6A9gwd8C1/zDIE0Kw/PWNnLS0Z0z",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Suministro en régimen de arrendamiento de una plataforma digital de gestión web en modo SaaS (producto SaaS llave en mano)",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Plataforma en modo SaaS (Software as a Service) — sin presencia in-situ obligatoria",
+        "dificultad": 3,
+        "facilidad_ia": 8,
+        "utilidad_ia": 5,
+        "principales_desafios": [
+          "Adecuación al perfil de usuario mayor",
+          "Accesibilidad"
+        ],
+        "ideas_clave": [
+          "Chatbot IA para personas mayores",
+          "Recomendador IA de actividades",
+          "Voz a texto para inscripciones"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 5,
+        "facilidad_ia": 8,
+        "dificultad": 3
+      }
+    },
+    {
+      "hash": "f557293452735148",
+      "id_oficial": "20/2026/27006",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=fG3fGaLu2PCIzo3LHNPGcQ%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Servicio de Renovación Soporte y Mantenimiento Firewall y SOC Ayuntamiento de Arganda del Rey",
+        "descripcion": "Id licitación: 20/2026/27006; Órgano de Contratación: Alcaldía del Ayuntamiento de Arganda del Rey ; Importe: 199750 EUR; Estado: PUB",
+        "organo_contratante": "Alcaldía del Ayuntamiento de Arganda del Rey",
+        "presupuesto_base_eur": 199750.0,
+        "presupuesto_total_eur": 241697.5,
+        "plazo_presentacion": "2026-05-26",
+        "cpv_codigos": [
+          "72000000",
+          "72700000",
+          "72500000"
+        ],
+        "lugar_ejecucion": "Comunidad de Madrid",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=fPKWMnkX6hfpOionXPcxY9KyoDRPzEdfv0mNAmsefKFovvjj8EDallUdtMflKyQyFsTCV12lA%2B3K3VQCyJflsIUkd5OY/s3Qh3BiCQvsrXOB0nvVKRzfe4rpHcnlPhSZ",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=IpL8xdQYBWs4sCRw0YKbgc%2BfeRgpg1922OMJyNBnJRR/pBB5EbS00ChL/K%2BnujUgBsL2pEHZ428xdj93STqsJefEmJQpP1PBhg0NSfYJ8dy1aXEvq3KHa/AEHgtDrQw0",
+        "tipo_objeto": "mixto",
+        "evidencia_tipo_objeto": "Renovación Soporte y Mantenimiento Firewall y SOC (combina licencias renovables + servicios SOC continuos)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "SOC suele ser servicio remoto pero firewall vive en CPD del Ayuntamiento",
+        "dificultad": 7,
+        "facilidad_ia": 4,
+        "utilidad_ia": 7,
+        "principales_desafios": [
+          "Especialización ciberseguridad municipal",
+          "ENS/SOC 24x7"
+        ],
+        "ideas_clave": [
+          "IA para detección de anomalías en logs",
+          "Triage automático de alertas SOC"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 7,
+        "facilidad_ia": 4,
+        "dificultad": 7
+      }
+    },
+    {
+      "hash": "418769237aecba76",
+      "id_oficial": "26-SE-08",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=gmnlsbXaxXcQyBAnWzHfCg%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Contrato consistente en la prestación del servicio de implantación, puesta en funcionamiento y explotación en modalidad SaaS (Software as a Service) de un sistema integral de gestión del control de presencia y registro de jornada del personal del Ayuntamiento de Mislata",
+        "descripcion": "Id licitación: 26-SE-08; Órgano de Contratación: Alcaldía del Ayuntamiento de Mislata; Importe: 44550.42 EUR; Estado: PUB",
+        "organo_contratante": "Alcaldía del Ayuntamiento de Mislata",
+        "presupuesto_base_eur": 44550.42,
+        "presupuesto_total_eur": 53906.0,
+        "plazo_presentacion": "2026-05-26",
+        "cpv_codigos": [
+          "72260000",
+          "48450000",
+          "72267100",
+          "35125200"
+        ],
+        "lugar_ejecucion": "Valencia/València",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=0vOriIt//11UjeYMDABehEBrZjEfxawQ/OMDCtTFVx6n2sAAaj4MitTt1RuamF10lzDvEyi7BftqTngUEQ5jiBLfd8knKJ4SiNzFgl7NVgNJOVDbGCDM%2BMigrvuVS7Rv",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=0UalqGmL6oUjJ60zbn0/rrBGwEpv1m1rc1lW8mka12nh5s/0CqRX/NU9bDfdJP1VEtVbdGf/jhKZU4U6p%2B%2BHFWULB%2BwOvyMqkkc0a8AmLiD6CYyL7SIrUOBFfNf52ZqA",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Prestación del servicio de implantación, puesta en funcionamiento y explotación en modalidad SaaS de un sistema integral de gestión del control de presencia",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Modalidad SaaS (Software as a Service) — entrega como servicio remoto",
+        "dificultad": 3,
+        "facilidad_ia": 7,
+        "utilidad_ia": 3,
+        "principales_desafios": [
+          "Hardware fichaje + integración nómina",
+          "RGPD biometría"
+        ],
+        "ideas_clave": [
+          "IA para detección de patrones anómalos de jornada",
+          "OCR de partes de trabajo"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 3,
+        "facilidad_ia": 7,
+        "dificultad": 3
+      }
+    },
+    {
+      "hash": "5863c0375c336b24",
+      "id_oficial": "375/2026",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=q5gYgDKEKYns%2BnLj3vAg5A%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "C26/01 Implantación e mantemento dun sistema de información para a xestión e recadación dos ingresos municipais",
+        "descripcion": "Id licitación: 375/2026; Órgano de Contratación: Junta de Gobierno del Ayuntamiento de Cangas; Importe: 176312.4 EUR; Estado: PUB",
+        "organo_contratante": "Junta de Gobierno del Ayuntamiento de Cangas",
+        "presupuesto_base_eur": 176312.4,
+        "presupuesto_total_eur": 213338.0,
+        "plazo_presentacion": "2026-05-26",
+        "cpv_codigos": [
+          "48000000",
+          "72260000",
+          "72268000"
+        ],
+        "lugar_ejecucion": "Pontevedra",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=FfzQ56bYHhmcaPTacnXCtp159XDYgH%2BatFNnx0XLn8oIZBBsuNJFVhOr/Q24HbeHXi2JReQgQvuRUl8%2BvOd9D4FR7zPX0laGYnTIOfs%2Bv3EC1/zDIE0Kw/PWNnLS0Z0z",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=7EthrW6SZ1C11/z1ug79p2aBWB1Wi2oD3eQXzgRowY0Yw0q28Do6vR0sBW2PE4/d0Rkd4EsQjgnW7R2hYXJKsfG5uSVzBn3rnajleFzJ2bIC1/zDIE0Kw/PWNnLS0Z0z",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Implantación y mantenimiento de un sistema de información para la gestión y recaudación de los ingresos municipales (sistema nombrado)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Implantación en Ayuntamiento de Cangas (Pontevedra); mantenimiento posiblemente remoto",
+        "dificultad": 6,
+        "facilidad_ia": 6,
+        "utilidad_ia": 5,
+        "principales_desafios": [
+          "Integración con catastro y bancos",
+          "Cumplimiento Ley General Tributaria local"
+        ],
+        "ideas_clave": [
+          "IA para detección de morosidad",
+          "Asistente IA al contribuyente"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 5,
+        "facilidad_ia": 6,
+        "dificultad": 6
+      }
+    },
+    {
+      "hash": "2c83203e885f1cc1",
+      "id_oficial": "192026",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=whA4c03XeGM4NavIWzMcHA%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Servicios de integración de FACe y facturación electrónica en Segittur, y el servicio de soporte y mantenimiento de Business Central. . Las necesidades a satisfacer se especifican con mayor detalle en el “PLIEGO DE PRESCRIPCIONES TÉCNICAS DE LA CONTRATACIÓN\"",
+        "descripcion": "Id licitación: 192026; Órgano de Contratación: Presidencia y Dirección de Administración y Finanzas de la de la Sociedad Mercantil Estatal para la Gestión de la Innovación y las Tecnologías Turísticas, S.A.M.P. (SEGITTUR); Importe: 95000 EUR; Estado: PUB",
+        "organo_contratante": "Presidencia y Dirección de Administración y Finanzas de la de la Sociedad Mercantil Estatal para la Gestión de la Innovación y las Tecnologías Turísticas, S.A.M.P. (SEGITTUR)",
+        "presupuesto_base_eur": 95000.0,
+        "presupuesto_total_eur": 114950.0,
+        "plazo_presentacion": "2026-05-25",
+        "cpv_codigos": [
+          "72000000"
+        ],
+        "lugar_ejecucion": "Madrid",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=DHtXc%2BjgJI%2BGeEw45/7ax/eivLYZUh/I8MoOmAKpNZO4Ua2n99gx%2BXCpMQoeI1O8AO276PSdIQX6sRsIeC238I/vUeA3UK5TpzM3QMi83Rd45ClyWkoJ44mKM70IFcOu",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=q0auQ1YwZ368zuy9n1j/JGw5pkUtkh53BHcqMtXeILBwH3lZUVgMMJcN4MGLwsBRKx8wwevVepR4%2B0/zmPuSdd1skOHKmqWDMHO/ZB8j3s/VTD3T98KC0nSgQFM0q%2B5s",
+        "tipo_objeto": "mixto",
+        "evidencia_tipo_objeto": "Servicios de integración de FACe y facturación electrónica en Segittur, y servicio de soporte y mantenimiento de Business Central (integración + soporte)",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Integración FACe y Business Central — desarrollables remotamente vía APIs y conexiones cloud",
+        "dificultad": 4,
+        "facilidad_ia": 7,
+        "utilidad_ia": 4,
+        "principales_desafios": [
+          "Conocimiento Business Central API",
+          "Especificación FACe vigente"
+        ],
+        "ideas_clave": [
+          "IA para clasificación automática de facturas",
+          "Detección de duplicados/anomalías"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 4,
+        "facilidad_ia": 7,
+        "dificultad": 4
+      }
+    },
+    {
+      "hash": "a28f87658fb35d89",
+      "id_oficial": "P4103300B-2026/000013-PEA",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=racrrBK%2BmkQZDGvgaZEVxQ%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Implantación de plataforma de turismo inteligente (patcul) ...",
+        "descripcion": "Id licitación: P4103300B-2026/000013-PEA; Órgano de Contratación: Alcaldía del Ayuntamiento de Constantina; Importe: 81709 EUR; Estado: PUB",
+        "organo_contratante": "Alcaldía del Ayuntamiento de Constantina",
+        "presupuesto_base_eur": 81709.0,
+        "presupuesto_total_eur": 98867.89,
+        "plazo_presentacion": "2026-05-25",
+        "cpv_codigos": [
+          "72000000"
+        ],
+        "lugar_ejecucion": null,
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=UKWMkHhC54DL9o/WzTEJFSyfxy88y0sn7zLtWvj1zZoy9izc9kaSIb2V/5IglksZiuHNu3Gss03lKFfw%2BeLnJFs5BUq8yFmEHKtL/6V3mQN7QB3HKyQaFUExmUVQCerk",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=fkF2JD750de4cqPNXaNxmGKrZZ7j3MRm4fXY5fDybI4wgUqyrYs7YgAbTP/Gvyf86gMhKJe1oekFU6YeL4IcA4WFhYs/Gi/rffT2uhwDA9i1aXEvq3KHa/AEHgtDrQw0",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Implantación de plataforma de turismo inteligente (PATCUL) — plataforma nombrada con alcance de implantación",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Implantación en Ayuntamiento de Constantina (Sevilla); plataforma de turismo típicamente cloud/SaaS",
+        "dificultad": 5,
+        "facilidad_ia": 7,
+        "utilidad_ia": 7,
+        "principales_desafios": [
+          "Datos abiertos turísticos heterogéneos",
+          "Justificación EDUSI/PERTE"
+        ],
+        "ideas_clave": [
+          "Recomendador IA de rutas turísticas",
+          "Asistente conversacional al visitante",
+          "Análisis de sentimiento de reseñas"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 7,
+        "facilidad_ia": 7,
+        "dificultad": 5
+      }
+    },
+    {
+      "hash": "75b43b8ec4201a03",
+      "id_oficial": "4E_26",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=QYjvE8Tz2S710HRJw8TEnQ%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Contrato de Suministro mediante arrendamiento de una infraestructura informática en la nube (SAAS) para realizar un proyecto piloto de transporte público a demanda en la Provincia de Burgos. Reto demográfico.",
+        "descripcion": "Id licitación: 4E_26; Órgano de Contratación: Presidencia de la Diputación Provincial de Burgos; Importe: 59950 EUR; Estado: PUB",
+        "organo_contratante": "Presidencia de la Diputación Provincial de Burgos",
+        "presupuesto_base_eur": 59950.0,
+        "presupuesto_total_eur": 72539.5,
+        "plazo_presentacion": "2026-05-25",
+        "cpv_codigos": [
+          "48000000",
+          "72000000"
+        ],
+        "lugar_ejecucion": "Burgos",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=zvsidJIcWYHTiww4FMCIz3AJ3xaINgh0TbR40W%2B0m6vx4libYR2gLVS3xJHcysRSBdz5zTeMETN6SBvGIaNEy4JOiEbHXPvVqTex2pdAyJj6CYyL7SIrUOBFfNf52ZqA",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=ZNwQ83rNaLr/TnxqFLz6XYVXX8jDvWyHXgHOUi8b1HNOgMJhvNQRzyri6vtruYiiTkA2Q/tYpoCpTREs4uyd2tNu6hxyXOUv7hYWvzV2OYaCx2e6p7hqtlp2aFupgHMr",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Suministro mediante arrendamiento de una infraestructura informática en la nube (SAAS) para realizar un proyecto piloto de transporte público a demanda (piloto con alcance cerrado)",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Infraestructura en la nube (SAAS) — sin presencia en sede",
+        "dificultad": 6,
+        "facilidad_ia": 8,
+        "utilidad_ia": 9,
+        "principales_desafios": [
+          "Optimización dinámica de rutas rurales",
+          "Adopción usuarios mayores"
+        ],
+        "ideas_clave": [
+          "IA de ruteo dinámico (DARP)",
+          "Predicción de demanda con modelos temporales",
+          "Voz a reserva para usuarios sin smartphone"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 9,
+        "facilidad_ia": 8,
+        "dificultad": 6
+      }
+    },
+    {
+      "hash": "aaffddaee6f26100",
+      "id_oficial": "4390/2026",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=3Tw69XQtsbR%2FR5QFTlaM4A%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Servicio para la activación de la funcionalidad SIT-CAT y la colaboración en el centro de atención telemática para el Servicio de Recaudación Municipal del Excmo. Ayuntamiento de Arucas",
+        "descripcion": "Id licitación: 4390/2026; Órgano de Contratación: Consejero de la Sociedad Municipal para el Desarrollo de Arucas S.A.; Importe: 80000 EUR; Estado: PUB",
+        "organo_contratante": "Consejero de la Sociedad Municipal para el Desarrollo de Arucas S.A.",
+        "presupuesto_base_eur": 80000.0,
+        "presupuesto_total_eur": 85600.0,
+        "plazo_presentacion": "2026-05-27",
+        "cpv_codigos": [
+          "72000000",
+          "79342300",
+          "79510000"
+        ],
+        "lugar_ejecucion": "Canarias",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=f94W4RBcNnZwJr1ZOxmrdck462xpurspWEMq1KyZVgJR6b0EPpCFUW%2BzpZ/18NhZLiiUL%2Bm9w3tuZLqDqzLZYsPLN9gp9UeRpbSAlNpFhZPfdyQgZAdTm3EfcUAC7CJ6",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=dzE%2BmfcwsJgmSWnvn16pjW1tCca3TLxrtvRN52IiZMY7MvniLHheBha6ANNKmOAfULy6KsX4kCb9TaMU8R1AkzmZgLXjvkbVHpvFRH/Ric7DdQD9RyhUmzT4jZ2In4zL",
+        "tipo_objeto": "mixto",
+        "evidencia_tipo_objeto": "Servicio para la activación de la funcionalidad SIT-CAT (configuración/integración) y la colaboración en el centro de atención telemática (mezcla técnica + atención)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Activación SIT-CAT (técnica, remoto) + colaboración en centro telemático (típicamente con turnos)",
+        "dificultad": 4,
+        "facilidad_ia": 5,
+        "utilidad_ia": 6,
+        "principales_desafios": [
+          "Integración con sistemas tributarios canarios",
+          "Atención multicanal al contribuyente"
+        ],
+        "ideas_clave": [
+          "IA para clasificación automática de consultas",
+          "Asistente IA al agente telemático"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 6,
+        "facilidad_ia": 5,
+        "dificultad": 4
+      }
+    },
+    {
+      "hash": "246db6341fd3945b",
+      "id_oficial": "PLI-02405",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=lWuYZB9Z1Ag%2B1TMyIiZmzw%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "El objeto del contrato es el suministro, implantación y puesta en servicio de una plataforma de firma electrónica y flujo de firmas, utilizable en entornos de escritorio y dispositivos móviles, que permita la firma electrónica de documentos con plena validez legal conforme al Reglamento (UE) nº 910/2014 (eIDAS)",
+        "descripcion": "Id licitación: PLI-02405; Órgano de Contratación: ENUSA Industrias Avanzadas S.A., S.M.E. ; Importe: 33708 EUR; Estado: PUB",
+        "organo_contratante": "ENUSA Industrias Avanzadas S.A., S.M.E.",
+        "presupuesto_base_eur": 33708.0,
+        "presupuesto_total_eur": 40786.68,
+        "plazo_presentacion": "2026-05-26",
+        "cpv_codigos": [
+          "79132100",
+          "48451000",
+          "72000000"
+        ],
+        "lugar_ejecucion": "Madrid",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=I9SfA6/P0AfAdwMmeKxIV9pZffgZD%2B%2B8z98H/PYNIrze9xU1tl2XSgEaHcesjN49zs0kxxfnSCS02TQaD9SjrkhuUgwx3iHBGciJ2JQGF4hJOVDbGCDM%2BMigrvuVS7Rv",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=JK7XmEhb078MuftRKgsZCW2ItEn585xPBGBOg/dn%2BjgGSyuvGqsjIo6cVRwQp5ejL/UDcc2de9zTKr98OdZys6f89R/6fOkiOifE%2BgSMchGHAj0WEJrB5sP7amrh2jBD",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Suministro, implantación y puesta en servicio de una plataforma de firma electrónica y flujo de firmas (producto nombrado, alcance cerrado, eIDAS)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Plataforma de firma electrónica utilizable en entornos de escritorio y dispositivos móviles; implantación con conexión a infra ENUSA",
+        "dificultad": 6,
+        "facilidad_ia": 6,
+        "utilidad_ia": 3,
+        "principales_desafios": [
+          "Cumplimiento eIDAS y certificados qualified",
+          "Integración con CADES/PADES/XADES"
+        ],
+        "ideas_clave": [
+          "OCR + clasificación IA de documentos a firmar",
+          "Detección de cláusulas obligatorias"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 3,
+        "facilidad_ia": 6,
+        "dificultad": 6
+      }
+    },
+    {
+      "hash": "24aa148ae4935b41",
+      "id_oficial": "GEX 1175/2024",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5%2Brb62a11OB9Zh%2FyRJgM8w%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "El objeto del presente contrato es la implantación de un sistema digitalizado en la captación y distribución del agua que permita la mejora de la eficiencia hídrica y energética de la red",
+        "descripcion": "Id licitación: GEX 1175/2024; Órgano de Contratación: Alcaldía de Ayuntamiento de Fuente Tójar; Importe: 81091.65 EUR; Estado: PUB",
+        "organo_contratante": "Alcaldía de Ayuntamiento de Fuente Tójar",
+        "presupuesto_base_eur": 81091.65,
+        "presupuesto_total_eur": 98120.9,
+        "plazo_presentacion": "2026-05-26",
+        "cpv_codigos": [
+          "38421100",
+          "72000000",
+          "32400000",
+          "32441200",
+          "38434000",
+          "32500000"
+        ],
+        "lugar_ejecucion": "Córdoba",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Wa6vhZiBCdiyOVtweIqwj2OJQUINTJ/PnVJ89SEhpjyejxgCYNp2Yyln7MjpPiC//W2Bp730Z7KLKRK7I3Lv1gn80IvapKQ%2BKQk70B5SWi9JOVDbGCDM%2BMigrvuVS7Rv",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=/IHwvzevUfMsv5fWfDjAewfii8DDS972U0XtBF8mWABk7ywPamhVWhl1eNlr%2BDN/XgiJ6AywJNR3e0hi9LspiCRMXF0rteuvsWBGUyoNpxB45ClyWkoJ44mKM70IFcOu",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Implantación de un sistema digitalizado en la captación y distribución del agua (sistema nombrado con alcance cerrado)",
+        "lugar_prestacion": "infra_cliente",
+        "evidencia_lugar_prestacion": "Sensórica/SCADA en la red municipal de agua — instalación física en la red del Ayuntamiento de Fuente Tójar",
+        "dificultad": 6,
+        "facilidad_ia": 6,
+        "utilidad_ia": 7,
+        "principales_desafios": [
+          "Hardware sensorial robusto en campo",
+          "Conectividad rural"
+        ],
+        "ideas_clave": [
+          "IA para detección de fugas por anomalías de presión",
+          "Predicción de demanda hídrica",
+          "Mantenimiento predictivo"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 7,
+        "facilidad_ia": 6,
+        "dificultad": 6
+      }
+    },
+    {
+      "hash": "3a25b95482ec377d",
+      "id_oficial": "21148/2026",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=UbKDN4bJYobua%2Fi14w%2FPLA%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Suministro de licencia y soporte para mantenimiento de la tecnología de gestión de Bicinrivas, en modalidad SAAS",
+        "descripcion": "Id licitación: 21148/2026; Órgano de Contratación: Junta de Gobierno del Ayuntamiento de Rivas Vaciamadrid; Importe: 128524.92 EUR; Estado: PUB",
+        "organo_contratante": "Junta de Gobierno del Ayuntamiento de Rivas Vaciamadrid",
+        "presupuesto_base_eur": 128524.92,
+        "presupuesto_total_eur": 155515.15,
+        "plazo_presentacion": "2026-06-11",
+        "cpv_codigos": [
+          "48218000",
+          "72000000"
+        ],
+        "lugar_ejecucion": "Madrid",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=ezhjRWg4p6w0L2gIhuN%2BDaASiN%2BFm8PeB7d4GoUk3K7CMpss7OydND9yqe5EIq02bjKWBXrkg5ur4rxbp6mJ1UIHCzcIdDwkEmBh59s9kHwZyAJWGsSt0OzTSTyw9JAs",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=aiuwqJEeXShvdBjCQrAKJHyXGSlnb1ahWs3gVzaF89JMZjVfA/pbSj7ScQE8XHX6imciSalOTboDXnSed8OOcGNNYj67Wu2Qzsb3FN%2BAOAGCx2e6p7hqtlp2aFupgHMr",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Suministro de licencia y soporte para mantenimiento de la tecnología de gestión de Bicinrivas, en modalidad SAAS (producto SaaS específico)",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Modalidad SAAS — sin presencia in-situ",
+        "dificultad": 3,
+        "facilidad_ia": 4,
+        "utilidad_ia": 3,
+        "principales_desafios": [
+          "Producto específico (Bicinrivas) — barrera competitiva",
+          "Continuidad servicio"
+        ],
+        "ideas_clave": [
+          "Análisis IA de uso para optimizar estaciones",
+          "Mantenimiento predictivo de bicis"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 3,
+        "facilidad_ia": 4,
+        "dificultad": 3
+      }
+    },
+    {
+      "hash": "b2c55a58351c0129",
+      "id_oficial": "055/2026",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=tW63vdD69grL1rX3q%2FMAPA%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Servicios de control de acceso, presencia y acreditación en EMVS Madrid.",
+        "descripcion": "Id licitación: 055/2026; Órgano de Contratación: Empresa Municipal de la Vivienda y Suelo de Madrid, S.A.; Importe: 53314.56 EUR; Estado: PUB",
+        "organo_contratante": "Empresa Municipal de la Vivienda y Suelo de Madrid, S.A.",
+        "presupuesto_base_eur": 53314.56,
+        "presupuesto_total_eur": 64510.62,
+        "plazo_presentacion": "2026-06-01",
+        "cpv_codigos": [
+          "72000000",
+          "50000000"
+        ],
+        "lugar_ejecucion": null,
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=A3lAb%2BkddSIDRFlGcAwB5VOiAGzm%2BYG7xnL3zBpaIBjcZ83aIDb6kc9d5KAOPtdLTlf0fgfO8a/dMQLuUzkOe7acDHRHr8PtEVghCxivRQzDdQD9RyhUmzT4jZ2In4zL",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=PquRGCUxxZOyoyaAZwCitCaksyGYCbJD649DTOYbWqMEvsG%2BQRkbGRtEkqKGvHBjtS7U6UVYoeCYYNq4mJQzHn0O595lHczFTW5BBiaJ%2B5eHAj0WEJrB5sP7amrh2jBD",
+        "tipo_objeto": "mixto",
+        "evidencia_tipo_objeto": "Servicios de control de acceso, presencia y acreditación en EMVS Madrid (servicios continuos + posibles equipos)",
+        "lugar_prestacion": "infra_cliente",
+        "evidencia_lugar_prestacion": "Control de acceso físico a la EMVS Madrid — instalación y operación en sede",
+        "dificultad": 4,
+        "facilidad_ia": 5,
+        "utilidad_ia": 4,
+        "principales_desafios": [
+          "RGPD biometría",
+          "Integración con sistemas RR.HH."
+        ],
+        "ideas_clave": [
+          "Reconocimiento facial con consentimiento",
+          "Detección de patrones inusuales"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 4,
+        "facilidad_ia": 5,
+        "dificultad": 4
+      }
+    },
+    {
+      "hash": "43a7269c06d670c1",
+      "id_oficial": "40/26 RTPA",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=C%2B0FMP4IZmA4NavIWzMcHA%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Servicios de medición de consumo HbbTV y de emisión y gestión de contenidos interactivos asociados a los canales de Radiotelevisión del Principado de Asturias SA Unipersonal (RTPA).",
+        "descripcion": "Id licitación: 40/26 RTPA; Órgano de Contratación: Dirección General de Radiotelevisión del Principado de Asturias, S.A. Unipersonal; Importe: 73100 EUR; Estado: PUB",
+        "organo_contratante": "Dirección General de Radiotelevisión del Principado de Asturias, S.A. Unipersonal",
+        "presupuesto_base_eur": 73100.0,
+        "presupuesto_total_eur": 88451.0,
+        "plazo_presentacion": "2026-06-01",
+        "cpv_codigos": [
+          "72200000"
+        ],
+        "lugar_ejecucion": "Asturias",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=SM2OHSLKThPrvvob85XGaJaefKY7NT8dlJqm1MOdQ3eeJ0LFG0jfy1W7lBeA8MB6WryuoUoGuM94sxfAQ%2BR3U259jp1i6ia9503ocY88wDpJOVDbGCDM%2BMigrvuVS7Rv",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=WrywmLq1vaXXIzNOQWSLocN2wvzG9rWa3XeXnxQap4kOXcNrbcRxTEQjwOGPAHrANI2lwuWyaJss8WpE8AeyYdCWiDI91Hje42CBLBY5NaeB0nvVKRzfe4rpHcnlPhSZ",
+        "tipo_objeto": "mixto",
+        "evidencia_tipo_objeto": "Servicios de medición de consumo HbbTV y de emisión y gestión de contenidos interactivos (medición + gestión de contenidos)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Medición HbbTV puede ser remoto; gestión de contenidos puede requerir presencia en CPD de RTPA",
+        "dificultad": 5,
+        "facilidad_ia": 5,
+        "utilidad_ia": 6,
+        "principales_desafios": [
+          "Estándar HbbTV",
+          "Telemetría broadcast"
+        ],
+        "ideas_clave": [
+          "IA para recomendación de contenido",
+          "Detección automática de patrones de consumo"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 6,
+        "facilidad_ia": 5,
+        "dificultad": 5
+      }
+    },
+    {
+      "hash": "437ad5c84c76528e",
+      "id_oficial": "7/26",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1O%2F%2FkAtw1BfgL1BHd3qjQA%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Servicios para el desarrollo de un software para la gestión y optimización del transporte a la demanda.",
+        "descripcion": "Id licitación: 7/26; Órgano de Contratación: Consejo de Administración de la Empresa Municipal de Transports Urbans de Palma, S.A; Importe: 113026.3 EUR; Estado: PUB",
+        "organo_contratante": "Consejo de Administración de la Empresa Municipal de Transports Urbans de Palma, S.A",
+        "presupuesto_base_eur": 113026.3,
+        "presupuesto_total_eur": 136761.82,
+        "plazo_presentacion": "2026-06-01",
+        "cpv_codigos": [
+          "72262000",
+          "72316000",
+          "72267100"
+        ],
+        "lugar_ejecucion": "Mallorca",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=2WJUbN%2BTHl4snvKetqNDpqqxdnmlvwJQWA7WSh66094k%2BlAPFWZNvsMA%2Bm%2BomfpfbqsP/LQba0cnTs%2B%2BjII%2Boe9EWvzzTM%2BCdCTRmNVtYinDdQD9RyhUmzT4jZ2In4zL",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=kOzZ6wg9X9YDhgORihgrHy9YHT0KIjIeBAhc4jaR5x4TggP5hmuLF3bjAApWNUhCWlBmGq1P1NHsLE1snj2L3gWptzuOSdYDbqy7CkNX4bjVTD3T98KC0nSgQFM0q%2B5s",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Servicios para el desarrollo de un software para la gestión y optimización del transporte a la demanda (desarrollo de software con objetivo claro)",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Desarrollo de software entregable; la EMT explota luego en su infra",
+        "dificultad": 6,
+        "facilidad_ia": 8,
+        "utilidad_ia": 9,
+        "principales_desafios": [
+          "Optimización en tiempo real DARP",
+          "Integración con flota EMT existente"
+        ],
+        "ideas_clave": [
+          "IA de ruteo dinámico",
+          "Predicción de demanda urbana",
+          "RL para asignación óptima"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 9,
+        "facilidad_ia": 8,
+        "dificultad": 6
+      }
+    },
+    {
+      "hash": "f723f1f464a39269",
+      "id_oficial": "APAS-2026-004.",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=srI5j7KwqT%2BGCFcHcNGIlQ%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Servicio de diseño, desarrollo e implementación de un sistema de alertas tempranas para la identificación y seguimiento de casos de\r\nmujeres en riesgo de feminicidio.",
+        "descripcion": "Id licitación: APAS-2026-004.; Órgano de Contratación: Dirección de la Fundación para la Internacionalización de las Administraciones Públicas; Importe: 60000 EUR; Estado: PUB",
+        "organo_contratante": "Dirección de la Fundación para la Internacionalización de las Administraciones Públicas",
+        "presupuesto_base_eur": 60000.0,
+        "presupuesto_total_eur": 72600.0,
+        "plazo_presentacion": "2026-05-26",
+        "cpv_codigos": [
+          "72262000",
+          "72316000"
+        ],
+        "lugar_ejecucion": "El Salvador",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=tChezK78N/%2BnwtH%2BGQ0XXZ9YfX4o3fax8qmdxXPpDEGZnzGeYPvyiwIYR14W/jFVjGwCLcadWxrp2BB0s9oOnZiypqzXRYrKbDLUtIutsAt45ClyWkoJ44mKM70IFcOu",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=CEpiLYhRMn%2Bpz4jHiEhalRGPlaYcQ2FjVL4%2Bfdcy5WMMa8MOA3JvstVNTqnIhdh3uqzITUQg6wGNLLHJ3SqiBtroYgjf0hiA4kBoLTy7%2B0d45ClyWkoJ44mKM70IFcOu",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Servicio de diseño, desarrollo e implementación de un sistema de alertas tempranas para la identificación y seguimiento de casos de mujeres en riesgo de feminicidio (sistema nombrado, alcance cerrado)",
+        "lugar_prestacion": "mixto",
+        "evidencia_lugar_prestacion": "Sistema desarrollable remotamente, posible despliegue en infra de la FIIAPP/contraparte",
+        "dificultad": 8,
+        "facilidad_ia": 7,
+        "utilidad_ia": 9,
+        "principales_desafios": [
+          "Sensibilidad ética/sesgos del modelo",
+          "Calidad de datos de denuncias",
+          "Coordinación interagencial"
+        ],
+        "ideas_clave": [
+          "NLP de denuncias y atestados",
+          "Modelos de riesgo con explicabilidad",
+          "Triage automatizado priorizando seguridad"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 9,
+        "facilidad_ia": 7,
+        "dificultad": 8
+      }
+    },
+    {
+      "hash": "26bab6b4de468084",
+      "id_oficial": "1243928D",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=EgMf7VCkhWEwYTJJ03sHog%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T21:00:00+02:00",
+      "datos": {
+        "titulo": "Contrato Mixto de Servicios y Suministro para la Implantación de un Sistema Interactivo Accesible en el Museo de la Música Étnica de Barranda para la mejora de la Competitividad y Calidad Turisticas.",
+        "descripcion": "Id licitación: 1243928D; Órgano de Contratación: Junta de Gobierno del Ayuntamiento de Caravaca de la Cruz; Importe: 26280.99 EUR; Estado: PUB",
+        "organo_contratante": "Junta de Gobierno del Ayuntamiento de Caravaca de la Cruz",
+        "presupuesto_base_eur": 26280.99,
+        "presupuesto_total_eur": 31800.0,
+        "plazo_presentacion": "2026-05-28",
+        "cpv_codigos": [
+          "72212520",
+          "72261000",
+          "30200000",
+          "32322000"
+        ],
+        "lugar_ejecucion": "Murcia",
+        "url_pliego_pcap": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=K0pJLBpRv1%2Bb8oN6BQfTQ48WCLyf8NH4zI5NpwI9jxuSxfTxHad8hRZJOaWyjI5bwiRCwbVdMxTaGu0iLBUzc/Px0c1PqEK%2BReCfQ4mYV9PDdQD9RyhUmzT4jZ2In4zL",
+        "url_pliego_ppt": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=yWk66RzasmlNBarNPGg/K3mCTP1mPLelMlljptM/awCStIIs2y5ALDXu2r2w8JWSwKcOVCQ39KexALMnss0MK5kaZBSWmWEw%2B45Y2ERq8Zd45ClyWkoJ44mKM70IFcOu",
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Contrato mixto de servicios y suministro para la implantación de un sistema interactivo accesible en el Museo de la Música Étnica de Barranda (sistema interactivo nombrado)",
+        "lugar_prestacion": "infra_cliente",
+        "evidencia_lugar_prestacion": "Instalación física en el museo de la Música Étnica de Barranda (Caravaca de la Cruz)",
+        "dificultad": 5,
+        "facilidad_ia": 7,
+        "utilidad_ia": 6,
+        "principales_desafios": [
+          "Hardware interactivo en museo rural",
+          "Accesibilidad universal"
+        ],
+        "ideas_clave": [
+          "IA para reconocimiento de instrumentos por audio",
+          "Asistente conversacional del museo",
+          "Generación de contenidos multilingües"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 6,
+        "facilidad_ia": 7,
+        "dificultad": 5
+      }
+    }
+  ],
+  "limitaciones": "Datos extraídos del feed ATOM mensual oficial de PLACSP (mecanismo de sindicación de la DG Patrimonio - licitacionesPerfilesContratanteCompleto3_202605.zip). Las URLs apuntan al expediente individual (deeplink:detalle_licitacion) tal como las publica PLACSP en cada <entry>. El feed ATOM trae summary, cbc:Name, presupuesto, plazo, CPV, órgano y URLs de pliegos pero NO el texto completo del pliego; la clasificación tipo_objeto / lugar_prestacion se ha realizado a partir del título y nombre del proyecto. Cuando el texto no era concluyente se ha usado 'indeterminado' o 'mixto' para que lic-evaluador desempate consultando los pliegos individuales. Aplicados los descartes automáticos v0.2.0: tipo_objeto='horas_servicio' (asistencia técnica / cuerpo de consultores / oficina técnica / mantenimiento puro) y lugar_prestacion='presencial_continuada' (Defensa con habilitación HSEC, información clasificada). Se descartaron también 2 items con CPV 72260000 marginal (M5/M6-2026, sensores físicos en Blanca) por estar fuera del scope software/IT. Hashes calculados con sha256(id_oficial)[:16]; 5 IDs descartados por estar en hashes_a_evitar. El acceso a los expedientes individuales vía web requiere certificado en muchos casos; el feed ATOM es la vía estable y autorizada."
+}

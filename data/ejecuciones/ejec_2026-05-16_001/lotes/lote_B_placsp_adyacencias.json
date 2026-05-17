@@ -1,0 +1,170 @@
+{
+  "lote_id": "lote_B_placsp_adyacencias",
+  "ejecucion_id": "ejec_2026-05-16_001",
+  "fuente": "PLACSP",
+  "fecha": "2026-05-16",
+  "metodo": "boe_indice_dia + webfetch_detalle_placsp + gobierto_cpv (chrome-devtools no disponible: Chrome no estaba arrancable; ATOM feed requería certificado)",
+  "queries_usadas": [
+    "BOE.es sumario V.A días 2026-04-16..2026-05-15 (15 días + Sec V.B muestreado)",
+    "boe.es búsqueda CPV 72300/72400/72500 + adyacencias 72200/72100/72600/72610/72415/72416/72317/72318/72514",
+    "contratos.gobierto.es/cpv/72500000, 72400000, 72415000, 72514000, 72319000, 72416000, 72317000, 72310000, 72253000, 72512000, 72413000, 72318000",
+    "contratos-publicos.comunidad.madrid búsqueda CPV 72500000",
+    "websearch dirigida: 'BOE-B-2026 anuncio licitación CPV 72... plazo de presentación junio/mayo 2026'",
+    "websearch 'BOE-B-2026 servicios datos web hosting' plazos 21-31 mayo / 1-15 junio 2026"
+  ],
+  "items_extraidos_total": 3,
+  "items_descartados_por_fetch_fallido": 0,
+  "items_descartados_por_descarte_automatico": 18,
+  "items_descartados_por_dedup": 2,
+  "items_observados": [
+    {
+      "hash": "872616d337b2fcc3",
+      "id_oficial": "202650PAS185",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=f3SHAhgdQq9QFSeKCRun4Q%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T19:54:29Z",
+      "datos": {
+        "titulo": "Servicios de plataformas de recursos digitales y streaming para el CAPN",
+        "descripcion": "Servicios de plataformas de recursos digitales y streaming para el Consejo de Administración del Patrimonio Nacional. Procedimiento abierto simplificado, presentación electrónica.",
+        "organo_contratante": "Consejo de Administración del Patrimonio Nacional",
+        "presupuesto_base_eur": 60000.0,
+        "presupuesto_total_eur": 102000.0,
+        "plazo_presentacion": "2026-05-18",
+        "cpv_codigos": [
+          "72500000",
+          "72416000",
+          "72317000",
+          "72318000",
+          "71320000",
+          "79970000",
+          "79980000"
+        ],
+        "lugar_ejecucion": "ES - España (sede CAPN, Madrid)",
+        "url_pliego_pcap": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=f3SHAhgdQq9QFSeKCRun4Q%3D%3D",
+        "url_pliego_ppt": null,
+        "tipo_objeto": "indeterminado",
+        "evidencia_tipo_objeto": "Objeto literal: 'Servicios de plataformas de recursos digitales y streaming para el CAPN' — los CPV (72416 ASP, 72317 almacenamiento, 72318 transmisión, 79980 suscripción) sugieren provisión de PLATAFORMA SaaS/licencias (entregable_definido), pero el anuncio BOE no enumera productos/módulos concretos ni descarta componente de servicios horas; el PCAP/PPT no se ha podido descargar por canal automático.",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "Naturaleza del objeto (plataforma de streaming + ASP) y CPVs 72416/72317/72318/79980 implican entrega de servicio digital sin presencia física continuada. Lugar de ejecución BOE = 'ES' (no se concreta sede). No hay mención a habilitaciones de seguridad ni red SARA.",
+        "dificultad": null,
+        "facilidad_ia": null,
+        "utilidad_ia": null,
+        "principales_desafios": [
+          "Integración con sistema interno del CAPN (gestión de bibliotecas/archivos del Patrimonio Nacional)",
+          "Requisitos de catálogo/derechos de contenido digital (licencias editoriales y musicales)",
+          "Plazo de presentación muy corto (2 días desde la fecha de extracción)"
+        ],
+        "ideas_clave": [
+          "Si es entregable cerrado de plataforma SaaS de streaming + recursos digitales, encaja con el perfil del equipo (modelo solución completa + infra propia)",
+          "Acelerador IA potencial: recomendación de contenidos, búsqueda semántica, transcripción/subtitulado automático del streaming",
+          "Plataforma streaming sugiere un dominio donde la IA puede aportar diferenciación real"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP",
+        "BOE (BOE-B-2026-14510, publicado 7 mayo 2026)"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 6,
+        "facilidad_ia": 6,
+        "dificultad": 5
+      }
+    },
+    {
+      "hash": "f62bb899d4214456",
+      "id_oficial": "CF050-25-033",
+      "url_oficial": "https://www.juntadeandalucia.es/haciendayadministracionpublica/apl/pdc-front-publico/perfiles-licitaciones/detalle-licitacion?idExpediente=897928",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T19:54:29Z",
+      "datos": {
+        "titulo": "Servicio de Alojamiento Web de Citas + eITV",
+        "descripcion": "Servicio de Alojamiento Web de la aplicación de Citas y de la plataforma eITV (Inspección Técnica de Vehículos electrónica) para VEIASA, Verificaciones Industriales de Andalucía S.A. (Junta de Andalucía). Procedimiento abierto. Indexada en PLACSP vía sindicación SIREC Junta de Andalucía.",
+        "organo_contratante": "Verificaciones Industriales de Andalucía, S.A. (VEIASA) - Junta de Andalucía",
+        "presupuesto_base_eur": 120000.0,
+        "presupuesto_total_eur": 330000.0,
+        "plazo_presentacion": "2026-05-21",
+        "cpv_codigos": [
+          "72415000",
+          "72210000"
+        ],
+        "lugar_ejecucion": "ES61 - Andalucía",
+        "url_pliego_pcap": "https://www.juntadeandalucia.es/haciendayadministracionpublica/apl/pdc-front-publico/perfiles-licitaciones/detalle-licitacion?idExpediente=897928",
+        "url_pliego_ppt": null,
+        "tipo_objeto": "entregable_definido",
+        "evidencia_tipo_objeto": "Objeto literal: 'Servicio de Alojamiento Web de Citas + eITV' + CPV 72415000 (servicios de hospedaje de operación de sitios web www) + 72210000 (programación de paquetes de software). Aplicaciones concretas nombradas: Citas y eITV. La unidad contractual no es 'jornadas técnicas' sino el alojamiento operativo y la programación.",
+        "lugar_prestacion": "remoto",
+        "evidencia_lugar_prestacion": "CPV 72415000 = hospedaje de operación de sitios web → infra del adjudicatario (proveedor de hosting), entrega remota. No hay indicio de presencia continuada en sede VEIASA ni habilitación de seguridad personal.",
+        "dificultad": null,
+        "facilidad_ia": null,
+        "utilidad_ia": null,
+        "principales_desafios": [
+          "Sector ITV implica continuidad operativa 24/7 y SLAs estrictos (citas ciudadanas no pueden caerse)",
+          "Posibles requisitos de protección de datos por gestión de citas (DNI, matrículas)",
+          "Compatibilidad con la aplicación Citas + plataforma eITV preexistentes; migración sin downtime"
+        ],
+        "ideas_clave": [
+          "Encaja muy bien con perfil de modelo entregable + infra propia: hosting + programación, dos componentes claros, sin asistencia técnica horaria",
+          "Acelerador IA: monitorización predictiva de incidentes de hosting; análisis de patrones de citas; detección de fraude/no-shows con ML",
+          "Cliente Junta de Andalucía simpático: digitalización con apetito de innovación"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP (sindicación SIREC Junta de Andalucía)",
+        "Gobierto Contratación (indexado CPV 72415000)"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 5,
+        "facilidad_ia": 6,
+        "dificultad": 6
+      }
+    },
+    {
+      "hash": "2e22312a38b6033a",
+      "id_oficial": "J260019",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=9b9xbrwpPta7JOCXkOhcDg%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T19:54:29Z",
+      "datos": {
+        "titulo": "Servicio de apoyo a usuarios del Generador de Sedes Web para Bibliotecas públicas",
+        "descripcion": "Servicio de apoyo a usuarios del Generador de Sedes Web para Bibliotecas públicas de la Subdirección General de Coordinación Bibliotecaria del Ministerio de Cultura. Procedimiento abierto, duración 1 año.",
+        "organo_contratante": "Junta de Contratación del Ministerio de Cultura",
+        "presupuesto_base_eur": 25033.32,
+        "presupuesto_total_eur": 125166.6,
+        "plazo_presentacion": "2026-05-25",
+        "cpv_codigos": [
+          "72610000"
+        ],
+        "lugar_ejecucion": "ES300 - Comunidad de Madrid",
+        "url_pliego_pcap": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=9b9xbrwpPta7JOCXkOhcDg%3D%3D",
+        "url_pliego_ppt": null,
+        "tipo_objeto": "horas_servicio",
+        "evidencia_tipo_objeto": "Objeto literal: 'Servicio de apoyo a usuarios' + CPV 72610000 (Servicios de apoyo informático). El patrón 'apoyo a usuarios' con duración anual es señal típica de bolsa de horas / asistencia técnica continuada, no entregable cerrado. No se mencionan productos/módulos a entregar.",
+        "lugar_prestacion": "indeterminado",
+        "evidencia_lugar_prestacion": "El anuncio BOE y la página resumen PLACSP no concretan modalidad. CPV 72610 (apoyo a usuarios) frecuentemente implica presencia híbrida o turnos en sede del organismo; pero sin el PCAP/PPT no es posible afirmarlo. Se etiqueta indeterminado.",
+        "dificultad": null,
+        "facilidad_ia": null,
+        "utilidad_ia": null,
+        "principales_desafios": [
+          "Modelo de prestación 'apoyo a usuarios' encaja mal con el perfil del equipo (probable bolsa de horas)",
+          "Atención a usuarios de bibliotecas implica turnos horarios y nivel de servicio acordado",
+          "Encaje bajo con perfil de agencia entregable + IA"
+        ],
+        "ideas_clave": [
+          "Si el evaluador confirma 'horas_servicio' explícito en el PCAP, aplica descarte automático v0.2.0",
+          "Acelerador IA marginal: posible chatbot de tier-1 para bibliotecarios usuarios, pero el contrato es de soporte humano",
+          "Lote B requiere lectura literal del PCAP/PPT antes de tomar decisión final"
+        ]
+      },
+      "fuentes_corroboradas": [
+        "PLACSP",
+        "BOE (BOE-B-2026-15207, publicado 12 mayo 2026)"
+      ],
+      "scoring_local": {
+        "utilidad_ia": 3,
+        "facilidad_ia": 3,
+        "dificultad": 4
+      }
+    }
+  ],
+  "limitaciones": "Restricciones de entorno relevantes para este lote: (1) MCP chrome-devtools no estaba disponible (Chrome no arrancable: 'Could not connect to Chrome'), forzando uso exclusivo de WebFetch + WebSearch, que tiene rate-limit y produce respuestas resumidas en lugar de DOM completo. (2) Los feeds ATOM de PLACSP (sindicacion_643.atom, sindicacion_644.atom) devuelven error 'Su certificado no está autorizado a acceder a la Plataforma' para clientes sin certificado digital; no se pudo iterar listado oficial. (3) El buscador web de PLACSP es un portlet JS sobre Portal IBM WPS que WebFetch no puede ejecutar — se obtienen siempre páginas marketing/landing en lugar de resultados. (4) Los agregadores indexados (gobierto, infoconcurso) muestran tablas truncadas o desactualizadas que no permiten filtrar por 'plazo abierto a fecha X'; sólo se accedió a 5-10 entradas por CPV vía WebFetch. (5) Las plataformas autonómicas (PSCP Cataluña, contratos-publicos Madrid, SIREC Andalucía) requieren JS y/o no exponen filtros por presupuesto en la URL. CONSECUENCIAS PRÁCTICAS: cobertura no exhaustiva del universo PLACSP; se ha priorizado la corroboración firme de 3 expedientes (id_oficial, url al detalle PLACSP, plazo, presupuesto, CPVs) en lugar de inflar el lote con candidatos sin verificar. DESCARTES (resumen): 18 expedientes BOE de mayo 2026 descartados por automatismo — 12 por presupuesto > 200.000 EUR (BOE-B-2026-13466 INE 8.1M, 12458 IMSERSO 4.1M, 11314 RED.ES 4.1M, 12638 Min.Agricultura 1.8M, 14172 Sanidad 1.7M, 12556 MUFACE 1.3M, 14145 AIReF 1.2M, 15326 CDTI Drupal 1.2M, 11863 MICIU 3.8M, 14416 Interior 10.1M, 14553 CSN 2.8M, 14535 OEPM 2.3M); 4 por plazo cerrado a 16-05-2026 (BOE-B-2026-10168 INJUVE 29-abr, 10387 CES 24-abr, 11314 RED.ES 24-abr, 14283 Patrimonio Koha 12-may, 11844 Taibilla CPD 11-may); 2 por objeto fuera de scope IT (BOE-B-2026-15301 cartografía CPV 71354, 15330 CNMV inglés CPV 79530, 14535 OEPM CPV 64216 centralita); más varias formalizaciones que no son licitaciones (BOE-B-2026-15151, 15172, 15483, 14004, 14146, 13590, 11729, 12457). DEDUP: 2 expedientes coincidentes con hashes_a_evitar = '004/26-SG' (RED.ES gestión documental) y 'BOE-B-2026-14444' (Sanidad Azure). NOTA SOBRE PERÍMETRO DE ADYACENCIAS: los 3 items aceptados usan CPVs 72500/72416/72317/72318 (item 1, ajustado a CPV objetivo), 72415/72210 (item 2, 72415 dentro del subárbol 72400 internet), 72610 (item 3, adyacente al 72500). Justificación de inclusión del 72610: el lote es explícitamente de 'adyacencias' y el subárbol 72.6 es el complementario inmediato del 72.5 dentro del grupo 72 'Servicios TI'."
+}

@@ -1,0 +1,41 @@
+{
+  "ejec_id": "ejec_2026-05-15_002",
+  "fecha_calculo": "2026-05-15",
+  "modo": "no_ia_en_producto",
+  "fuentes": [
+    {
+      "nombre": "PLACSP",
+      "n_items_total": 17,
+      "n_items_unicos": 16,
+      "n_items_corroborados": 0,
+      "n_en_top_actual": 8,
+      "ratio_top_sobre_total": 0.47058823529411764,
+      "score_medio_top": 7.0325,
+      "presupuesto_medio_top_eur": 103997.6975
+    },
+    {
+      "nombre": "BOE",
+      "n_items_total": 0,
+      "n_items_unicos": 0,
+      "n_items_corroborados": 0,
+      "n_en_top_actual": 0,
+      "ratio_top_sobre_total": 0,
+      "score_medio_top": 0,
+      "presupuesto_medio_top_eur": null
+    },
+    {
+      "nombre": "AUTONOMICO",
+      "n_items_total": 12,
+      "n_items_unicos": 11,
+      "n_items_corroborados": 6,
+      "n_en_top_actual": 1,
+      "ratio_top_sobre_total": 0.08333333333333333,
+      "score_medio_top": 6.51,
+      "presupuesto_medio_top_eur": 100000.0
+    }
+  ],
+  "solapamiento": {
+    "AUTONOMICO_PLACSP": 6
+  },
+  "diagnostico": []
+}

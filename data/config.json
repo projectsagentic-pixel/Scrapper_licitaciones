@@ -1,0 +1,60 @@
+{
+  "_comment": "Parámetros del buscador de licitaciones. Múltiples fuentes en paralelo, una por subagente. La prioridad relativa entre fuentes la ajusta lic-comparador-fuentes con confirmación humana.",
+  "dominio": "licitaciones",
+  "objetivo_total_por_ejecucion": 100,
+  "lotes_por_ejecucion": 5,
+  "items_por_lote": 20,
+  "lotes_en_paralelo": true,
+  "modo_busqueda": "mixto",
+  "modos_disponibles": {
+    "mixto": "IA-en-producto y no-IA compiten juntos. utilidad_ia se evalúa honestamente 0-10.",
+    "solo_ia_en_producto": "Solo licitaciones con utilidad_ia>=6 entran al pool.",
+    "sin_ia_en_producto": "Forzar utilidad_ia=0 para todos los items (modo legacy ejec_002)."
+  },
+  "fuentes_activas": [
+    {
+      "nombre": "PLACSP",
+      "subagente": "lic-placsp-investigador",
+      "url_base": "https://contrataciondelestado.es/wps/portal/plataforma",
+      "prioridad": 1.0,
+      "habilitada": true
+    },
+    {
+      "nombre": "BOE",
+      "subagente": "lic-boe-investigador",
+      "url_base": "https://www.boe.es/diario_boe/",
+      "prioridad": 0.2,
+      "habilitada": true
+    },
+    {
+      "nombre": "AUTONOMICO",
+      "subagente": "lic-autonomico-investigador",
+      "plataformas": [
+        { "nombre": "Euskadi", "url_base": "https://www.contratacion.euskadi.eus/" },
+        { "nombre": "Catalunya", "url_base": "https://contractaciopublica.gencat.cat/" },
+        { "nombre": "Madrid", "url_base": "https://www.madrid.org/contratos-publicos/" },
+        { "nombre": "Andalucia", "url_base": "https://www.juntadeandalucia.es/temas/contratacion-publica.html" },
+        { "nombre": "Galicia", "url_base": "https://www.contratosdegalicia.gal/" }
+      ],
+      "prioridad": 0.6,
+      "habilitada": true
+    },
+    {
+      "nombre": "AGREGADOR",
+      "subagente": "lic-agregador-investigador",
+      "url_base": "varios",
+      "prioridad": 0.4,
+      "habilitada": false
+    }
+  ],
+  "filtros_globales": {
+    "cpv_codigos_objetivo": ["72000000", "72200000", "72260000", "72300000", "72400000", "72500000", "72600000", "73000000"],
+    "presupuesto_min_eur": 20000,
+    "presupuesto_max_eur": 200000,
+    "plazo_minimo_dias": 7,
+    "ambito_geografico": "ES",
+    "incluir_menores": false
+  },
+  "ultima_modificacion": "2026-05-16",
+  "notas_usuario": "CPV 72000000 = servicios TI; 73000000 = I+D. CPV 72260000 (servicios relacionados con software) añadido tras ejec_2026-05-15_001: rinde como subset 72200. CPV 73210000 retirado: 0 resultados en PLACSP. Techo subido a 200k tras ejec_2026-05-15_001 para capturar cluster autonómico 150-205k. BOE prioridad bajada a 0.2 por solapamiento 100% con PLACSP y 0 aportes al top. 2026-05-16: subido objetivo a 100 (5 lotes x 20) tras introducir rúbrica v0.2.0 con descarte por bolsa-de-horas y on-site; modo búsqueda = mixto."
+}

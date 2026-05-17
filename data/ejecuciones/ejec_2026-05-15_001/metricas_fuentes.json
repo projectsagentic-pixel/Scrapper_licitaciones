@@ -1,0 +1,46 @@
+{
+  "ejec_id": "ejec_2026-05-15_001",
+  "fecha_calculo": "2026-05-15",
+  "modo": "ia_en_producto",
+  "fuentes": [
+    {
+      "nombre": "PLACSP",
+      "n_items_total": 21,
+      "n_items_unicos": 20,
+      "n_items_corroborados": 0,
+      "n_en_top_actual": 6,
+      "ratio_top_sobre_total": 0.2857142857142857,
+      "score_medio_top": 7.566666666666666,
+      "presupuesto_medio_top_eur": 60362.82666666667
+    },
+    {
+      "nombre": "BOE",
+      "n_items_total": 11,
+      "n_items_unicos": 11,
+      "n_items_corroborados": 11,
+      "n_en_top_actual": 0,
+      "ratio_top_sobre_total": 0.0,
+      "score_medio_top": 0,
+      "presupuesto_medio_top_eur": null
+    },
+    {
+      "nombre": "AUTONOMICO",
+      "n_items_total": 12,
+      "n_items_unicos": 12,
+      "n_items_corroborados": 0,
+      "n_en_top_actual": 0,
+      "ratio_top_sobre_total": 0.0,
+      "score_medio_top": 0,
+      "presupuesto_medio_top_eur": null
+    }
+  ],
+  "solapamiento": {
+    "BOE_PLACSP": 11
+  },
+  "diagnostico": [
+    "BOE: 11 items, 0 al top — fuente débil para este perfil <200k.",
+    "AUTONÓMICO: 12 items, 0 al top — revisar accesibilidad técnica de plataformas regionales.",
+    "PLACSP única fuente que aporta al top (6/6). Centraliza el mercado TI <200k.",
+    "Solapamiento BOE↔PLACSP: 11 items. BOE no aporta exclusividad."
+  ]
+}

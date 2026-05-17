@@ -1,0 +1,240 @@
+{
+  "ejecuciones": [
+    {
+      "id": "ejec_2026-05-15_001",
+      "fecha": "2026-05-15",
+      "timestamp": "2026-05-15T20:50:02.760415",
+      "modo": "ia_en_producto",
+      "parametros": {
+        "presupuesto_min_eur": 20000,
+        "presupuesto_max_eur": 200000,
+        "plazo_minimo_dias": 14
+      },
+      "pesos_aplicados": {
+        "utilidad_ia": 0.25,
+        "facilidad_ia": 0.2,
+        "dificultad": 0.15,
+        "encaje_perfil": 0.2,
+        "presupuesto_atractivo": 0.1,
+        "plazo_realista": 0.1
+      },
+      "totales": {
+        "items_brutos": 44,
+        "items_tras_dedup": 43,
+        "duplicados_eliminados": 1,
+        "elegibles_para_scoring": 24,
+        "no_elegibles": 19
+      },
+      "por_fuente": {
+        "PLACSP": {
+          "total": 20,
+          "elegibles": 20,
+          "no_elegibles": 0
+        },
+        "BOE": {
+          "total": 11,
+          "elegibles": 0,
+          "no_elegibles": 11
+        },
+        "AUTONOMICO": {
+          "total": 12,
+          "elegibles": 4,
+          "no_elegibles": 8
+        }
+      },
+      "resumen_scoring": {
+        "items_evaluados": 24,
+        "items_pasan_umbral": 6,
+        "top_score": 8.28,
+        "bottom_score": 3.23
+      },
+      "duplicados_eliminados": 1,
+      "nuevos_en_historial": 0,
+      "items_top": [
+        {
+          "id_oficial": "CA 30/26",
+          "fuente": "PLACSP",
+          "score": 8.28,
+          "objeto": "Contrato de servicios para la migración tecnológica, desarrollo e implantación de la plataforma web "
+        },
+        {
+          "id_oficial": "CP00198/2025",
+          "fuente": "PLACSP",
+          "score": 7.75,
+          "objeto": "Servicios digitales de verificación de identidad a través de reconocimiento biométrico (para ASEPEYO"
+        },
+        {
+          "id_oficial": "2051/2026",
+          "fuente": "PLACSP",
+          "score": 7.69,
+          "objeto": "Suministro de software para la realización de tareas de digitalización de la fiscalización de requis"
+        },
+        {
+          "id_oficial": "2026-027-S",
+          "fuente": "PLACSP",
+          "score": 7.58,
+          "objeto": "Contrato mixto de suministro y servicios de la nueva carpeta ciudadana única electrónica (aplicación"
+        },
+        {
+          "id_oficial": "001213/2026",
+          "fuente": "PLACSP",
+          "score": 7.45,
+          "objeto": "Servicio de desarrollo e implantación de la Aplicación de Gestión de desviaciones y acciones (para E"
+        },
+        {
+          "id_oficial": "DEMA-2026-017",
+          "fuente": "PLACSP",
+          "score": 6.65,
+          "objeto": "Servicio de Asistencia Técnica especializada dirigido al gobierno de Granada (país Granada, Caribe),"
+        }
+      ]
+    },
+    {
+      "id": "ejec_2026-05-15_002",
+      "fecha": "2026-05-15",
+      "timestamp": "2026-05-15T21:34:24.637648",
+      "modo": "no_ia_en_producto",
+      "parametros": {
+        "presupuesto_min_eur": 20000,
+        "presupuesto_max_eur": 200000,
+        "plazo_minimo_dias": 14
+      },
+      "pesos_aplicados": {
+        "utilidad_ia": 0.0,
+        "facilidad_ia": 0.3,
+        "dificultad": 0.2,
+        "encaje_perfil": 0.25,
+        "presupuesto_atractivo": 0.15,
+        "plazo_realista": 0.1
+      },
+      "totales": {
+        "items_brutos": 29,
+        "items_tras_dedup": 27,
+        "duplicados_eliminados": 2,
+        "elegibles_para_scoring": 18,
+        "no_elegibles": 9
+      },
+      "por_fuente": {
+        "PLACSP": {
+          "total": 16,
+          "elegibles": 16,
+          "no_elegibles": 0
+        },
+        "AUTONOMICO": {
+          "total": 11,
+          "elegibles": 2,
+          "no_elegibles": 9
+        }
+      },
+      "resumen_scoring": {
+        "items_evaluados": 18,
+        "items_pasan_umbral": 9,
+        "top_score": 8.37,
+        "bottom_score": 3.9
+      },
+      "duplicados_eliminados": 2,
+      "nuevos_en_historial": 22,
+      "items_top": [
+        {
+          "id_oficial": "CA 30/26",
+          "fuente": "PLACSP",
+          "score": 8.37,
+          "objeto": "Servicios para la migracion tecnologica, desarrollo e implantacion de la plataforma web instituciona"
+        },
+        {
+          "id_oficial": "001213/2026",
+          "fuente": "PLACSP",
+          "score": 7.45,
+          "objeto": "Servicio de desarrollo e implantacion de la Aplicacion de Gestion de desviaciones y acciones (CRUD +"
+        },
+        {
+          "id_oficial": "152026",
+          "fuente": "PLACSP",
+          "score": 7.27,
+          "objeto": "Servicios de apoyo en consultoría y auditoría en materia de accesibilidad (WCAG / norma UNE-EN 30154"
+        },
+        {
+          "id_oficial": "2026-00580",
+          "fuente": "PLACSP",
+          "score": 6.75,
+          "objeto": "Contratación de servicios para apoyo técnico en materia de modelado y automatización en procesos del"
+        },
+        {
+          "id_oficial": "004/26-SG",
+          "fuente": "PLACSP",
+          "score": 6.72,
+          "objeto": "Servicio para la gestión documental y archivo electrónico de Red.es: clasificación de documentos, cu"
+        },
+        {
+          "id_oficial": "2026-00621",
+          "fuente": "PLACSP",
+          "score": 6.57,
+          "objeto": "Servicios de Apoyo para la Gestión y Tramitación de los Informes Motivados (procedimiento administra"
+        },
+        {
+          "id_oficial": "2026-00669",
+          "fuente": "PLACSP",
+          "score": 6.57,
+          "objeto": "Servicios de Apoyo para la Coordinación de las tareas de Gestión del Cambio con la DGTDAJ (Dirección"
+        },
+        {
+          "id_oficial": "44/2026",
+          "fuente": "PLACSP",
+          "score": 6.56,
+          "objeto": "Contratacion del sistema de Suministro Inmediato de Informacion del IVA (SII) de la Empresa Nacional"
+        },
+        {
+          "id_oficial": "2026/G/069",
+          "fuente": "AUTONOMICO",
+          "score": 6.51,
+          "objeto": "Contratacion del servicio de asistencia tecnica para el apoyo a la certificacion del sistema integra"
+        }
+      ]
+    },
+    {
+      "id": "ejec_2026-05-16_001",
+      "fecha": "2026-05-16",
+      "modo_busqueda": "mixto",
+      "version_criterios": "0.2.0",
+      "objetivo_total": 100,
+      "items_consolidados": 43,
+      "items_descartados_auto": 9,
+      "items_top": 23,
+      "fuentes": [
+        "PLACSP",
+        "BOE",
+        "AUTONOMICO"
+      ]
+    },
+    {
+      "id": "ejec_2026-05-16_001",
+      "fecha": "2026-05-16",
+      "modo_busqueda": "mixto",
+      "version_criterios": "0.2.0",
+      "objetivo_total": 100,
+      "items_consolidados": 45,
+      "items_descartados_auto": 9,
+      "items_top": 25,
+      "fuentes": [
+        "PLACSP",
+        "BOE",
+        "AUTONOMICO"
+      ]
+    },
+    {
+      "id": "ejec_2026-05-16_001",
+      "fecha": "2026-05-16",
+      "modo_busqueda": "mixto",
+      "version_criterios": "0.3.0",
+      "objetivo_total": 100,
+      "items_consolidados": 45,
+      "items_descartados_auto": 9,
+      "items_top": 28,
+      "fuentes": [
+        "PLACSP",
+        "BOE",
+        "AUTONOMICO"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>buscador licitaciones — índice global</title>
+<style>
+  :root { --bg:#0d1117; --fg:#e6edf3; --muted:#8b949e; --card:#161b22; --accent:#58a6ff; --good:#3fb950; --warn:#d29922; --bad:#f85149; --border:#30363d; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--fg); line-height:1.5; }
+  header { padding: 24px; border-bottom: 1px solid var(--border); }
+  h1 { margin:0 0 6px; font-size:22px; }
+  h2 { font-size: 14px; margin: 28px 24px 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .meta { color: var(--muted); font-size: 13px; }
+  table { width: calc(100% - 48px); margin: 0 24px; border-collapse: collapse; }
+  th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  th { background: var(--card); font-weight: 600; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  td a { color: var(--accent); text-decoration: none; }
+  td a:hover { text-decoration: underline; }
+  .pill { display:inline-block; padding: 2px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+  .good { background: rgba(63,185,80,0.18); color: var(--good); }
+  .warn { background: rgba(210,153,34,0.18); color: var(--warn); }
+  .bad  { background: rgba(248,81,73,0.18); color: var(--bad); }
+  .badge { font-size: 11px; padding: 1px 6px; border-radius: 3px; background: var(--card); border: 1px solid var(--border); margin-right: 3px; color: var(--muted); }
+  .badge-PLACSP { color: var(--accent); border-color: var(--accent); }
+  .badge-BOE { color: var(--warn); border-color: var(--warn); }
+  .badge-AUTONOMICO { color: var(--good); border-color: var(--good); }
+  .mode-pill { display:inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .mode-ia_en_producto { background: rgba(88,166,255,0.18); color: var(--accent); }
+  .mode-no_ia_en_producto { background: rgba(63,185,80,0.18); color: var(--good); }
+  .num { font-variant-numeric: tabular-nums; }
+  footer { padding: 16px 24px; margin-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 12px; }
+  code { background: var(--card); padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  .stat { display: inline-block; margin-right: 32px; vertical-align: top; }
+  .stat-val { font-size: 28px; font-weight: 700; color: var(--fg); }
+  .stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .titulo { font-weight: 600; }
+  .organo { color: var(--muted); font-size: 12px; }
+  .filters { display:flex; gap:8px; padding: 12px 24px; flex-wrap:wrap; align-items:center; }
+  .filters input, .filters select { background: var(--card); color: var(--fg); border: 1px solid var(--border); padding: 6px 10px; border-radius: 6px; font-size: 13px; }
+  .filters label { font-size: 12px; color: var(--muted); margin-right: 4px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>buscador licitaciones — índice global</h1>
+  <div class="meta">Cada ejecución es autocontenida (carpeta <code>dashboards/&lt;ejec_id&gt;/</code>). Top global agrega top de todas las ejecuciones deduplicando por id_oficial+fuente y manteniendo el mejor score.</div>
+</header>
+
+<div style="padding: 16px 24px; border-bottom: 1px solid var(--border);">
+  <span class="stat"><div class="stat-val" id="k-ejec">0</div><div class="stat-label">Ejecuciones</div></span>
+  <span class="stat"><div class="stat-val" id="k-hist">0</div><div class="stat-label">Items vistos (histórico)</div></span>
+  <span class="stat"><div class="stat-val" id="k-top">0</div><div class="stat-label">Top global vigente</div></span>
+  <span class="stat"><div class="stat-val" id="k-fuentes">0</div><div class="stat-label">Fuentes activas</div></span>
+</div>
+
+<h2>Ejecuciones</h2>
+<table id="t-ejec"><thead><tr>
+  <th>Ejecución</th><th>Fecha</th><th>Modo</th><th class="num">Items</th><th class="num">Elegibles</th><th class="num">Top</th><th class="num">Score medio top</th><th>Dashboard</th>
+</tr></thead><tbody></tbody></table>
+
+<h2>Top global (todas las ejecuciones, deduplicado)</h2>
+<div class="filters">
+  <label>Buscar</label><input type="text" id="g-text" placeholder="título, órgano…" />
+  <label>Modo</label><select id="g-mode"><option value="">todos</option><option value="ia_en_producto">ia_en_producto</option><option value="no_ia_en_producto">no_ia_en_producto</option></select>
+  <label>Fuente</label><select id="g-fuente"><option value="">todas</option></select>
+  <label>Score min</label><input type="number" id="g-score" min="0" max="10" step="0.1" style="width:70px" value="0" />
+</div>
+<table id="t-global"><thead><tr>
+  <th>#</th><th>Licitación</th><th>Fuente</th><th>Modo</th><th class="num">Presupuesto</th><th>Plazo</th><th class="num">Score</th><th>Ejecución</th>
+</tr></thead><tbody></tbody></table>
+
+<footer>
+  Generado por <code>scripts/build_dashboard.py</code>. Funciona desde <code>file://</code>.
+</footer>
+
+<script id="data" type="application/json">{"ejecuciones": [{"id": "ejec_2026-05-15_001", "fecha": "2026-05-15", "modo": "ia_en_producto", "items_totales": 43, "elegibles": 24, "top": 6, "score_medio_top": 7.566666666666666}, {"id": "ejec_2026-05-15_002", "fecha": "2026-05-15", "modo": "no_ia_en_producto", "items_totales": 27, "elegibles": 18, "top": 9, "score_medio_top": 6.974444444444444}], "total_historial": 65, "top_global": [{"ejecucion_id": "ejec_2026-05-15_002", "modo": "no_ia_en_producto", "id_oficial": "CA 30/26", "fuente": "PLACSP", "titulo": "Servicios para la migracion tecnologica, desarrollo e implantacion de la plataforma web instituciona", "score": 8.37, "organo": "Dirección General de la Casa Árabe - Ministerio de Asuntos Exteriores, Unión Europea y Cooperación", "presupuesto": 41322.31, "fecha_limite": "2026-06-03"}, {"ejecucion_id": "ejec_2026-05-15_001", "modo": "ia_en_producto", "id_oficial": "CP00198/2025", "fuente": "PLACSP", "titulo": "Servicios digitales de verificación de identidad a través de reconocimiento biométrico (para ASEPEYO", "score": 7.75, "organo": "Subdirección General de Medios de ASEPEYO. Mutua Colaboradora con la Seguridad Social num. 151", "presupuesto": 92400.0, "fecha_limite": "2026-06-08"}, {"ejecucion_id": "ejec_2026-05-15_001", "modo": "ia_en_producto", "id_oficial": "2051/2026", "fuente": "PLACSP", "titulo": "Suministro de software para la realización de tareas de digitalización de la fiscalización de requis", "score": 7.69, "organo": "Junta de Gobierno del Ayuntamiento de Alboraya", "presupuesto": 39600.0, "fecha_limite": "2026-05-29"}, {"ejecucion_id": "ejec_2026-05-15_001", "modo": "ia_en_producto", "id_oficial": "2026-027-S", "fuente": "PLACSP", "titulo": "Contrato mixto de suministro y servicios de la nueva carpeta ciudadana única electrónica (aplicación", "score": 7.58, "organo": "Junta de Gobierno del Ayuntamiento de Palma de Mallorca", "presupuesto": 32104.65, "fecha_limite": "2026-05-29"}, {"ejecucion_id": "ejec_2026-05-15_001", "modo": "ia_en_producto", "id_oficial": "001213/2026", "fuente": "PLACSP", "titulo": "Servicio de desarrollo e implantación de la Aplicación de Gestión de desviaciones y acciones (para E", "score": 7.45, "organo": "Comité de Dirección de Equipos Nucleares S.A. (ENSA) - SEPI - Ministerio de Hacienda", "presupuesto": 85000.0, "fecha_limite": "2026-06-25"}, {"ejecucion_id": "ejec_2026-05-15_002", "modo": "no_ia_en_producto", "id_oficial": "152026", "fuente": "PLACSP", "titulo": "Servicios de apoyo en consultoría y auditoría en materia de accesibilidad (WCAG / norma UNE-EN 30154", "score": 7.27, "organo": "Presidencia y Dirección de Administración y Finanzas de la Sociedad Mercantil Estatal para la Gestión de la Innovación y las Tecnologías Turísticas, S.A.M.P. (SEGITTUR) - Ministerio de Industria y Turismo", "presupuesto": 140000.0, "fecha_limite": "2026-06-04"}, {"ejecucion_id": "ejec_2026-05-15_002", "modo": "no_ia_en_producto", "id_oficial": "2026-00580", "fuente": "PLACSP", "titulo": "Contratación de servicios para apoyo técnico en materia de modelado y automatización en procesos del", "score": 6.75, "organo": "Consejero Delegado de Ingeniería de Sistemas para la Defensa de España S.A., S.M.E. y M.P. (ISDEFE) - Ministerio de Defensa", "presupuesto": 83532.47, "fecha_limite": "2026-06-17"}, {"ejecucion_id": "ejec_2026-05-15_002", "modo": "no_ia_en_producto", "id_oficial": "004/26-SG", "fuente": "PLACSP", "titulo": "Servicio para la gestión documental y archivo electrónico de Red.es: clasificación de documentos, cu", "score": 6.72, "organo": "Dirección General de la Entidad Pública Empresarial RED.ES - Ministerio para la Transformación Digital y de la Función Pública - Secretaría de Estado de Digitalización e Inteligencia Artificial", "presupuesto": 163365.0, "fecha_limite": "2026-06-01"}, {"ejecucion_id": "ejec_2026-05-15_001", "modo": "ia_en_producto", "id_oficial": "DEMA-2026-017", "fuente": "PLACSP", "titulo": "Servicio de Asistencia Técnica especializada dirigido al gobierno de Granada (país Granada, Caribe),", "score": 6.65, "organo": "Dirección de la Fundación para la Internacionalización de las Administraciones Públicas (FIIAPP) - Ministerio de Asuntos Exteriores, Unión Europea y Cooperación", "presupuesto": 71750.0, "fecha_limite": "2026-05-29"}, {"ejecucion_id": "ejec_2026-05-15_002", "modo": "no_ia_en_producto", "id_oficial": "2026-00621", "fuente": "PLACSP", "titulo": "Servicios de Apoyo para la Gestión y Tramitación de los Informes Motivados (procedimiento administra", "score": 6.57, "organo": "Consejero Delegado de Ingeniería de Sistemas para la Defensa de España S.A., S.M.E. y M.P. (ISDEFE) - Ministerio de Defensa", "presupuesto": 146220.8, "fecha_limite": "2026-06-15"}, {"ejecucion_id": "ejec_2026-05-15_002", "modo": "no_ia_en_producto", "id_oficial": "2026-00669", "fuente": "PLACSP", "titulo": "Servicios de Apoyo para la Coordinación de las tareas de Gestión del Cambio con la DGTDAJ (Dirección", "score": 6.57, "organo": "Consejero Delegado de Ingeniería de Sistemas para la Defensa de España S.A., S.M.E. y M.P. (ISDEFE) - Ministerio de Defensa", "presupuesto": 146565.0, "fecha_limite": "2026-06-09"}, {"ejecucion_id": "ejec_2026-05-15_002", "modo": "no_ia_en_producto", "id_oficial": "44/2026", "fuente": "PLACSP", "titulo": "Contratacion del sistema de Suministro Inmediato de Informacion del IVA (SII) de la Empresa Nacional", "score": 6.56, "organo": "Consejo de Administración de Empresa Nacional de Innovación S.M.E., S.A. (ENISA) - Ministerio de Industria y Turismo", "presupuesto": 25976.0, "fecha_limite": "2026-06-01"}, {"ejecucion_id": "ejec_2026-05-15_002", "modo": "no_ia_en_producto", "id_oficial": "2026/G/069", "fuente": "AUTONOMICO", "titulo": "Contratacion del servicio de asistencia tecnica para el apoyo a la certificacion del sistema integra", "score": 6.51, "organo": "Autoridad Portuaria de A Coruna (organismo publico estatal pero con perfil publicado en Contratos Publicos de Galicia)", "presupuesto": 100000.0, "fecha_limite": "2026-06-04"}], "fuentes_activas": 3}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+
+function fmtEur(n) { if (n == null) return '—'; return new Intl.NumberFormat('es-ES').format(Math.round(n)) + ' €'; }
+function esc(s) { if (s == null) return ''; return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+function scoreClass(s) { return s >= 7.5 ? 'good' : s >= 5.5 ? 'warn' : 'bad'; }
+
+document.getElementById('k-ejec').textContent = DATA.ejecuciones.length;
+document.getElementById('k-hist').textContent = DATA.total_historial;
+document.getElementById('k-top').textContent = DATA.top_global.length;
+document.getElementById('k-fuentes').textContent = DATA.fuentes_activas;
+
+const te = document.querySelector('#t-ejec tbody');
+DATA.ejecuciones.forEach(e => {
+  te.innerHTML += `<tr>
+    <td><strong>${esc(e.id)}</strong></td>
+    <td>${esc(e.fecha)}</td>
+    <td><span class="mode-pill mode-${e.modo}">${esc(e.modo)}</span></td>
+    <td class="num">${e.items_totales}</td>
+    <td class="num">${e.elegibles}</td>
+    <td class="num">${e.top}</td>
+    <td class="num">${e.score_medio_top != null ? e.score_medio_top.toFixed(2) : '—'}</td>
+    <td><a href="${esc(e.id)}/index.html">abrir →</a></td>
+  </tr>`;
+});
+
+const fuentesUniq = [...new Set(DATA.top_global.map(x => x.fuente))].sort();
+const gfsel = document.getElementById('g-fuente');
+fuentesUniq.forEach(f => { const o = document.createElement('option'); o.value = f; o.textContent = f; gfsel.appendChild(o); });
+
+function renderGlobal() {
+  const ft = document.getElementById('g-text').value.toLowerCase();
+  const fm = document.getElementById('g-mode').value;
+  const ff = document.getElementById('g-fuente').value;
+  const fmin = parseFloat(document.getElementById('g-score').value) || 0;
+  const items = DATA.top_global.filter(it => {
+    if (fm && it.modo !== fm) return false;
+    if (ff && it.fuente !== ff) return false;
+    if ((it.score || 0) < fmin) return false;
+    if (ft) {
+      const blob = [it.titulo, it.organo, it.id_oficial].filter(Boolean).join(' ').toLowerCase();
+      if (!blob.includes(ft)) return false;
+    }
+    return true;
+  });
+  const tg = document.querySelector('#t-global tbody');
+  tg.innerHTML = '';
+  if (items.length === 0) { tg.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:40px;">Sin items.</td></tr>'; return; }
+  items.forEach((it, i) => {
+    tg.innerHTML += `<tr>
+      <td>${i+1}</td>
+      <td>
+        <div class="titulo">${esc(it.titulo)}</div>
+        <div class="organo">${esc(it.organo || '—')} · ${esc(it.id_oficial || '')}</div>
+      </td>
+      <td><span class="badge badge-${it.fuente}">${it.fuente}</span></td>
+      <td><span class="mode-pill mode-${it.modo}">${esc(it.modo)}</span></td>
+      <td class="num">${fmtEur(it.presupuesto)}</td>
+      <td>${it.fecha_limite || '—'}</td>
+      <td class="num"><span class="pill ${scoreClass(it.score)}">${it.score.toFixed(2)}</span></td>
+      <td><a href="${esc(it.ejecucion_id)}/index.html">${esc(it.ejecucion_id)}</a></td>
+    </tr>`;
+  });
+}
+
+['g-text','g-mode','g-fuente','g-score'].forEach(id => document.getElementById(id).addEventListener('input', renderGlobal));
+renderGlobal();
+</script>
+</body>
+</html>

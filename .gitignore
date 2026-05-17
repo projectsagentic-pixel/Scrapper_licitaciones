@@ -1,0 +1,32 @@
+# Snapshots regenerables de PLACSP (descargables vía contrataciondelestado.es)
+data/raw_snapshots/placsp_atom/extracted/
+data/raw_snapshots/placsp_atom/*.zip
+
+# Adjuntos pesados en general
+*.pdf
+*.zip
+*.7z
+*.rar
+*.tar.gz
+*.tgz
+
+# Temporales del pipeline
+data/_tmp_*
+data/**/*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp

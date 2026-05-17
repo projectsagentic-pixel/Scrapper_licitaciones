@@ -1,0 +1,86 @@
+{
+  "lote_id": "lote_C_placsp_id_sistemas",
+  "ejecucion_id": "ejec_2026-05-16_001",
+  "fuente": "PLACSP",
+  "fecha": "2026-05-16",
+  "metodo": "boe_sumarios_diarios+webfetch_expedientes_PLACSP",
+  "queries_usadas": [
+    "Sumario BOE 2026-05-15 sección V.A (anuncios de contratación) — vía boe.es/boe/dias/2026/05/15/",
+    "Sumario BOE 2026-05-14 sección V.A — Ministerio de Inclusión, Hacienda, Ciencia, RED.ES",
+    "Sumario BOE 2026-05-13 sección V.A — CSIC, CDTI, CNMV",
+    "Sumario BOE 2026-05-12 sección V.A — Justicia, Cultura, Defensa Ciberespacio",
+    "Sumario BOE 2026-05-08 sección V.A — Congreso, Exteriores, OEPM, CSN",
+    "Sumario BOE 2026-05-07 sección V.A — Interior, MICIU, Sanidad",
+    "Sumario BOE 2026-05-06 sección V.A — INTA, ADIF, CSIC",
+    "Sumario BOE 2026-05-05 sección V.A — AIReF, Cultura J260015, CSIC",
+    "Sumario BOE 2026-05-04 sección V.A — ADIF Adif-AV, CSIC, INE",
+    "Sumario BOE 2026-04-30 sección V.A — MICIU, CSIC",
+    "Sumario BOE 2026-04-29 sección V.A — INE, Congreso, BSC",
+    "Sumario BOE 2026-04-28 sección V.A — EMAD, Ejército Aire, ADIF",
+    "Sumario BOE 2026-04-27 sección V.A — Senado, Patentes",
+    "Sumario BOE 2026-04-24 sección V.A — CSIC, PLOCAN",
+    "Sumario BOE 2026-04-23 sección V.A — AEAT, Pesca, ADIF",
+    "Sumario BOE 2026-04-22 sección V.A — FOGASA, Pesca, MUFACE",
+    "Sumario BOE 2026-04-21 sección V.A — INE, Mineco, IMSERSO",
+    "Sumario BOE 2026-04-20 sección V.A — Defensa, ADIF",
+    "Sumario BOE 2026-04-17 sección V.A — INVIED, ADIF, MICIU",
+    "Sumario BOE 2026-04-16 sección V.A — RED.ES afirma federado",
+    "Sumario BOE 2026-04-15 sección V.A — Agricultura SIG, Inclusión IMPORTASS",
+    "Sumario BOE 2026-04-14 sección V.A — Patrimonio Nacional, ADIF, MICIU",
+    "Sumario BOE 2026-04-13 sección V.A — DGT, CEDEX, RED.ES",
+    "Sumario BOE 2026-04-09 sección V.A — Transformación Digital cuántico",
+    "Sumario BOE 2026-03-31 sección V.A — AEAT, ADIF GRC",
+    "Sumario BOE 2026-03-30 sección V.A — CSIC MATLAB",
+    "Sumario BOE 2026-03-27 sección V.A — Cultura DOMUS, CSIC, CNMC SICILIA2",
+    "Sumario BOE 2026-03-20 sección V.A — CSD soporte, Instituto Mujeres, Marina SaaS, RED.ES RECI"
+  ],
+  "items_extraidos_total": 51,
+  "items_descartados_por_fetch_fallido": 0,
+  "items_descartados_por_descarte_automatico": 49,
+  "items_descartados_por_dedup": 1,
+  "items_observados": [
+    {
+      "hash": "2e22312a38b6033a",
+      "id_oficial": "J260019",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=9b9xbrwpPta7JOCXkOhcDg%3D%3D",
+      "fuente": "PLACSP",
+      "fecha_visto": "2026-05-16T00:00:00Z",
+      "datos": {
+        "titulo": "Servicio de apoyo a usuarios del Generador de Sedes Web para Bibliotecas públicas",
+        "descripcion": "Servicio de apoyo a usuarios del Generador de Sedes Web para Bibliotecas públicas de la Subdirección General de Coordinación Bibliotecaria del Ministerio de Cultura. Soporte técnico y funcional a las bibliotecas públicas que utilizan la herramienta corporativa de generación de sedes web; gestión de incidencias, evolutivos menores y atención a usuarios bibliotecarios distribuidos por toda España.",
+        "organo_contratante": "Junta de Contratación del Ministerio de Cultura",
+        "presupuesto_base_eur": 25033.32,
+        "presupuesto_total_eur": 125166.60,
+        "plazo_presentacion": "2026-05-25",
+        "cpv_codigos": ["72610000"],
+        "lugar_ejecucion": "ES300 (Madrid) — usuarios distribuidos en bibliotecas de toda España",
+        "url_pliego_pcap": null,
+        "url_pliego_ppt": null,
+        "tipo_objeto": "horas_servicio",
+        "evidencia_tipo_objeto": "Servicio de apoyo a usuarios — el objeto literal es 'servicio de apoyo' a usuarios bibliotecarios; el valor estimado (125k) corresponde a presupuesto base 25k + 4 prórrogas anuales, lo que sugiere unidad de contratación = año de soporte continuo de help-desk más que entregable cerrado. CPV 72610000 ('Servicios de apoyo informático') refuerza la clasificación.",
+        "lugar_prestacion": "indeterminado",
+        "evidencia_lugar_prestacion": "El anuncio BOE no especifica si la prestación es en sede del Ministerio (Plaza del Rey, Madrid) o remota. CPV 72610000 admite ambas modalidades. Requeriría leer el PPT/PCAP del expediente para confirmar.",
+        "dificultad": null,
+        "facilidad_ia": null,
+        "utilidad_ia": null,
+        "principales_desafios": [
+          "Dependencia operativa de la herramienta corporativa 'Generador de Sedes Web' (probablemente desarrollo propio del Ministerio, no producto comercial)",
+          "Atención a usuarios poco técnicos (bibliotecarios) que requiere soft skills además de capacidad técnica",
+          "Bajo presupuesto base (25k/año) hace difícil dimensionar un equipo dedicado"
+        ],
+        "ideas_clave": [
+          "Acelerador IA candidato: chatbot de primer nivel para resolver preguntas frecuentes de bibliotecarios sobre el generador antes de escalar a soporte humano",
+          "Asistente IA para clasificar incidencias entrantes y enrutarlas a especialista (UI, contenidos, plantillas)",
+          "Documentación generada por IA a partir del histórico de tickets para autoservicio"
+        ]
+      },
+      "fuentes_corroboradas": ["PLACSP", "BOE-B-2026-15207"],
+      "scoring_local": {
+        "utilidad_ia": 4,
+        "facilidad_ia": 6,
+        "dificultad": 4
+      }
+    }
+  ],
+  "limitaciones": "RECOLECCIÓN MUY POR DEBAJO DEL OBJETIVO (1 de 20). Causas raíz documentadas: (1) Acceso directo a buscador PLACSP / feeds ATOM bloqueado para WebFetch (página de error 'certificado no autorizado') y MCP chrome-devtools no disponible en este entorno (Chrome no expuso websocket DevTools en localhost:9222). (2) Fallback a sumarios diarios del BOE (sección V.A — anuncios de contratación) sí funciona, pero el BOE solo publica anuncios de licitaciones que superan ciertos umbrales: en la práctica la inmensa mayoría de expedientes BOE de servicios TI están en el rango 500.000 € — 10.000.000 €, FUERA DEL FILTRO presupuesto_max_eur=200.000 €. (3) Los expedientes pequeños (20k-200k) que se publican como 'procedimiento abierto simplificado' o 'contratos menores' raramente llegan al BOE; suelen residir solo en plataformas autonómicas (BOCM, DOGC, DOG, BOPV, BOPA…) o en los buscadores específicos de PLACSP, ambos inaccesibles por las razones del punto 1. (4) Se revisaron 28 sumarios BOE consecutivos (2026-03-20 a 2026-05-16) y se extrajeron datos individuales de >50 expedientes; solo 1 cumple SIMULTÁNEAMENTE: presupuesto en rango, plazo VIGENTE (>= 2026-05-23), CPV en scope IT/I+D, y no está en hashes_a_evitar. (5) Se descartaron 49 candidatos: 32 por presupuesto > 200k, 9 por plazo ya pasado, 5 por scope fuera (idiomas/audio/obras), 2 por anuncio de formalización (ya adjudicados), 1 por dedup (004/26-SG ya consolidado). Recomendación para futuros lotes PLACSP: habilitar chrome-devtools o un MCP con acceso autenticado a contrataciondelestado.es y/o añadir lotes específicos para boletines autonómicos (BOCM, DOGC, DOG, BOPV) donde residen los expedientes pequeños."
+}

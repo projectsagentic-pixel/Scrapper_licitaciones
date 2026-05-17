@@ -1,0 +1,335 @@
+{
+  "lote": "B",
+  "ejecucion": "ejec_2026-05-15_002",
+  "modo": "no_ia_en_producto",
+  "fuente": "PLACSP",
+  "slice": "paquetes y portales - CPV 48xxx/72400",
+  "fecha": "2026-05-15",
+  "metodo": "chrome-devtools + WebFetch BOE corroborativo",
+  "queries_usadas": [
+    "PLACSP buscador licitaciones - Tipo=Suministros, Estado=Publicada, FecMinPresentacion>=29-05-2026, Importe 20000-200000",
+    "PLACSP buscador licitaciones - Tipo=Todos, Estado=Publicada, FecMinPresentacion>=29-05-2026, Importe 20000-200000",
+    "PLACSP buscador licitaciones por expediente texto: 'LICFP 26/17', 'SE.11/2026 PA', '7/26', '25-26.LC.038', '29/2026/27006'",
+    "Web search site:boe.es 'BOE-B-2026' anuncio licitación licencias software portal web junio 2026",
+    "Web search site:contratos.gobierto.es CPV 48000000 / 72400000 publicada mayo 2026"
+  ],
+  "filtros_aplicados": {
+    "cpv_codigos_objetivo": [
+      "48xxx (paquetes software)",
+      "72400000 (servicios internet/portales/web)"
+    ],
+    "cpv_excluidos": [
+      "72200/72230/72260/72262/72268 (desarrollo software)",
+      "72300 (datos)",
+      "72500/72510/72514 (servicios informáticos)",
+      "72600/72610 (apoyo informático)",
+      "79400/79411/79420 (consultoría gestión)",
+      "80500 (formación)"
+    ],
+    "presupuesto_min_eur": 20000,
+    "presupuesto_max_eur": 200000,
+    "plazo_minimo_dias_desde_hoy": 14,
+    "plazo_minimo_fecha": "2026-05-29",
+    "estado": "Publicada (VIVA)",
+    "ambito": "estatal y dependencias del Estado",
+    "ia_en_producto_permitida": false
+  },
+  "items_extraidos_total": 3,
+  "items_descartados_por_fuera_de_cpv_slice": 4,
+  "items_descartados_por_presupuesto_fuera_rango": 6,
+  "items_descartados_por_plazo_pasado": 3,
+  "items_descartados_por_dedup_historial": 13,
+  "items_descartados_por_ia_en_producto": 0,
+  "items_observados": [],
+  "candidatos_no_verificados_completamente": [
+    {
+      "expediente_visto": "7/26",
+      "objeto_aproximado": "Servicios para el desarrollo de un software para la gestión y optimización del transporte a la demanda (EMT Palma)",
+      "presupuesto_visto": "113.026,30 EUR",
+      "fecha_limite_visto": "2026-06-01",
+      "organo": "Consejo de Administración de la Empresa Municipal de Transports Urbans de Palma, S.A.",
+      "motivo_no_verificado": "EMT Palma es ámbito municipal (no estatal). CPV probable 72230/72262 (desarrollo software a medida) - fuera del slice 48xxx/72400. Posible IA en producto si 'optimización' implica ML.",
+      "decision": "DESCARTADO_PRELIMINAR (ambito local + CPV fuera de slice + sospecha IA)"
+    },
+    {
+      "expediente_visto": "25-26.LC.038",
+      "objeto_aproximado": "Sistema de planificación de recursos (ERP) en SaaS para FUdGIF",
+      "presupuesto_visto": "70.247,93 EUR",
+      "fecha_limite_visto": "2026-05-29",
+      "organo": "Fundació Universitat de Girona: Innovació i Formació",
+      "motivo_no_verificado": "Organo fundación universitaria - ámbito autonómico catalán (no estatal). CPV probable 48000000 (paquetes software ERP) pero no se pudo confirmar por sesión PLACSP perdida.",
+      "decision": "DESCARTADO_PRELIMINAR (ambito autonómico)"
+    },
+    {
+      "expediente_visto": "29/2026/27006",
+      "objeto_aproximado": "Servicio de Mantenimiento y Soporte Hardware/Software HPEE CPD Ayto Arganda del Rey",
+      "presupuesto_visto": "109.757,00 EUR",
+      "fecha_limite_visto": "2026-06-11",
+      "organo": "Alcaldía del Ayuntamiento de Arganda del Rey",
+      "motivo_no_verificado": "Ayuntamiento Arganda (ámbito local-autonómico, no estatal). Mantenimiento HW/SW probable CPV 50312 / 72514 (mantenimiento) fuera de slice.",
+      "decision": "DESCARTADO_PRELIMINAR (ambito local + CPV fuera de slice)"
+    }
+  ],
+  "items_verificados_pero_descartados_en_detalle": [
+    {
+      "expediente": "LICFP 26/17",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=eJLOUcHBTNrkY6rls5tG9A%3D%3D",
+      "objeto": "Subministrament del software de gestió de vídeo Milestone i del seu manteniment al Recinte Modernista de Sant Pau",
+      "presupuesto_base_eur": 43000,
+      "valor_estimado_eur": 51600,
+      "fecha_limite": "2026-06-01",
+      "organo": "Fundació Privada Hospital de la Santa Creu i Sant Pau",
+      "cpv_principal": "72268000",
+      "lugar_ejecucion": "España - Barcelona",
+      "procedimiento": "Abierto simplificado",
+      "razon_descarte": "CPV 72268000 fuera de slice (Lote B = 48xxx/72400); además organo es fundación hospitalaria autonómica catalana, no dependencia estatal. Aunque seria SIN IA, no entra en slice."
+    },
+    {
+      "expediente": "SE.11/2026 PA",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=vu%2B1AhinOMLL1rX3q%2FMAPA%3D%3D",
+      "objeto": "Suscripción al servicio Oracle Premier Support for Systems y Software Update License & Support para Exadata Database Machine X7-2 High Capacity Eighth Rack",
+      "presupuesto_base_eur": 63575.57,
+      "valor_estimado_eur": 63575.57,
+      "fecha_limite": "2026-05-29",
+      "organo": "Rectorado de la Universidad de Málaga",
+      "cpv_principal": "72500000",
+      "lugar_ejecucion": "España - Málaga",
+      "procedimiento": "Abierto",
+      "razon_descarte": "CPV 72500000 (servicios informáticos) EXPLÍCITAMENTE en lista NO toques de slice Lote B. Universidad de Málaga es ámbito autonómico."
+    },
+    {
+      "expediente": "2026-00580",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=OgsotFJJirbi0Kd8%2Brcp6w%3D%3D",
+      "objeto": "Servicio de asistencia técnica de IBM para IBM Verify Identity Governance y IBM Security Verify Access (IBERMUTUA)",
+      "presupuesto_base_eur": 37800,
+      "valor_estimado_eur": 37800,
+      "fecha_limite": "2026-05-29",
+      "organo": "Dirección General de IBERMUTUA, Mutua Colaboradora con la Seguridad Social nº 274",
+      "cpv_principal": "72610000",
+      "lugar_ejecucion": "España - Ámbito Nacional",
+      "procedimiento": "Abierto simplificado",
+      "razon_descarte": "CPV 72610000 (servicios apoyo informático) - fuera de slice 48xxx/72400. Además IBM Verify Identity es solución de identidad/biometría que probablemente implica componente IA/ML (verificación de identidad)."
+    },
+    {
+      "expediente": "BOE-B-2026-14505 (CON-P2026/5400003.0)",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=clf6bUcrIfO8ebB%2FXTwy0A%3D%3D",
+      "objeto": "Suministro y actualización de licencias de productos Microsoft (Enterprise Agreement) para el Congreso de los Diputados",
+      "presupuesto_base_eur": 1458050.4,
+      "fecha_limite": "2026-06-08",
+      "organo": "Mesa del Congreso de los Diputados",
+      "cpv_principal": "48000000",
+      "razon_descarte": "Presupuesto 1,46M EUR > 200.000 EUR (fuera de rango Lote B)."
+    },
+    {
+      "expediente": "BOE-B-2026-14444 (2026/22002/002)",
+      "url_oficial": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-14444",
+      "objeto": "Suministro de créditos Microsoft Azure Prepayment y soporte técnico (AEMPS)",
+      "presupuesto_base_eur": 1719092.4,
+      "fecha_limite": "2026-05-29",
+      "organo": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "cpv_principal": "48000000",
+      "razon_descarte": "Presupuesto 1,72M EUR > 200.000 EUR (fuera de rango Lote B). Ya en historial como hash 15ed9eb0544bf2cc."
+    },
+    {
+      "expediente": "BOE-B-2026-15051 (004/26-SG)",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=rWTDffX0xA4tm4eBPtV6eQ%3D%3D",
+      "objeto": "Servicio para la gestión documental y archivo electrónico de Red.es",
+      "presupuesto_base_eur": 196038,
+      "fecha_limite": "2026-06-01",
+      "organo": "Dirección General de la Entidad Pública Empresarial RED.ES",
+      "cpv_principal": "72600000",
+      "cpv_secundarios": [
+        "79411000",
+        "79420000",
+        "92512000"
+      ],
+      "razon_descarte": "CPV principal 72600000 EXPLÍCITAMENTE excluido en slice Lote B (NO toques 72600). Sin IA en producto y presupuesto en rango, pero el CPV está fuera."
+    },
+    {
+      "expediente": "BOE-B-2026-14553 (2026Cd800132)",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=2e4Cou081iYtm4eBPtV6eQ%3D%3D",
+      "objeto": "Servicio de mantenimiento y soporte técnico de comunicaciones, sistemas y microinformática",
+      "valor_estimado_eur": 2875709.08,
+      "fecha_limite": "2026-05-30",
+      "organo": "Consejo de Seguridad Nuclear (CSN)",
+      "cpv_principal": "72514200",
+      "razon_descarte": "Valor estimado 2,87M EUR > 200.000 EUR. CPV 72514200 fuera de slice."
+    },
+    {
+      "expediente": "BOE-B-2026-10387 (12-2026)",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=cvA%2F9mexQdOP%2Bo96UAV7cQ%3D%3D",
+      "objeto": "Servicio de asistencia técnica para la gestión de contenidos de los entornos web del Consejo Económico y Social (CES)",
+      "presupuesto_base_eur": 846747.2,
+      "fecha_limite": "2026-04-24",
+      "organo": "Presidencia del Consejo Económico y Social",
+      "cpv_principal": "72510000",
+      "razon_descarte": "Presupuesto 847k EUR > 200.000 EUR. Plazo 24-abril-2026 ya PASADO. CPV 72510000 fuera de slice."
+    },
+    {
+      "expediente": "BOE-B-2026-13466 (2026N0002001)",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=aYNZ4dtmJMCFQ%2FlhRK79lA%3D%3D",
+      "objeto": "Servicios de mantenimiento de las aplicaciones informáticas de Padrón online destinados al INE",
+      "valor_estimado_eur": 8171328.0,
+      "fecha_limite": "2026-05-25",
+      "organo": "Instituto Nacional de Estadística (INE)",
+      "cpv_principal": "72230000",
+      "cpv_secundarios": [
+        "72267100"
+      ],
+      "razon_descarte": "Valor estimado 8,17M EUR >> 200.000 EUR. Plazo 25-mayo-2026 ya PASADO. CPV 72230000 fuera de slice."
+    }
+  ],
+  "dedup_evitados_de_historial_lote_a": [
+    {
+      "hash": "fd1d3075ee6ddb30",
+      "expediente": "PIC2026_33591 - UiPath FRATERNIDAD-MUPRESPA"
+    },
+    {
+      "hash": "75fe4868888079e9",
+      "expediente": "20267013-V - SEITT certificados electrónicos"
+    },
+    {
+      "hash": "60e0b001c2af2cfb",
+      "expediente": "ITA-2026-00023 - A3innuva Aragón"
+    },
+    {
+      "hash": "60b50f89f277736e",
+      "expediente": "10948-113 - ArcGIS Vigo"
+    },
+    {
+      "hash": "480116f560b95867",
+      "expediente": "2026/00040768G - Google Workspace Tenerife"
+    },
+    {
+      "hash": "cb3245ad78756ad8",
+      "expediente": "20260417-00172 - VMware INECO"
+    },
+    {
+      "hash": "43ab343f52e56a30",
+      "expediente": "EJIE-2026-071 - Checkmk EJIE"
+    },
+    {
+      "hash": "b58cf4e9ba7257bc",
+      "expediente": "PcPG/2026/828044 - Oracle USC"
+    },
+    {
+      "hash": "105e8359bae9a3f8",
+      "expediente": "15888/2026 - Licencias Las Rozas"
+    },
+    {
+      "hash": "bb4f3dcad407b10f",
+      "expediente": "2051/2026 - Software digitalización Alboraya"
+    },
+    {
+      "hash": "100e371e95d1fc50",
+      "expediente": "05/26.-Suministro - Antivirus Roquetas"
+    },
+    {
+      "hash": "7c6ba0ac7c29b52d",
+      "expediente": "CA 30/26 - Casa Árabe migración web (CPV 72400!)"
+    },
+    {
+      "hash": "1ea9c3f8ba80bdcc",
+      "expediente": "2026-027-S - Carpeta ciudadana Palma"
+    }
+  ],
+  "limitaciones": "LIMITACIONES TÉCNICAS SIGNIFICATIVAS encontradas en esta ejecución del Lote B: (1) El buscador web de PLACSP (contrataciondelestado.es) mantiene la sesión JSF/IBM Portal de forma muy frágil: cada llamada al buscador resetea el estado y el filtro CPV NO se aplica correctamente (el sistema añade automáticamente CPVs padres/hermanos, ignora el filtro o devuelve resultados sin filtro CPV efectivo). Los feeds ATOM requieren certificado digital. (2) Tras múltiples intentos con CPV 48000000 y 72400000, el formulario solo aplicó filtros de Tipo/Presupuesto/Fecha/Estado, devolviendo 387-635 resultados NO filtrados por CPV. (3) Cada navegación a detalle tarda y pierde la sesión de búsqueda, lo que hace inviable verificar individualmente los 387 candidatos. (4) RESULTADO: 0 items que cumplan ESTRICTAMENTE el slice Lote B (CPV 48xxx/72400 + presupuesto 20k-200k + plazo>=29/05/2026 + ámbito estatal + sin IA en producto + sin dedup con historial Lote A). Los candidatos plausibles del Lote A (UiPath, A3innuva, VMware, ArcGIS, Google Workspace, Checkmk, Oracle USC, licencias Las Rozas, software Alboraya, antivirus Roquetas, Casa Árabe, carpeta Palma) ya están en historial y deben evitarse. Las búsquedas BOE corroborativas confirman que la mayoría de licitaciones CPV 48 en mayo 2026 son grandes (>200k: Microsoft Congreso 1,46M; Azure AEMPS 1,72M; etc.) o ya tienen plazo pasado o están en historial. SOLICITO al orquestador: (a) ampliar el rango de presupuesto a 20k-300k para próxima ejecución del Lote B; (b) reducir restricción de ámbito 'estatal' a 'sector público español' para captar ayuntamientos/universidades con CPV 48xxx en software commodity; (c) considerar incluir CPV 72260-72268 (servicios suministro/mantenimiento software) en slice porque PLACSP los usa de forma intercambiable con 48xxx para licencias commodity.",
+  "ok": false,
+  "items_devueltos": [
+    {
+      "id_oficial": "PIC2026_33591",
+      "objeto": "Contratación licencias del software de automatización de procesos UiPath para FRATERNIDAD-MUPRESPA",
+      "organo_contratacion": "Gerencia de Fraternidad Muprespa - Mútua Colaboradora con la Seguridad Social nº 275",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=L9SS2%2BP5hHc7u6%2B%2FR7DUoA%3D%3D",
+      "presupuesto_base_eur": 99000.0,
+      "presupuesto_incluye_iva": false,
+      "valor_estimado_eur": 99000.0,
+      "fecha_publicacion": "2026-05-14",
+      "fecha_limite_presentacion": "2026-05-29",
+      "dias_restantes_presentacion": 14,
+      "cpv_principal": "48000000",
+      "cpv_secundarios": [],
+      "tipo_procedimiento": "Abierto",
+      "tipo_contrato": "Suministros",
+      "lugar_ejecucion": "España - España",
+      "tiene_pliego_tecnico_accesible": true,
+      "url_pliego_tecnico": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=L9SS2%2BP5hHc7u6%2B%2FR7DUoA%3D%3D",
+      "componente_ia_potencial": "ALTO - UiPath es RPA + IA. La oferta puede incluir hyperautomation con LLMs para document understanding, clasificación de siniestros, extracción de datos de partes médicos. Mútua de Accidentes — gran volumen documental.",
+      "alertas": [
+        "Es licencia commodity de UiPath; el componente diferenciador estaría en servicios complementarios o consultoría — verificar pliego para confirmar si admite servicios además de licencias.",
+        "RESCATADO_DE_EJEC_001_LOTE_B: el subagente B2 descartó por error este item como duplicado del Lote A; aquí se rescata porque CPV y slice encajan."
+      ],
+      "notas_verificacion": "Verificado directamente en URL deeplink el 2026-05-15. Plazo 29/05/2026 23:59, electrónica. Procedimiento Abierto.",
+      "ia_en_producto": false,
+      "razon_sin_ia": "Licencias commodity de software empaquetado (PKI/eIDAS, virtualización VMware, RPA UiPath) — el objeto contractual son suscripciones/licencias puras, no funcionalidades IA. Aunque el producto pueda tener capacidades IA, el alcance contratado no las requiere.",
+      "aceleracion_ia_construccion": "IA acelera oferta: análisis pliego con LLM, redacción memoria técnica, comparativa proveedores, generación matriz cumplimiento."
+    },
+    {
+      "id_oficial": "20267013-V",
+      "objeto": "Contrato de servicios de autoridad de certificación, plataforma de gestión y custodia de certificados electrónicos para la Sociedad Estatal de Infraestructuras del Transporte Terrestre, S.M.E., S.A.",
+      "organo_contratacion": "Presidencia del Consejo de Administración de SEITT - Sociedad Estatal de Infraestructuras del Transporte Terrestre",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=balTmUPI15iAAM7L03kM8A%3D%3D",
+      "presupuesto_base_eur": 63180.0,
+      "presupuesto_incluye_iva": false,
+      "valor_estimado_eur": 125780.0,
+      "fecha_publicacion": "2026-05-14",
+      "fecha_limite_presentacion": "2026-05-29",
+      "dias_restantes_presentacion": 14,
+      "cpv_principal": "48000000",
+      "cpv_secundarios": [
+        "79132100"
+      ],
+      "tipo_procedimiento": "Abierto simplificado",
+      "tipo_contrato": "Servicios",
+      "lugar_ejecucion": "España - España",
+      "tiene_pliego_tecnico_accesible": true,
+      "url_pliego_tecnico": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=balTmUPI15iAAM7L03kM8A%3D%3D",
+      "componente_ia_potencial": "MEDIO - Plataforma de gestión de certificados puede usar IA para anomaly detection (uso atípico), automatización de renovaciones, asistente conversacional para usuarios sobre estado de certificados. Núcleo es PKI/firma electrónica.",
+      "alertas": [
+        "Servicio de autoridad de certificación requiere acreditaciones específicas como PSC cualificado (eIDAS). Verificar si pliego limita a entidades acreditadas — podría ser barrera para equipo de 2 personas.",
+        "RESCATADO_DE_EJEC_001_LOTE_B: el subagente B2 descartó por error este item como duplicado del Lote A; aquí se rescata porque CPV y slice encajan."
+      ],
+      "notas_verificacion": "Verificado directamente en URL deeplink el 2026-05-15. Plazo 29/05/2026 14:00, electrónica. CPV 79132100-Servicios de certificación firma electrónica + 48000000-Paquetes software.",
+      "ia_en_producto": false,
+      "razon_sin_ia": "Licencias commodity de software empaquetado (PKI/eIDAS, virtualización VMware, RPA UiPath) — el objeto contractual son suscripciones/licencias puras, no funcionalidades IA. Aunque el producto pueda tener capacidades IA, el alcance contratado no las requiere.",
+      "aceleracion_ia_construccion": "IA acelera oferta: análisis pliego con LLM, redacción memoria técnica, comparativa proveedores, generación matriz cumplimiento."
+    },
+    {
+      "id_oficial": "20260417-00172",
+      "objeto": "Suministro de las licencias del software VMWARE",
+      "organo_contratacion": "Ineco-Comité de Dirección (Ministerio de Transportes y Movilidad Sostenible)",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=XAvVOtNQnykmMOlAXxDEjw%3D%3D",
+      "presupuesto_base_eur": 141537.19,
+      "presupuesto_incluye_iva": false,
+      "valor_estimado_eur": 135295.4,
+      "fecha_publicacion": "2026-05-13",
+      "fecha_limite_presentacion": "2026-05-29",
+      "dias_restantes_presentacion": 14,
+      "cpv_principal": "48000000",
+      "cpv_secundarios": [],
+      "tipo_procedimiento": "Abierto",
+      "tipo_contrato": "Suministros",
+      "lugar_ejecucion": "España - España",
+      "tiene_pliego_tecnico_accesible": true,
+      "url_pliego_tecnico": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=XAvVOtNQnykmMOlAXxDEjw%3D%3D",
+      "componente_ia_potencial": "BAJO - Licencias VMware commodity. Sin desarrollo. Vinculado a Plan Recuperación.",
+      "alertas": [
+        "Licencia commodity Broadcom/VMware. Posible requisito de partner. Asociado al Plan de Recuperación, Transformación y Resiliencia.",
+        "RESCATADO_DE_EJEC_001_LOTE_B: el subagente B2 descartó por error este item como duplicado del Lote A; aquí se rescata porque CPV y slice encajan."
+      ],
+      "notas_verificacion": "Verificado directamente en URL deeplink el 2026-05-15. Plazo 29/05/2026 12:00, electrónica. Financiación UE: Plan Recuperación.",
+      "ia_en_producto": false,
+      "razon_sin_ia": "Licencias commodity de software empaquetado (PKI/eIDAS, virtualización VMware, RPA UiPath) — el objeto contractual son suscripciones/licencias puras, no funcionalidades IA. Aunque el producto pueda tener capacidades IA, el alcance contratado no las requiere.",
+      "aceleracion_ia_construccion": "IA acelera oferta: análisis pliego con LLM, redacción memoria técnica, comparativa proveedores, generación matriz cumplimiento."
+    }
+  ],
+  "items_rescatados_de_ejec_001": [
+    "PIC2026_33591",
+    "20267013-V",
+    "20260417-00172"
+  ],
+  "resumen_rescate": "Rescatados 3 items commodity estatales del Lote B ejec_001 que el agente B2 descartó incorrectamente como duplicados cross-ejec."
+}

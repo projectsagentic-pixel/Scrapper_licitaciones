@@ -1,0 +1,275 @@
+{
+  "ejecucion_id": "ejec_2026-05-15_002",
+  "modo": "no_ia_en_producto",
+  "ultima_actualizacion": "2026-05-15",
+  "umbral_top": 6.5,
+  "total": 9,
+  "top_actual": [
+    {
+      "titulo": "Servicios para la migracion tecnologica, desarrollo e implantacion de la plataforma web institucional de Casa Arabe. Arquitectura API REST, CI/CD automatizado, sistema desacoplado, CMS open source, cu",
+      "organo_contratante": "Direccion General de la Casa Arabe - Ministerio de Asuntos Exteriores, Union Europea y Cooperacion",
+      "descripcion": "Servicios para la migracion tecnologica, desarrollo e implantacion de la plataforma web institucional de Casa Arabe. Arquitectura API REST, CI/CD automatizado, sistema desacoplado, CMS open source, cumplimiento ENS y OWASP Top 10.",
+      "cpv_codigos": [
+        "72000000"
+      ],
+      "lugar_ejecucion": "Madrid (Espana)",
+      "presupuesto_base_eur": 41322.31,
+      "presupuesto_total_eur": 41322.31,
+      "plazo_presentacion": "2026-06-03",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=cDgLCmtXuvmExvMJXBMHHQ%3D%3D",
+      "score_total": 8.37,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A en modo no_ia_en_producto."
+      },
+      "facilidad_ia": {
+        "valor": 9,
+        "por_que": "Web institucional + i18n: caso ideal para gen-UI, scaffolding Next/Nuxt, generación de boilerplate, tests, contenido seed. Acelera 4x para 2 personas."
+      },
+      "dificultad": {
+        "valor": 4,
+        "por_que": "Alcance acotado (1 web), procedimiento simplificado, plazo cómodo, sin requisitos especiales más allá de i18n."
+      },
+      "encaje_perfil": 9,
+      "id_oficial": "CA 30/26"
+    },
+    {
+      "titulo": "Servicio de desarrollo e implantacion de la Aplicacion de Gestion de desviaciones y acciones (CRUD + workflow) para Equipos Nucleares S.A. (ENSA). Plataforma corporativa para registro, seguimiento y c",
+      "organo_contratante": "Comite de Direccion de Equipos Nucleares S.A. (ENSA) - SEPI - Ministerio de Hacienda",
+      "descripcion": "Servicio de desarrollo e implantacion de la Aplicacion de Gestion de desviaciones y acciones (CRUD + workflow) para Equipos Nucleares S.A. (ENSA). Plataforma corporativa para registro, seguimiento y cierre de desviaciones del proceso productivo nuclear, con flujos de aprobacion y reporting.",
+      "cpv_codigos": [
+        "72262000"
+      ],
+      "lugar_ejecucion": "Santander, Cantabria (Espana)",
+      "presupuesto_base_eur": 85000.0,
+      "presupuesto_total_eur": 85000.0,
+      "plazo_presentacion": "2026-06-25",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=fMhdHQKYqG7jHF5qKI4aaw%3D%3D",
+      "score_total": 7.45,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A."
+      },
+      "facilidad_ia": {
+        "valor": 8,
+        "por_que": "App CRUD moderna de gestión de desviaciones + workflow. Stack moderno + IA gen acelera 3-4x (modelo de datos, formularios, validaciones, tests)."
+      },
+      "dificultad": {
+        "valor": 6,
+        "por_que": "Sector nuclear, regulación CSN, trazabilidad estricta, validación documental. Plazo 41d holgado compensa."
+      },
+      "encaje_perfil": 7,
+      "id_oficial": "001213/2026"
+    },
+    {
+      "titulo": "Servicios de apoyo en consultoría y auditoría en materia de accesibilidad (WCAG / norma UNE-EN 301549) en el marco de los proyectos de los Destinos Turísticos Inteligentes que lidera SEGITTUR",
+      "organo_contratante": "Presidencia y Dirección de Administración y Finanzas de la Sociedad Mercantil Estatal para la Gestión de la Innovación y las Tecnologías Turísticas, S.A.M.P. (SEGITTUR) - Ministerio de Industria y Turismo",
+      "descripcion": "Servicios de apoyo en consultoría y auditoría en materia de accesibilidad (WCAG / norma UNE-EN 301549) en el marco de los proyectos de los Destinos Turísticos Inteligentes que lidera SEGITTUR",
+      "cpv_codigos": [
+        "79419000"
+      ],
+      "lugar_ejecucion": "España - Madrid - Madrid",
+      "presupuesto_base_eur": 140000.0,
+      "presupuesto_total_eur": 140000.0,
+      "plazo_presentacion": "2026-06-04",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=eOBhJjSgrNuGCFcHcNGIlQ%3D%3D",
+      "score_total": 7.27,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A."
+      },
+      "facilidad_ia": {
+        "valor": 7,
+        "por_que": "Consultoría y auditoría accesibilidad web (WCAG/EN 301 549). IA gen acelera análisis automático, generación de informes, validación pautas."
+      },
+      "dificultad": {
+        "valor": 4,
+        "por_que": "Accesibilidad técnica conocida, estándares claros. SEGITTUR es cliente accesible."
+      },
+      "encaje_perfil": 7,
+      "id_oficial": "152026"
+    },
+    {
+      "titulo": "Contratación de servicios para apoyo técnico en materia de modelado y automatización en procesos del Ejército de Tierra (modelado de procesos BPM + automatización de workflows, no IA)",
+      "organo_contratante": "Consejero Delegado de Ingeniería de Sistemas para la Defensa de España S.A., S.M.E. y M.P. (ISDEFE) - Ministerio de Defensa",
+      "descripcion": "Contratación de servicios para apoyo técnico en materia de modelado y automatización en procesos del Ejército de Tierra (modelado de procesos BPM + automatización de workflows, no IA)",
+      "cpv_codigos": [
+        "79411000"
+      ],
+      "lugar_ejecucion": "España - Madrid",
+      "presupuesto_base_eur": 83532.47,
+      "presupuesto_total_eur": 83532.47,
+      "plazo_presentacion": "2026-06-17",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=l8UpwQKGeqMXhk1FZxEyvw%3D%3D",
+      "score_total": 6.75,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A."
+      },
+      "facilidad_ia": {
+        "valor": 8,
+        "por_que": "Modelado BPM y automatización procesos (workflows ejército, no ML). IA gen acelera enormemente modelado BPMN, plantillas, documentación, tests."
+      },
+      "dificultad": {
+        "valor": 7,
+        "por_que": "Sector Defensa (Ejército de Tierra): posibles habilitaciones, ENS Alto. Plazo 33d holgado."
+      },
+      "encaje_perfil": 5,
+      "id_oficial": "2026-00580"
+    },
+    {
+      "titulo": "Servicio para la gestión documental y archivo electrónico de Red.es: clasificación de documentos, custodia, ENS, archivo electrónico conforme normativa",
+      "organo_contratante": "Dirección General de la Entidad Pública Empresarial RED.ES - Ministerio para la Transformación Digital y de la Función Pública - Secretaría de Estado de Digitalización e Inteligencia Artificial",
+      "descripcion": "Servicio para la gestión documental y archivo electrónico de Red.es: clasificación de documentos, custodia, ENS, archivo electrónico conforme normativa",
+      "cpv_codigos": [
+        "72600000",
+        "79411000",
+        "79420000",
+        "92512000"
+      ],
+      "lugar_ejecucion": "España - Madrid",
+      "presupuesto_base_eur": 163365.0,
+      "presupuesto_total_eur": 163365.0,
+      "plazo_presentacion": "2026-06-01",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=rWTDffX0xA4tm4eBPtV6eQ%3D%3D",
+      "score_total": 6.72,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A."
+      },
+      "facilidad_ia": {
+        "valor": 7,
+        "por_que": "Gestión documental ENI clásica: workflows, metadatos, formatos eEMGDE. IA gen acelera desarrollo de plantillas, mapeo metadatos, conversores formato."
+      },
+      "dificultad": {
+        "valor": 5,
+        "por_que": "Cumplimiento ENI (Esquema Nacional de Interoperabilidad), formatos estándar. Técnico pero documentado."
+      },
+      "encaje_perfil": 7,
+      "id_oficial": "004/26-SG"
+    },
+    {
+      "titulo": "Servicios de Apoyo para la Gestión y Tramitación de los Informes Motivados (procedimiento administrativo de gestión y tramitación expediente a expediente)",
+      "organo_contratante": "Consejero Delegado de Ingeniería de Sistemas para la Defensa de España S.A., S.M.E. y M.P. (ISDEFE) - Ministerio de Defensa",
+      "descripcion": "Servicios de Apoyo para la Gestión y Tramitación de los Informes Motivados (procedimiento administrativo de gestión y tramitación expediente a expediente)",
+      "cpv_codigos": [
+        "79411000"
+      ],
+      "lugar_ejecucion": "España - Madrid",
+      "presupuesto_base_eur": 146220.8,
+      "presupuesto_total_eur": 146220.8,
+      "plazo_presentacion": "2026-06-15",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=JIwEUyfFVSh6nTs9LZ9RhQ%3D%3D",
+      "score_total": 6.57,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A."
+      },
+      "facilidad_ia": {
+        "valor": 7,
+        "por_que": "Apoyo gestión tramitación Informes Motivados. Procesos administrativos: IA gen acelera plantillas, clasificación documental clásica."
+      },
+      "dificultad": {
+        "valor": 5,
+        "por_que": "Trabajo administrativo + ISDEFE como intermediario: procesos conocidos."
+      },
+      "encaje_perfil": 5,
+      "id_oficial": "2026-00621"
+    },
+    {
+      "titulo": "Servicios de Apoyo para la Coordinación de las tareas de Gestión del Cambio con la DGTDAJ (Dirección General de Transformación Digital de la Administración de Justicia)",
+      "organo_contratante": "Consejero Delegado de Ingeniería de Sistemas para la Defensa de España S.A., S.M.E. y M.P. (ISDEFE) - Ministerio de Defensa",
+      "descripcion": "Servicios de Apoyo para la Coordinación de las tareas de Gestión del Cambio con la DGTDAJ (Dirección General de Transformación Digital de la Administración de Justicia)",
+      "cpv_codigos": [
+        "79411000"
+      ],
+      "lugar_ejecucion": "España - Madrid",
+      "presupuesto_base_eur": 146565.0,
+      "presupuesto_total_eur": 146565.0,
+      "plazo_presentacion": "2026-06-09",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=SaPiBjq70Mc3vLk2DU2Ddg%3D%3D",
+      "score_total": 6.57,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A."
+      },
+      "facilidad_ia": {
+        "valor": 7,
+        "por_que": "Gestión del Cambio en Transformación Digital Justicia. Consultoría/gestión proyectos: IA acelera redacción, análisis, planificación."
+      },
+      "dificultad": {
+        "valor": 5,
+        "por_que": "Cliente Justicia, posibles barreras de acceso a sistemas; gestión cambio en sector público es proceso largo."
+      },
+      "encaje_perfil": 5,
+      "id_oficial": "2026-00669"
+    },
+    {
+      "titulo": "Contratacion del sistema de Suministro Inmediato de Informacion del IVA (SII) de la Empresa Nacional de Innovacion (ENISA). Integracion con AEAT para envio de registros de facturacion via servicios we",
+      "organo_contratante": "Consejo de Administracion de Empresa Nacional de Innovacion S.M.E., S.A. (ENISA) - Ministerio de Industria y Turismo",
+      "descripcion": "Contratacion del sistema de Suministro Inmediato de Informacion del IVA (SII) de la Empresa Nacional de Innovacion (ENISA). Integracion con AEAT para envio de registros de facturacion via servicios web. Software de gestion fiscal estandarizado, sin IA.",
+      "cpv_codigos": [
+        "72000000",
+        "48000000",
+        "72230000"
+      ],
+      "lugar_ejecucion": "Madrid (Espana)",
+      "presupuesto_base_eur": 25976.0,
+      "presupuesto_total_eur": 25976.0,
+      "plazo_presentacion": "2026-06-01",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=N1NzAV9eUbU%2B1TMyIiZmzw%3D%3D",
+      "score_total": 6.56,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A."
+      },
+      "facilidad_ia": {
+        "valor": 7,
+        "por_que": "Integración SII-AEAT bien documentada. IA gen acelera mucho conectores XML, validación esquemas, generación de tests con datos sintéticos."
+      },
+      "dificultad": {
+        "valor": 4,
+        "por_que": "Estándar AEAT consolidado, integración técnica conocida. Plazo y presupuesto compatibles."
+      },
+      "encaje_perfil": 6,
+      "id_oficial": "44/2026"
+    },
+    {
+      "titulo": "Contratacion del servicio de asistencia tecnica para el apoyo a la certificacion del sistema integrado de gestion y gestion de los riesgos generales y medioambientales en el Puerto de A Coruna. Consul",
+      "organo_contratante": "Autoridad Portuaria de A Coruna (organismo publico estatal pero con perfil publicado en Contratos Publicos de Galicia)",
+      "descripcion": "Contratacion del servicio de asistencia tecnica para el apoyo a la certificacion del sistema integrado de gestion y gestion de los riesgos generales y medioambientales en el Puerto de A Coruna. Consultoria en sistemas de gestion (ISO 9001/14001/45001) y riesgos ambientales.",
+      "cpv_codigos": [
+        "79411000-8"
+      ],
+      "lugar_ejecucion": "Galicia (ES111 - A Coruna)",
+      "presupuesto_base_eur": 100000.0,
+      "presupuesto_total_eur": 100000.0,
+      "plazo_presentacion": "2026-06-04",
+      "fuente_principal": "AUTONOMICO",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ZX6IRJh7iZA%2BnLj3vAg5A%3D%3D",
+      "score_total": 6.51,
+      "utilidad_ia": {
+        "valor": 0,
+        "por_que": "N/A."
+      },
+      "facilidad_ia": {
+        "valor": 6,
+        "por_que": "Apoyo gestión municipal: procesos administrativos clásicos. IA gen ayuda con redacción y análisis."
+      },
+      "dificultad": {
+        "valor": 5,
+        "por_que": "Bilbao, consultoría municipal estándar. Sin barreras técnicas fuertes."
+      },
+      "encaje_perfil": 5,
+      "id_oficial": "2026/G/069"
+    }
+  ]
+}

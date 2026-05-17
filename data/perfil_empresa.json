@@ -1,0 +1,35 @@
+{
+  "_comment": "Perfil de la empresa para alimentar plantillas del dashboard (email previo, carta inicial, memoria técnica). Boceto inicial — el usuario lo refinará con su feedback. Si el usuario edita esto, persistir cambios y no sobreescribir.",
+  "version": "0.1.0-boceto",
+  "ultima_modificacion": "2026-05-16",
+  "estado": "boceto_pendiente_validacion",
+  "razon_estado": "Generado por Claude basándose en memoria del proyecto (equipo de 2 personas, apalancamiento IA doble, foco en proyectos disruptivos software con entregable cerrado e infra propia). El usuario debe pulir taglines en próxima conversación.",
+  "nombre_empresa": "[PENDIENTE_USUARIO]",
+  "firma_usuario": "[PENDIENTE_USUARIO]",
+  "taglines": [
+    "Equipo de 2 personas que aprovecha la IA en dos vectores: como acelerador de desarrollo (1/4 del tiempo de un equipo tradicional) y como funcionalidad integrada en el producto entregado.",
+    "Vendemos solución completa, no horas. Cada proyecto se contrata con entregables nombrados, alcance cerrado y precio fijo.",
+    "Desarrollamos en nuestra propia infraestructura y entregamos artefacto desplegable o SaaS — sin estructura on-site, sin cuerpo de consultores en la sede del cliente.",
+    "Foco en proyectos software con uno o varios componentes IA disruptivos: NLU, agentes, automatización inteligente, ML aplicado a problemas reales del cliente.",
+    "Sweet spot 20-200k€ en plazos de adjudicación de mínimo 14 días: nicho que la gran consultora desprecia y que nosotros entregamos con calidad de boutique.",
+    "Stack moderno y agnóstico de proveedor cloud: APIs REST, IaC, CI/CD, contenedores. El cliente recibe código mantenible, no dependencia de nuestro equipo.",
+    "Productividad apalancada en gen-UI, scaffolding asistido, tests autogenerados y datos sintéticos. Lo que un equipo de 8 hace en 6 meses, nosotros lo hacemos en 2 con calidad equivalente.",
+    "Sin sobrecoste de estructura: el precio del proyecto se va al producto, no a managers intermedios.",
+    "Compromiso de soporte post-entrega acotado y transparente: entregamos, formamos al cliente y nos retiramos cuando deja de necesitarnos."
+  ],
+  "que_no_hacemos": [
+    "Bolsa de horas / cuerpo de consultores / asistencia técnica continuada.",
+    "Trabajo on-site obligatorio en sede del cliente.",
+    "Proyectos con habilitaciones de seguridad personal incompatibles con equipo remoto.",
+    "Integraciones legacy puras sin componente innovador."
+  ],
+  "tecnologias_dominio": [
+    "[PENDIENTE_USUARIO — añadir stack concreto: lenguajes, frameworks, modelos IA, cloud]"
+  ],
+  "campos_pendientes_de_usuario": [
+    "nombre_empresa",
+    "firma_usuario (nombre + cargo + email + teléfono)",
+    "tecnologias_dominio",
+    "casos de éxito concretos para citar en memoria técnica (proyectos previos del usuario y socio)"
+  ]
+}

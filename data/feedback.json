@@ -1,0 +1,25 @@
+{
+  "_comment": "Feedback humano sobre items concretos del top o sobre la rúbrica entera.",
+  "entradas": [
+    {
+      "fecha": "2026-05-17",
+      "tipo": "rubrica",
+      "ref": "general",
+      "texto_usuario": "el tema es un proyecto clasico, que hagamos facil con Desarollo por IA, tipo SPEC DRIVEN DEVELOPMENT, no implementando funcionalidades de IA tipo rag voz etc... o sea el tema es hacerlo facil mediante la IA, no que tenga IA incorporado",
+      "interpretacion": "La propuesta de valor del usuario es spec-driven development (dev humano + IA gen tipo Claude Code/Cursor) sobre pliegos detallados clásicos, NO incorporar funcionalidades IA en el producto entregado. La rúbrica v0.2.0 confundía ambas vertientes en facilidad_ia y daba peso a utilidad_ia (IA en el producto) que no es relevante para su ventaja real.",
+      "propuesta_derivada": "v0.3.0: renombrar facilidad_ia -> spec_driven_fit (0.18); NUEVO factor claridad_pliego (0.10); utilidad_ia baja a 0.05. Catálogo de 12 señales operativas detectables (stack_mainstream, crud_masivo, integraciones_estandar, logica_mecanica, boilerplate_alto, testeable, pliego_detallado, pliego_vago, hardware_raro, legacy_mal_doc, ux_experimental, investigacion). Detección híbrida heurística + subagente lic-profundizar bajo demanda.",
+      "estado": "aplicado",
+      "diff_aplicado_ref": "criterios.json cambios[].version_nueva=0.3.0"
+    },
+    {
+      "fecha": "2026-05-16",
+      "tipo": "rubrica",
+      "ref": "general",
+      "texto_usuario": "quiero licitaciones que no sean por horas/persona, sino vendiendo a solucion completa entregable, y por otro lado que trabajemos en la infraestructura propia, no la de cliente y luego entregemos. para poder trabajar con mayor flexibilidad y nuestra propia productividad basada en nuestras tecnologias. autonomia_infra subelo a 20, modelo de entrega a 25, facilidad ia a 20, y el resto como tu veas",
+      "interpretacion": "El usuario quiere que la rúbrica capture explícitamente dos restricciones operativas del equipo de 2 personas: (1) modelo comercial = solución entregable cerrada, NO bolsa de horas / asistencia técnica / cuerpo de consultores; (2) lugar de desarrollo = nuestra infra, NO on-site cliente. Estos dos vectores deben dominar la rúbrica (0.45 combinado) por encima incluso de utilidad_ia. El acelerador IA (facilidad_ia=0.20) sigue siendo prioritario porque es la palanca de productividad del equipo.",
+      "propuesta_derivada": "Aplicada como criterios.json v0.2.0: +2 factores (modelo_entrega 0.25, autonomia_infra 0.20), pesos redistribuidos según indicación del usuario, +2 descartes automáticos por bolsa de horas y on-site obligatorio. Subagentes investigadores extraerán 2 nuevos campos del pliego: tipo_objeto y lugar_prestacion.",
+      "estado": "aplicado",
+      "diff_aplicado_ref": "criterios.json cambios[].version_nueva=0.2.0"
+    }
+  ]
+}

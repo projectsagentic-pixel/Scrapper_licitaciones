@@ -1,0 +1,188 @@
+{
+  "ejecucion_id": "ejec_2026-05-15_001",
+  "modo": "ia_en_producto",
+  "ultima_actualizacion": "2026-05-15",
+  "umbral_top": 6.5,
+  "total": 6,
+  "top_actual": [
+    {
+      "titulo": "Contrato de servicios para la migración tecnológica, desarrollo e implantación de la plataforma web institucional de Casa Árabe.",
+      "organo_contratante": "Dirección General de la Casa Árabe - Ministerio de Asuntos Exteriores, Unión Europea y Cooperación",
+      "descripcion": "Contrato de servicios para la migración tecnológica, desarrollo e implantación de la plataforma web institucional de Casa Árabe.",
+      "cpv_codigos": [
+        "72000000"
+      ],
+      "lugar_ejecucion": "España - Madrid",
+      "presupuesto_base_eur": 41322.31,
+      "presupuesto_total_eur": 41322.31,
+      "plazo_presentacion": "2026-06-03",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=cDgLCmtXuvmExvMJXBMHHQ%3D%3D",
+      "score_total": 8.28,
+      "utilidad_ia": {
+        "valor": 8,
+        "por_que": "Buscador semántico multilingüe (es/ar/en) con embeddings + LLM RAG, traducción automática, resúmenes generados, chatbot cultural. IA central."
+      },
+      "facilidad_ia": {
+        "valor": 9,
+        "por_que": "Web institucional + i18n + IA: caso ideal para gen-UI + LLM. Acelera 4x para equipo pequeño."
+      },
+      "dificultad": {
+        "valor": 4,
+        "por_que": "Alcance acotado (1 web), procedimiento simplificado, sin requisitos especiales. Difícil = baja."
+      },
+      "encaje_perfil": 9,
+      "id_oficial": "CA 30/26"
+    },
+    {
+      "titulo": "Servicios digitales de verificación de identidad a través de reconocimiento biométrico (para ASEPEYO).",
+      "organo_contratante": "Subdirección General de Medios de ASEPEYO. Mutua Colaboradora con la Seguridad Social num. 151",
+      "descripcion": "Servicios digitales de verificación de identidad a través de reconocimiento biométrico (para ASEPEYO).",
+      "cpv_codigos": [
+        "72500000"
+      ],
+      "lugar_ejecucion": "España - Nacional (Extra-Regio NUTS 3)",
+      "presupuesto_base_eur": 92400.0,
+      "presupuesto_total_eur": 92400.0,
+      "plazo_presentacion": "2026-06-08",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=k7qGqV0pKfjyoM4us5k4vw%3D%3D",
+      "score_total": 7.75,
+      "utilidad_ia": {
+        "valor": 10,
+        "por_que": "Face recognition + liveness detection contra deepfakes + OCR + matching biométrico. La IA ES el producto."
+      },
+      "facilidad_ia": {
+        "valor": 8,
+        "por_que": "Modelos pre-entrenados (face, OCR, liveness) + LLM para resolución KYC excepciones aceleran mucho el desarrollo."
+      },
+      "dificultad": {
+        "valor": 7,
+        "por_que": "DOUE/SARA exige solvencia alta; mercado consolidado (Veridas, Mitek, IDnow) — necesita diferenciación clara."
+      },
+      "encaje_perfil": 6,
+      "id_oficial": "CP00198/2025"
+    },
+    {
+      "titulo": "Suministro de software para la realización de tareas de digitalización de la fiscalización de requisitos básicos y del módulo de control permanente previo",
+      "organo_contratante": "Junta de Gobierno del Ayuntamiento de Alboraya",
+      "descripcion": "Suministro de software para la realización de tareas de digitalización de la fiscalización de requisitos básicos y del módulo de control permanente previo",
+      "cpv_codigos": [
+        "48900000"
+      ],
+      "lugar_ejecucion": "España - Valencia/València",
+      "presupuesto_base_eur": 39600.0,
+      "presupuesto_total_eur": 75120.0,
+      "plazo_presentacion": "2026-05-29",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=jK1vK2JfneM4NavIWzMcHA%3D%3D",
+      "score_total": 7.69,
+      "utilidad_ia": {
+        "valor": 8,
+        "por_que": "Digitalización de fiscalización: OCR + LLM + RAG sobre legislación local. Caso típico y de alto valor para gen-AI."
+      },
+      "facilidad_ia": {
+        "valor": 9,
+        "por_que": "Stack web + IA gen + RAG sobre PDFs: caso clásico que se monta en semanas."
+      },
+      "dificultad": {
+        "valor": 5,
+        "por_que": "Cumplimiento normativo (fiscalización local); técnico pero acotado."
+      },
+      "encaje_perfil": 8,
+      "id_oficial": "2051/2026"
+    },
+    {
+      "titulo": "Contrato mixto de suministro y servicios de la nueva carpeta ciudadana única electrónica (aplicación web)",
+      "organo_contratante": "Junta de Gobierno del Ayuntamiento de Palma de Mallorca",
+      "descripcion": "Contrato mixto de suministro y servicios de la nueva carpeta ciudadana única electrónica (aplicación web)",
+      "cpv_codigos": [
+        "48000000",
+        "48200000",
+        "72600000"
+      ],
+      "lugar_ejecucion": "España - Mallorca",
+      "presupuesto_base_eur": 32104.65,
+      "presupuesto_total_eur": 59178.04,
+      "plazo_presentacion": "2026-05-29",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=W7Q9qmyJN6AXhk1FZxEyvw%3D%3D",
+      "score_total": 7.58,
+      "utilidad_ia": {
+        "valor": 8,
+        "por_que": "Carpeta ciudadana con chatbot, autocompletado de formularios, clasificación de trámites. IA central para diferenciar."
+      },
+      "facilidad_ia": {
+        "valor": 9,
+        "por_que": "Web moderna + IA gen es sweet spot: gen-UI + componentes IA pre-empaquetados."
+      },
+      "dificultad": {
+        "valor": 5,
+        "por_que": "Integración con admin electrónica municipal; mixto suministro+servicios."
+      },
+      "encaje_perfil": 8,
+      "id_oficial": "2026-027-S"
+    },
+    {
+      "titulo": "Servicio de desarrollo e implantación de la Aplicación de Gestión de desviaciones y acciones (para Equipos Nucleares S.A.).",
+      "organo_contratante": "Comité de Dirección de Equipos Nucleares S.A. (ENSA) - SEPI - Ministerio de Hacienda",
+      "descripcion": "Servicio de desarrollo e implantación de la Aplicación de Gestión de desviaciones y acciones (para Equipos Nucleares S.A.).",
+      "cpv_codigos": [
+        "72262000"
+      ],
+      "lugar_ejecucion": "España - Cantabria - Santander",
+      "presupuesto_base_eur": 85000.0,
+      "presupuesto_total_eur": 85000.0,
+      "plazo_presentacion": "2026-06-25",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=fMhdHQKYqG7jHF5qKI4aaw%3D%3D",
+      "score_total": 7.45,
+      "utilidad_ia": {
+        "valor": 8,
+        "por_que": "Clasificación de desviaciones por severidad con ML, RCA con LLM, sugerencia inteligente de acciones correctivas. La IA puede ser el diferenciador del producto."
+      },
+      "facilidad_ia": {
+        "valor": 8,
+        "por_que": "App moderna con CRUD + ML + LLM. Stack moderno + IA generativa acelera 4x el desarrollo."
+      },
+      "dificultad": {
+        "valor": 7,
+        "por_que": "Sector nuclear, regulación CSN, trazabilidad y validación pueden ser exigentes; requiere documentación rigurosa."
+      },
+      "encaje_perfil": 7,
+      "id_oficial": "001213/2026"
+    },
+    {
+      "titulo": "Servicio de Asistencia Técnica especializada dirigido al gobierno de Granada (país Granada, Caribe), para llevar a cabo la implementación de un programa de digitalización a través de una hoja de ruta ",
+      "organo_contratante": "Dirección de la Fundación para la Internacionalización de las Administraciones Públicas (FIIAPP) - Ministerio de Asuntos Exteriores, Unión Europea y Cooperación",
+      "descripcion": "Servicio de Asistencia Técnica especializada dirigido al gobierno de Granada (país Granada, Caribe), para llevar a cabo la implementación de un programa de digitalización a través de una hoja de ruta de gobierno digital.",
+      "cpv_codigos": [
+        "73220000",
+        "71356200",
+        "72224000",
+        "75130000"
+      ],
+      "lugar_ejecucion": "Granada (Caribe) - lugar de ejecución exterior",
+      "presupuesto_base_eur": 71750.0,
+      "presupuesto_total_eur": 71750.0,
+      "plazo_presentacion": "2026-05-29",
+      "fuente_principal": "PLACSP",
+      "url_oficial": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=YPhxogDLgS1%2FP7lJ7Fu0SA%3D%3D",
+      "score_total": 6.65,
+      "utilidad_ia": {
+        "valor": 7,
+        "por_que": "Consultoría gov.digital con margen real para LLM en análisis regulatorio, mapeo procesos AS-IS/TO-BE, redacción de catálogos. La IA aporta como copilot, no como núcleo de producto."
+      },
+      "facilidad_ia": {
+        "valor": 8,
+        "por_que": "Consultoría es uno de los sectores que más acelera con LLMs (redacción, análisis comparado, síntesis). Stack ligero."
+      },
+      "dificultad": {
+        "valor": 6,
+        "por_que": "Ejecución internacional (Granada-Caribe), coordinación con país tercero, posibles desplazamientos. Barrera operativa para 2 personas."
+      },
+      "encaje_perfil": 5,
+      "id_oficial": "DEMA-2026-017"
+    }
+  ]
+}

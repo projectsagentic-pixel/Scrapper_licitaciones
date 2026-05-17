@@ -1,0 +1,56 @@
+{
+  "_comment": "Propuestas de auto-mejora generadas por *-automejora. Se guardan tanto las aplicadas como las rechazadas para que el sistema aprenda qué tipo de propuestas no quieres.",
+  "propuestas": [
+    {
+      "id": "mejora_2026-05-15_001",
+      "fecha": "2026-05-15",
+      "ejecucion_origen": "ejec_2026-05-15_001",
+      "diagnostico": "BOE devolvió 11 items, todos sobrepresupuesto (>200k) y con solapamiento 100% con PLACSP. 0 aportes al top. La Sección V publica casi solo contratos sobre umbral SARA (>144k), inadecuada para perfil <200k.",
+      "cambio": "config.json: fuentes_activas.BOE.prioridad de 0.7 a 0.2",
+      "estado": "aplicada",
+      "decision_usuario": "Bajar prioridad a 0.2",
+      "evidencia": "metricas_fuentes.json BOE: n_en_top_actual=0, n_items_corroborados=11, solapamiento.BOE_PLACSP=11"
+    },
+    {
+      "id": "mejora_2026-05-15_002",
+      "fecha": "2026-05-15",
+      "ejecucion_origen": "ejec_2026-05-15_001",
+      "diagnostico": "Cluster autonómico 150-205k bloqueado por techo 150k (Sabadell archivos 205k, Atlassian Bilbao 185k, Ermua data space 144k). Lote D aportó solo 3 elegibles, ninguno al top, mientras casos con encaje IA fuerte quedaron fuera por presupuesto.",
+      "cambio": "config.json: filtros_globales.presupuesto_max_eur de 1000000 a 200000",
+      "estado": "aplicada",
+      "decision_usuario": "Subir a 200k€",
+      "evidencia": "Lote D items fuera de filtro estricto = 9/12. Items marginales con encaje IA: 4059/2026 Ermua data space (144k, plazo justo), Sabadell-205k-Eina-Arxius (gestión documental + OCR)."
+    },
+    {
+      "id": "mejora_2026-05-15_003",
+      "fecha": "2026-05-15",
+      "ejecucion_origen": "ejec_2026-05-15_001",
+      "diagnostico": "CPV 73210000 dio 0 resultados en búsqueda PLACSP (CPV poco usado). CPV 72260000 sí rinde como subset de 72200 y debería figurar en la lista de búsqueda explícita.",
+      "cambio": "config.json: filtros_globales.cpv_codigos_objetivo añadir 72260000 (73210000 no estaba en la lista raíz, se mantuvo solo 73000000 como cubre-todo I+D)",
+      "estado": "aplicada",
+      "decision_usuario": "Sustituir 73210000 por 72260000",
+      "evidencia": "Lote A queries_probadas: 'CPV=73210000 -> 0 resultados', mientras 'CPV=72260000 -> 15 resultados (subset 72200)'."
+    },
+    {
+      "id": "mejora_2026-05-15_004",
+      "fecha": "2026-05-15",
+      "ejecucion_origen": "ejec_2026-05-15_001",
+      "diagnostico": "El scoring discrimina bien (top IA real 7-8, bottom commodity 1-3). Primera tanda — pocos datos para mover pesos sin feedback humano sobre el top.",
+      "cambio": "criterios.json: ningún cambio en v0.1.0",
+      "estado": "no_aplicada",
+      "decision_usuario": "Dejar v0.1.0 sin cambios",
+      "evidencia": "TOP 6 ≥ 6.5 con utilidad_ia ≥ 7 en todos; bottom 5 con utilidad_ia ≤ 2 (commodity). Discriminación buena.",
+      "siguiente_paso": "Captar feedback humano via /lic-feedback sobre los 6 del top antes de mover pesos."
+    },
+    {
+      "id": "observacion_2026-05-15_001",
+      "fecha": "2026-05-15",
+      "ejecucion_origen": "ejec_2026-05-15_001",
+      "diagnostico": "Plataformas autonómicas Catalunya (PSCP), Euskadi (KontratazioA) y Galicia (CPG) no exponen deeplinks sin JS — el subagente lic-autonomico-investigador tuvo que apoyarse en agregadores (Gobierto) y dejó URLs raíz con flag URL_BUSQUEDA_NO_DIRECTA. Madrid y Andalucía sí permiten deeplink.",
+      "cambio_sugerido": "Investigar si chrome-devtools puede mantener sesión persistente en estas 3 plataformas, o si conviene priorizar PLACSP (que federa muchos de sus expedientes) para regiones con plataforma pesada.",
+      "estado": "observacion",
+      "decision_usuario": "n/a (no requería decisión, queda como nota de mejora futura)",
+      "evidencia": "lote_D_autonomico.json: limitaciones_por_plataforma detalla problemas técnicos por plataforma."
+    }
+  ]
+}

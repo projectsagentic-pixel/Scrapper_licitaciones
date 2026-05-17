@@ -1,0 +1,150 @@
+{
+  "_comment": "Rúbrica de licitaciones — v0.3.0. Filosofía: primero filtra por modelo operativo (modelo_entrega + autonomia_infra = 0.45), luego mide apalancamiento spec-driven con IA (spec_driven_fit + claridad_pliego = 0.28 — el moat real del equipo de 2 + IA), luego contenido (encaje + dificultad). utilidad_ia pasa a marginal (0.05) porque la ventaja del equipo no viene de meter IA en el producto, sino de implementar pliegos clásicos a velocidad 4x con IA gen.",
+  "version": "0.3.0",
+  "factores": [
+    {
+      "nombre": "modelo_entrega",
+      "descripcion": "Tipo de contrato: solución completa entregable (precio cerrado, alcance definido, productos nombrados) vs. bolsa de horas / asistencia técnica / cuerpo de consultores. 10 = llave en mano con entregables nombrados y precio cerrado; 5 = híbrido (entregables + soporte/horas); 0-2 = bolsa de horas pura, 'servicios de apoyo', cuerpo de consultores, perfiles a demanda.",
+      "peso": 0.25,
+      "escala": "0-10",
+      "requiere_por_que": true,
+      "senales_alta": ["entregables nombrados", "precio cerrado", "producto a entregar", "implantación + entrega", "licencia + soporte acotado"],
+      "senales_baja": ["servicios de apoyo", "asistencia técnica", "bolsa de horas", "cuerpo técnico", "perfiles a demanda", "jornadas", "horas estimadas como unidad de contratación"]
+    },
+    {
+      "nombre": "autonomia_infra",
+      "descripcion": "¿Podemos desarrollar en nuestra infraestructura y entregar artefacto desplegable, o nos exige trabajar en infra del cliente / on-site? 10 = desarrollo y entrega remotos, SaaS o artefacto desplegable; 5 = híbrido (despliegue en cloud cliente con IaC propio o soporte remoto puntual); 0-2 = on-site obligatorio, red interna del cliente, habilitación personal de seguridad continuada.",
+      "peso": 0.20,
+      "escala": "0-10",
+      "requiere_por_que": true,
+      "senales_alta": ["SaaS", "entrega de software", "despliegue por adjudicatario", "licencia + soporte", "trabajo remoto", "app web/móvil entregable"],
+      "senales_baja": ["dependencias del órgano de contratación", "presencia continuada en sede", "acceso a red interna obligatorio", "VPN cliente + horario laboral", "habilitación HSEC", "Defensa clasificado", "red SARA Justicia in-situ"]
+    },
+    {
+      "nombre": "spec_driven_fit",
+      "descripcion": "Cuán implementable es el pliego con un workflow spec-driven (dev humano + IA gen de código). La nota la mueven las señales operativas: positivas (stack_mainstream, crud_masivo, integraciones_estandar, logica_mecanica, boilerplate_alto, testeable) suman, negativas (hardware_raro, legacy_mal_doc, ux_experimental, investigacion) restan. 10 = pliego ideal para spec-driven dev; 1 = pliego donde IA no acelera.",
+      "peso": 0.18,
+      "escala": "0-10",
+      "requiere_por_que": true,
+      "renombrado_desde": "facilidad_ia",
+      "formula": "clamp(5 + sum(positivas: alta+1.2, media+0.6, baja+0.3) - sum(negativas: alta-2.0, media-1.0, baja-0.5), 0, 10)",
+      "senales_positivas": ["stack_mainstream", "crud_masivo", "integraciones_estandar", "logica_mecanica", "boilerplate_alto", "testeable"],
+      "senales_negativas": ["hardware_raro", "legacy_mal_doc", "ux_experimental", "investigacion"]
+    },
+    {
+      "nombre": "claridad_pliego",
+      "descripcion": "Cuán detallado y cerrado está el pliego: criterios claros, requisitos puntuales nombrados, alcance acotado, entregables listados. Un stack mainstream con pliego vago sigue siendo lento porque la IA implementa specs fielmente pero no inventa scope. 10 = pliego con listas explícitas de entregables, criterios de aceptación y arquitectura propuesta; 1 = 'modernizar la web del ayuntamiento' sin más.",
+      "peso": 0.10,
+      "escala": "0-10",
+      "requiere_por_que": true,
+      "formula": "clamp(5 + bonus(pliego_detallado: alta+3, media+1.5, baja+0.5) - penalizacion(pliego_vago: alta-3, media-1.5, baja-0.5), 0, 10)",
+      "senales_positivas": ["pliego_detallado"],
+      "senales_negativas": ["pliego_vago"]
+    },
+    {
+      "nombre": "encaje_perfil",
+      "descripcion": "Encaje con el perfil de la agencia (stack conocido, cliente potencialmente apetecible, sector dominado). Ojo: una parte del encaje queda absorbida en modelo_entrega, autonomia_infra y spec_driven_fit; aquí se evalúa solo el resto (sector, simpatía cliente, dominio funcional).",
+      "peso": 0.10,
+      "escala": "0-10"
+    },
+    {
+      "nombre": "dificultad",
+      "descripcion": "Dificultad técnica/regulatoria/operativa percibida. Ojo: aquí valor ALTO = MÁS difícil. Para el score se invierte (10 - dificultad). En v0.3.0 pesa menos porque spec_driven_fit ya captura la dificultad efectiva para nuestro workflow.",
+      "peso": 0.06,
+      "escala": "0-10",
+      "requiere_por_que": true,
+      "invertir_para_score": true
+    },
+    {
+      "nombre": "utilidad_ia",
+      "descripcion": "Cuánto valor real aporta la IA al objetivo de la licitación (IA EN EL PRODUCTO). En v0.3.0 baja a 0.05 — diferenciador comercial menor; la ventaja del equipo NO viene de meter IA en el producto sino de implementar pliegos clásicos 4x más rápido con IA gen. 10 = la IA es el corazón del proyecto y nos da una historia comercial diferencial; 0 = el pliego no contempla IA y eso está bien.",
+      "peso": 0.05,
+      "escala": "0-10",
+      "requiere_por_que": true
+    },
+    {
+      "nombre": "presupuesto_atractivo",
+      "descripcion": "Presupuesto razonable para el alcance descrito. Los descartes automáticos cubren los extremos, así que este factor pesa poco.",
+      "peso": 0.03,
+      "escala": "0-10"
+    },
+    {
+      "nombre": "plazo_realista",
+      "descripcion": "Hay tiempo de presentación suficiente (>= 14 días = 10; < 7 días = 0).",
+      "peso": 0.03,
+      "escala": "0-10"
+    }
+  ],
+  "pesos_normalizados": true,
+  "descartes_automaticos": [
+    "presupuesto_total < filtros_globales.presupuesto_min_eur",
+    "presupuesto_total > filtros_globales.presupuesto_max_eur",
+    "plazo_presentacion ya pasado",
+    "objeto del contrato fuera del scope de software/IT/IA (ej. obras, suministros físicos, sanitario, etc.)",
+    "duplicado exacto ya consolidado con misma fuente_principal y mismo id_oficial",
+    "tipo_objeto = 'horas_servicio' explícito en el pliego",
+    "lugar_prestacion = 'presencial_continuada' obligatorio en sede del cliente"
+  ],
+  "umbral_top": 6.5,
+  "senales_catalogo": {
+    "_comment": "Catálogo de las 12 señales operativas v0.3.0 — extraídas por subagentes investigadores (heurística textual rápida) y refinadas por lic-profundizar (lectura PCAP/PPT). Cada item las guarda en datos.senales[] como {nombre, confianza: 'alta'|'media'|'baja', evidencia: 'frase literal', origen: 'heuristica'|'profundizado'}.",
+    "stack_mainstream": "Tecnologías que IA gen domina: Next/React/Vue/Angular, Django/Rails/Laravel/FastAPI/Spring, Postgres/MySQL, Docker, Kubernetes estándar, AWS/Azure/GCP servicios comunes",
+    "crud_masivo": "Muchas entidades/pantallas/formularios — sistemas de gestión, backoffice, multi-rol, multi-módulo",
+    "integraciones_estandar": "FACe, Cl@ve, eIDAS, AEAT SII, ENS, OAuth/OIDC, REST/OpenAPI, OData",
+    "logica_mecanica": "Validaciones, reglas de negocio explícitas, workflows deterministas, motores de cálculo",
+    "boilerplate_alto": "Scaffolding intenso: i18n, multi-tenant, multi-rol, plumbing, configuración por entorno",
+    "testeable": "Comportamiento verificable automáticamente (no requiere validación humana subjetiva)",
+    "pliego_detallado": "Lista explícita de entregables, criterios de aceptación, arquitectura propuesta, fases con hitos",
+    "pliego_vago": "Requisitos abiertos, 'modernización general', scope sin acotar, criterios genéricos",
+    "hardware_raro": "Drivers específicos, dispositivos físicos peculiares, integraciones eléctricas, IoT propietario",
+    "legacy_mal_doc": "Cobol, AS/400, ERP custom, sistemas heredados sin documentación, tecnologías muertas",
+    "ux_experimental": "UX innovadora con iteración intensiva con usuarios reales (no UX estándar)",
+    "investigacion": "Algoritmos no estándar, R&D real, problemas sin solución conocida"
+  },
+  "ejes_scoring_modelo": [
+    {
+      "nombre": "modelo_entrega",
+      "guia_evaluacion": "Lee el objeto del contrato. ¿Habla de productos/entregables o de horas/perfiles? ¿La unidad de contratación es 'licencia + implantación' o 'jornadas técnicas'? Cita la frase clave."
+    },
+    {
+      "nombre": "autonomia_infra",
+      "guia_evaluacion": "¿Dónde se ejecuta el trabajo? ¿Presencia continuada, habilitaciones, red interna obligatoria? ¿O entrega de artefacto desplegable?"
+    },
+    {
+      "nombre": "spec_driven_fit",
+      "guia_evaluacion": "¿El pliego encaja con un workflow dev humano + IA gen? Mira el stack tecnológico, si hay CRUDs masivos, integraciones REST conocidas, lógica mecánica. Identifica señales positivas y negativas."
+    },
+    {
+      "nombre": "claridad_pliego",
+      "guia_evaluacion": "¿El pliego es detallado o vago? Un pliego con listado de entregables, criterios de aceptación nombrados y arquitectura propuesta puntúa alto. Un 'modernizar tal cosa' puntúa bajo."
+    }
+  ],
+  "cambios": [
+    {
+      "fecha": "2026-05-15",
+      "version_anterior": null,
+      "version_nueva": "0.1.0",
+      "diff": "rúbrica inicial",
+      "motivo": "siembra inicial al crear el proyecto",
+      "fuente": "humano"
+    },
+    {
+      "fecha": "2026-05-16",
+      "version_anterior": "0.1.0",
+      "version_nueva": "0.2.0",
+      "diff": "+factor modelo_entrega (peso 0.25), +factor autonomia_infra (peso 0.20). Pesos redistribuidos. +2 descartes automáticos: tipo_objeto=horas_servicio y lugar_prestacion=presencial_continuada.",
+      "motivo": "Usuario quiere proyectos vendidos como solución completa entregable (no bolsa de horas) y desarrollables en infraestructura propia (no on-site cliente).",
+      "fuente": "humano"
+    },
+    {
+      "fecha": "2026-05-17",
+      "version_anterior": "0.2.0",
+      "version_nueva": "0.3.0",
+      "diff": "Renombrado facilidad_ia -> spec_driven_fit (peso 0.20->0.18). NUEVO factor claridad_pliego (peso 0.10). utilidad_ia bajado de 0.13 a 0.05. Añadido catálogo de 12 señales operativas con fórmula explícita para spec_driven_fit y claridad_pliego. El moat IA pasa a pesar 0.28 (era 0.20).",
+      "motivo": "Reorientación de la propuesta de valor: la ventaja del equipo NO es construir productos con IA dentro (RAG/voz/chatbot), sino implementar pliegos CLÁSICOS de software a velocidad 4x con un workflow spec-driven (dev humano + IA gen). Por tanto: (1) que el pliego pida IA en el producto importa poco (utilidad_ia 0.05), (2) que el pliego sea spec-driven friendly (stack mainstream, CRUDs, integraciones estándar, lógica mecánica) importa mucho (spec_driven_fit 0.18), (3) la claridad del pliego es crítica porque IA implementa specs pero no inventa scope (claridad_pliego 0.10 nuevo).",
+      "fuente": "humano",
+      "pesos_fijados_por_usuario": ["utilidad_ia=0.05", "split spec_driven_fit + claridad_pliego (recomendado)", "deteccion hibrida (recomendado)"],
+      "pesos_recalibrados_por_claude": ["spec_driven_fit=0.18", "claridad_pliego=0.10", "resto sin cambios"]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "_comment": "Scores cualitativos asignados por el evaluador (humano-IA) para ejec_2026-05-15_001 (modo: ia_en_producto). 0-10 por eje. requiere_por_que en utilidad_ia, facilidad_ia, dificultad.",
+  "DEMA-2026-017": {
+    "utilidad_ia": 7, "facilidad_ia": 8, "dificultad": 6, "encaje_perfil": 5,
+    "por_que": {
+      "utilidad_ia": "Consultoría gov.digital con margen real para LLM en análisis regulatorio, mapeo procesos AS-IS/TO-BE, redacción de catálogos. La IA aporta como copilot, no como núcleo de producto.",
+      "facilidad_ia": "Consultoría es uno de los sectores que más acelera con LLMs (redacción, análisis comparado, síntesis). Stack ligero.",
+      "dificultad": "Ejecución internacional (Granada-Caribe), coordinación con país tercero, posibles desplazamientos. Barrera operativa para 2 personas."
+    }
+  },
+  "019/2026": {
+    "utilidad_ia": 7, "facilidad_ia": 7, "dificultad": 6, "encaje_perfil": 4,
+    "por_que": {
+      "utilidad_ia": "VR museo + IA generativa: assets 3D procedurales, voz neuronal multilingüe, narrativa LLM. Alto encaje conceptual.",
+      "facilidad_ia": "Gen-AI (text-to-3D, TTS, scripts narrativos) acelera enormemente la creación de contenido VR.",
+      "dificultad": "VR + IA + assets museísticos por 28k es ajustado; requiere perfil VR senior además de IA."
+    }
+  },
+  "44/2026": {
+    "utilidad_ia": 5, "facilidad_ia": 5, "dificultad": 4, "encaje_perfil": 4,
+    "por_que": {
+      "utilidad_ia": "SII IVA es servicio AEAT muy estandarizado; IA aporta en validación inteligente de facturas y detección de anomalías, pero el espacio para producto propio es estrecho.",
+      "facilidad_ia": "Integración fiscal-AEAT estandarizada; IA acelera parte de extracción de datos pero no el núcleo del cumplimiento.",
+      "dificultad": "Estándar AEAT bien documentado, integración técnica conocida."
+    }
+  },
+  "001213/2026": {
+    "utilidad_ia": 8, "facilidad_ia": 8, "dificultad": 7, "encaje_perfil": 7,
+    "por_que": {
+      "utilidad_ia": "Clasificación de desviaciones por severidad con ML, RCA con LLM, sugerencia inteligente de acciones correctivas. La IA puede ser el diferenciador del producto.",
+      "facilidad_ia": "App moderna con CRUD + ML + LLM. Stack moderno + IA generativa acelera 4x el desarrollo.",
+      "dificultad": "Sector nuclear, regulación CSN, trazabilidad y validación pueden ser exigentes; requiere documentación rigurosa."
+    }
+  },
+  "35070/27": {
+    "utilidad_ia": 5, "facilidad_ia": 5, "dificultad": 4, "encaje_perfil": 3,
+    "por_que": {
+      "utilidad_ia": "AIOps (anomaly detection en BBDD), asistente SQL con LLM, automatización runbooks. Útil pero ops, no producto.",
+      "facilidad_ia": "Ops con IA: ayuda moderada, no es desarrollo de producto.",
+      "dificultad": "Operación/administración BBDD; técnico pero acotado y conocido."
+    }
+  },
+  "2026/EA15/00000577": {
+    "utilidad_ia": 6, "facilidad_ia": 4, "dificultad": 9, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Threat intel con ML, correlación SIEM-LLM, playbooks SOAR. Núcleo IA en ciberseguridad moderna.",
+      "facilidad_ia": "Sector defensa con despliegues complicados; gen-AI no aplica al núcleo del trabajo.",
+      "dificultad": "Habilitación HPS, certificación ENS Alto, posibles requisitos de equipo nacional. Barrera fuerte para 2 personas."
+    }
+  },
+  "CP00198/2025": {
+    "utilidad_ia": 10, "facilidad_ia": 8, "dificultad": 7, "encaje_perfil": 6,
+    "por_que": {
+      "utilidad_ia": "Face recognition + liveness detection contra deepfakes + OCR + matching biométrico. La IA ES el producto.",
+      "facilidad_ia": "Modelos pre-entrenados (face, OCR, liveness) + LLM para resolución KYC excepciones aceleran mucho el desarrollo.",
+      "dificultad": "DOUE/SARA exige solvencia alta; mercado consolidado (Veridas, Mitek, IDnow) — necesita diferenciación clara."
+    }
+  },
+  "CA 30/26": {
+    "utilidad_ia": 8, "facilidad_ia": 9, "dificultad": 4, "encaje_perfil": 9,
+    "por_que": {
+      "utilidad_ia": "Buscador semántico multilingüe (es/ar/en) con embeddings + LLM RAG, traducción automática, resúmenes generados, chatbot cultural. IA central.",
+      "facilidad_ia": "Web institucional + i18n + IA: caso ideal para gen-UI + LLM. Acelera 4x para equipo pequeño.",
+      "dificultad": "Alcance acotado (1 web), procedimiento simplificado, sin requisitos especiales. Difícil = baja."
+    }
+  },
+  "2026-027-S": {
+    "utilidad_ia": 8, "facilidad_ia": 9, "dificultad": 5, "encaje_perfil": 8,
+    "por_que": {
+      "utilidad_ia": "Carpeta ciudadana con chatbot, autocompletado de formularios, clasificación de trámites. IA central para diferenciar.",
+      "facilidad_ia": "Web moderna + IA gen es sweet spot: gen-UI + componentes IA pre-empaquetados.",
+      "dificultad": "Integración con admin electrónica municipal; mixto suministro+servicios."
+    }
+  },
+  "PIC2026_33591": {
+    "utilidad_ia": 7, "facilidad_ia": 6, "dificultad": 6, "encaje_perfil": 5,
+    "por_que": {
+      "utilidad_ia": "UiPath + LLMs para document understanding, clasificación siniestros, extracción partes médicos. Encaje claro.",
+      "facilidad_ia": "RPA con IA: stack establecido. Gen-AI aporta pero no es transformador.",
+      "dificultad": "Mutua con datos sensibles, RPA enterprise; puede requerir habilitación específica."
+    }
+  },
+  "20267013-V": {
+    "utilidad_ia": 4, "facilidad_ia": 5, "dificultad": 8, "encaje_perfil": 3,
+    "por_que": {
+      "utilidad_ia": "Anomaly detection sobre uso de certificados, asistente conversacional. Marginal — núcleo es PKI/firma.",
+      "facilidad_ia": "PKI sector establecido; IA aporta poco al núcleo.",
+      "dificultad": "PSC cualificado eIDAS exige acreditaciones específicas — barrera de entrada alta."
+    }
+  },
+  "ITA-2026-00023": {
+    "utilidad_ia": 2, "facilidad_ia": 3, "dificultad": 3, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "A3innuva es producto cerrado RRHH commodity; IA aporta muy poco — el producto ya viene definido.",
+      "facilidad_ia": "Es licencia commodity, no hay desarrollo donde IA acelere.",
+      "dificultad": "Suministro de licencia; trivial técnicamente."
+    }
+  },
+  "10948-113": {
+    "utilidad_ia": 2, "facilidad_ia": 2, "dificultad": 3, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Licencia ESRI ArcGIS commodity; sin desarrollo.",
+      "facilidad_ia": "No hay desarrollo donde IA aporte.",
+      "dificultad": "Reseller-only típico; barrera de partner."
+    }
+  },
+  "2026/00040768G": {
+    "utilidad_ia": 3, "facilidad_ia": 2, "dificultad": 3, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Google Workspace incluye Gemini, pero es licencia commodity sin desarrollo propio.",
+      "facilidad_ia": "Reventa de licencias, sin código.",
+      "dificultad": "Posible requisito de partner Google certificado."
+    }
+  },
+  "20260417-00172": {
+    "utilidad_ia": 1, "facilidad_ia": 1, "dificultad": 3, "encaje_perfil": 1,
+    "por_que": {
+      "utilidad_ia": "VMware: commodity de virtualización pura, sin desarrollo ni IA.",
+      "facilidad_ia": "No aplica.",
+      "dificultad": "Partner Broadcom; barrera comercial."
+    }
+  },
+  "EJIE-2026-071": {
+    "utilidad_ia": 5, "facilidad_ia": 4, "dificultad": 4, "encaje_perfil": 3,
+    "por_que": {
+      "utilidad_ia": "Checkmk + AIOps: anomaly detection, predicción fallos, root cause analysis. Útil pero es ampliación licencias.",
+      "facilidad_ia": "Producto cerrado Checkmk; el aporte propio es servicios complementarios.",
+      "dificultad": "Ampliación licencias existentes; complejidad baja."
+    }
+  },
+  "PcPG/2026/828044": {
+    "utilidad_ia": 1, "facilidad_ia": 1, "dificultad": 3, "encaje_perfil": 1,
+    "por_que": {
+      "utilidad_ia": "Licencias Oracle commodity, sin desarrollo.",
+      "facilidad_ia": "No aplica.",
+      "dificultad": "Partner Oracle; barrera comercial."
+    }
+  },
+  "15888/2026": {
+    "utilidad_ia": 2, "facilidad_ia": 2, "dificultad": 3, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Licencias varias en 3 lotes; commodity sin desarrollo.",
+      "facilidad_ia": "No aplica salvo si algún lote incluye servicios.",
+      "dificultad": "Suministro mixto."
+    }
+  },
+  "2051/2026": {
+    "utilidad_ia": 8, "facilidad_ia": 9, "dificultad": 5, "encaje_perfil": 8,
+    "por_que": {
+      "utilidad_ia": "Digitalización de fiscalización: OCR + LLM + RAG sobre legislación local. Caso típico y de alto valor para gen-AI.",
+      "facilidad_ia": "Stack web + IA gen + RAG sobre PDFs: caso clásico que se monta en semanas.",
+      "dificultad": "Cumplimiento normativo (fiscalización local); técnico pero acotado."
+    }
+  },
+  "05/26.-Suministro": {
+    "utilidad_ia": 4, "facilidad_ia": 2, "dificultad": 3, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Antivirus cloud: vendors modernos usan IA para detección, pero es licencia commodity.",
+      "facilidad_ia": "Reseller de antivirus; no hay desarrollo.",
+      "dificultad": "Suministro licencia; trivial."
+    }
+  },
+  "ControlUp-150k-TMB": {
+    "utilidad_ia": 3, "facilidad_ia": 3, "dificultad": 4, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Monitorización VDI sin componente IA disruptivo.",
+      "facilidad_ia": "Producto cerrado ControlUp; oferta = reventa licencias.",
+      "dificultad": "Partner-only para producto específico."
+    }
+  },
+  "2026/062": {
+    "utilidad_ia": 2, "facilidad_ia": 3, "dificultad": 3, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Organización de evento universitario; componente tecnológico ligero (web/registro). Encaje TI marginal.",
+      "facilidad_ia": "Web evento sí, pero IA aporta poco al objeto contractual.",
+      "dificultad": "Organización de evento; logística más que técnica."
+    }
+  },
+  "2026/064": {
+    "utilidad_ia": 2, "facilidad_ia": 3, "dificultad": 3, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Dinamización territorial CADEs; encaje TI marginal.",
+      "facilidad_ia": "Coordinación territorial con plataforma digital ligera.",
+      "dificultad": "Gestión territorial; baja complejidad técnica."
+    }
+  },
+  "3284": {
+    "utilidad_ia": 2, "facilidad_ia": 2, "dificultad": 3, "encaje_perfil": 2,
+    "por_que": {
+      "utilidad_ia": "Atlassian Suite (Jira) es commodity ALM, sin IA central.",
+      "facilidad_ia": "Renovación de licencias — sin desarrollo donde IA acelere.",
+      "dificultad": "Partner Atlassian; barrera comercial. Presupuesto 185k cabe ahora con techo 200k."
+    }
+  }
+}

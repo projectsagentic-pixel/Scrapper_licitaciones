@@ -1,0 +1,148 @@
+{
+  "_comment": "Scores cualitativos para ejec_2026-05-15_002 (modo: no_ia_en_producto). utilidad_ia peso 0 → no afecta score. facilidad_ia = cuánto la IA acelera la CONSTRUCCIÓN. dificultad = barreras técnicas/regulatorias. encaje_perfil = stack conocido + cliente apetecible + alcance manejable por 2 personas.",
+
+  "CA 30/26": {
+    "utilidad_ia": 0, "facilidad_ia": 9, "dificultad": 4, "encaje_perfil": 9,
+    "por_que": {
+      "utilidad_ia": "N/A en modo no_ia_en_producto.",
+      "facilidad_ia": "Web institucional + i18n: caso ideal para gen-UI, scaffolding Next/Nuxt, generación de boilerplate, tests, contenido seed. Acelera 4x para 2 personas.",
+      "dificultad": "Alcance acotado (1 web), procedimiento simplificado, plazo cómodo, sin requisitos especiales más allá de i18n."
+    }
+  },
+  "001213/2026": {
+    "utilidad_ia": 0, "facilidad_ia": 8, "dificultad": 6, "encaje_perfil": 7,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "App CRUD moderna de gestión de desviaciones + workflow. Stack moderno + IA gen acelera 3-4x (modelo de datos, formularios, validaciones, tests).",
+      "dificultad": "Sector nuclear, regulación CSN, trazabilidad estricta, validación documental. Plazo 41d holgado compensa."
+    }
+  },
+  "019/2026": {
+    "utilidad_ia": 0, "facilidad_ia": 6, "dificultad": 7, "encaje_perfil": 4,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Producción VR + assets museísticos. IA gen acelera narrativa, scripts, modelado conceptual, pero la ejecución VR sigue siendo manual.",
+      "dificultad": "VR + assets museísticos + 28k es presupuesto ajustado para perfiles VR senior. Plazo 14d justo."
+    }
+  },
+  "35070/27": {
+    "utilidad_ia": 0, "facilidad_ia": 4, "dificultad": 4, "encaje_perfil": 4,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Ops/admin BBDD: IA gen ayuda en runbooks, asistente SQL, documentación. Ayuda moderada, no transformadora.",
+      "dificultad": "Operación BBDD para CSIC: técnico pero conocido. Sin barreras regulatorias fuertes."
+    }
+  },
+  "44/2026": {
+    "utilidad_ia": 0, "facilidad_ia": 7, "dificultad": 4, "encaje_perfil": 6,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Integración SII-AEAT bien documentada. IA gen acelera mucho conectores XML, validación esquemas, generación de tests con datos sintéticos.",
+      "dificultad": "Estándar AEAT consolidado, integración técnica conocida. Plazo y presupuesto compatibles."
+    }
+  },
+  "PIC2026_33591": {
+    "utilidad_ia": 0, "facilidad_ia": 4, "dificultad": 5, "encaje_perfil": 3,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Reventa licencias UiPath: sin desarrollo donde IA acelere. Solo ayuda para análisis pliego y memoria técnica.",
+      "dificultad": "Partner UiPath; competencia consolidada. Mutua estatal con datos sensibles."
+    }
+  },
+  "20267013-V": {
+    "utilidad_ia": 0, "facilidad_ia": 4, "dificultad": 8, "encaje_perfil": 3,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "PKI/eIDAS: sector altamente normado, sin código a desarrollar.",
+      "dificultad": "PSC cualificado eIDAS exige acreditaciones específicas — barrera de entrada muy alta para equipo nuevo."
+    }
+  },
+  "20260417-00172": {
+    "utilidad_ia": 0, "facilidad_ia": 1, "dificultad": 3, "encaje_perfil": 1,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Reventa VMware commodity. Sin código.",
+      "dificultad": "Partner Broadcom; barrera comercial, no técnica."
+    }
+  },
+  "202682000049": {
+    "utilidad_ia": 0, "facilidad_ia": 6, "dificultad": 6, "encaje_perfil": 5,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Soporte funcional NEDAES (nóminas funcionarios AGE) + parametrización. IA gen ayuda con documentación, scripts, análisis de incidencias.",
+      "dificultad": "Sistema NEDAES complejo, integraciones masivas con AGE, conocimiento de dominio nómina pública."
+    }
+  },
+  "CG-2026/2815/0063": {
+    "utilidad_ia": 0, "facilidad_ia": 4, "dificultad": 6, "encaje_perfil": 4,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Asistencia técnica IBM Verify (IAM commercial). IA gen ayuda en docs/scripts, pero la base es producto cerrado.",
+      "dificultad": "IBM Verify conocimiento de producto específico, IAM requiere expertise de identidades."
+    }
+  },
+  "004/26-SG": {
+    "utilidad_ia": 0, "facilidad_ia": 7, "dificultad": 5, "encaje_perfil": 7,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Gestión documental ENI clásica: workflows, metadatos, formatos eEMGDE. IA gen acelera desarrollo de plantillas, mapeo metadatos, conversores formato.",
+      "dificultad": "Cumplimiento ENI (Esquema Nacional de Interoperabilidad), formatos estándar. Técnico pero documentado."
+    }
+  },
+  "2026-00580": {
+    "utilidad_ia": 0, "facilidad_ia": 8, "dificultad": 7, "encaje_perfil": 5,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Modelado BPM y automatización procesos (workflows ejército, no ML). IA gen acelera enormemente modelado BPMN, plantillas, documentación, tests.",
+      "dificultad": "Sector Defensa (Ejército de Tierra): posibles habilitaciones, ENS Alto. Plazo 33d holgado."
+    }
+  },
+  "2026-00621": {
+    "utilidad_ia": 0, "facilidad_ia": 7, "dificultad": 5, "encaje_perfil": 5,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Apoyo gestión tramitación Informes Motivados. Procesos administrativos: IA gen acelera plantillas, clasificación documental clásica.",
+      "dificultad": "Trabajo administrativo + ISDEFE como intermediario: procesos conocidos."
+    }
+  },
+  "2026-00669": {
+    "utilidad_ia": 0, "facilidad_ia": 7, "dificultad": 5, "encaje_perfil": 5,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Gestión del Cambio en Transformación Digital Justicia. Consultoría/gestión proyectos: IA acelera redacción, análisis, planificación.",
+      "dificultad": "Cliente Justicia, posibles barreras de acceso a sistemas; gestión cambio en sector público es proceso largo."
+    }
+  },
+  "152026": {
+    "utilidad_ia": 0, "facilidad_ia": 7, "dificultad": 4, "encaje_perfil": 7,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Consultoría y auditoría accesibilidad web (WCAG/EN 301 549). IA gen acelera análisis automático, generación de informes, validación pautas.",
+      "dificultad": "Accesibilidad técnica conocida, estándares claros. SEGITTUR es cliente accesible."
+    }
+  },
+  "MNTB26-054": {
+    "utilidad_ia": 0, "facilidad_ia": 5, "dificultad": 6, "encaje_perfil": 4,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Adecuación ENS + RGPD: mayormente documentación y procesos. IA gen acelera plantillas, análisis brechas, redacción políticas.",
+      "dificultad": "Certificación ENS exige rigor; auditorías externas; cliente cultural (Thyssen) ágil pero exigente."
+    }
+  },
+  "2026008": {
+    "utilidad_ia": 0, "facilidad_ia": 6, "dificultad": 5, "encaje_perfil": 4,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Secretaría técnica Hacienda Euskadi: consultoría administrativa. IA gen acelera redacción, análisis normativo.",
+      "dificultad": "Admin vasca con SPRI; requiere euskera al menos parcial. 200k es presupuesto en límite del rango."
+    }
+  },
+  "2026/G/069": {
+    "utilidad_ia": 0, "facilidad_ia": 6, "dificultad": 5, "encaje_perfil": 5,
+    "por_que": {
+      "utilidad_ia": "N/A.",
+      "facilidad_ia": "Apoyo gestión municipal: procesos administrativos clásicos. IA gen ayuda con redacción y análisis.",
+      "dificultad": "Bilbao, consultoría municipal estándar. Sin barreras técnicas fuertes."
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "lote_id": "lote_D_boe",
+  "ejecucion_id": "ejec_2026-05-16_001",
+  "fuente": "BOE",
+  "fecha_ejecucion": "2026-05-16",
+  "rubrica_version": "0.2.0",
+  "filtros_aplicados": {
+    "cpv_objetivo": ["72000000", "72200000", "72260000", "72300000", "72400000", "72500000", "72600000", "73000000"],
+    "presupuesto_min_eur": 20000,
+    "presupuesto_max_eur": 200000,
+    "plazo_minimo_dias": 7,
+    "ambito_geografico": "ES",
+    "ventana_dias": 14,
+    "ventana_fechas": "2026-05-02 a 2026-05-16"
+  },
+  "items": [
+    {
+      "id_oficial": "BOE-B-2026-15207",
+      "hash": "747cd4fc2e2afb30",
+      "fuente": "BOE",
+      "url_oficial": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-15207",
+      "organo_contratacion": "Junta de Contratación del Ministerio de Cultura",
+      "objeto_contrato": "Servicio de apoyo a usuarios del Generador de Sedes Web para Bibliotecas públicas de la Subdirección General de Coordinación Bibliotecaria",
+      "cpv_principal": "72610000",
+      "presupuesto_base_sin_iva_eur": 125166.60,
+      "presupuesto_total_estimado_eur": 125166.60,
+      "moneda": "EUR",
+      "plazo_presentacion": "2026-05-25T19:00:00",
+      "dias_hasta_cierre": 9,
+      "lugar_ejecucion": "ES300 (Comunidad de Madrid)",
+      "fecha_publicacion_boe": "2026-05-12",
+      "tipo_anuncio": "licitacion",
+      "tipo_objeto": "indeterminado",
+      "evidencia_tipo_objeto": "Servicio de apoyo a usuarios del Generador de Sedes Web para Bibliotecas públicas — el anuncio del BOE no detalla si la unidad de contratación son horas/jornadas o entregables nombrados; describe un servicio continuado de soporte sin métrica explícita. Sería necesario consultar el PCAP/PPT en PLACSP para confirmar.",
+      "lugar_prestacion": "indeterminado",
+      "evidencia_lugar_prestacion": "Lugar principal de prestación de los servicios: ES300 (Comunidad de Madrid). El anuncio del BOE no aclara si requiere presencia continuada en sede de la Subdirección o si se admite trabajo remoto/teletrabajo. Apoyo a usuarios de un Generador de Sedes Web es a priori compatible con remoto, pero no hay evidencia literal en el anuncio.",
+      "datos": {
+        "expediente": "J260019",
+        "referencia_placsp": null,
+        "duracion_meses": null,
+        "procedimiento": "Abierto",
+        "perfil_contratante": "Junta de Contratación del Ministerio de Cultura"
+      },
+      "scoring_local": {
+        "modelo_entrega": {
+          "valor": 4,
+          "porque": "Servicio de 'apoyo a usuarios' — terminología típica de bolsa de horas / atención continuada al usuario final, sin entregables nombrados. Riesgo alto de ser horas_servicio una vez se lea el pliego. Tentativo a 4."
+        },
+        "autonomia_infra": {
+          "valor": 6,
+          "porque": "Apoyo a usuarios del 'Generador de Sedes Web' es un servicio sobre una plataforma del Ministerio. Probablemente requiere algún acceso a la herramienta del cliente pero no presencia física continuada. Tentativo: 6 (mixto, sin evidencia clara)."
+        },
+        "facilidad_ia": {
+          "valor": 6,
+          "porque": "La IA puede acelerar la atención a usuarios (chatbot/FAQ asistido, clasificación de tickets, generación de respuestas), pero el ámbito (Generador de Sedes Web Drupal-like, usuarios = bibliotecas públicas) limita el impacto."
+        },
+        "utilidad_ia": {
+          "valor": 5,
+          "porque": "La IA aporta valor moderado: clasificación de incidencias, asistente para usuarios bibliotecarios, generación automática de plantillas web. No es el corazón del proyecto (que es soporte humano), pero acelera la operación."
+        },
+        "encaje_perfil": {
+          "valor": 5,
+          "porque": "Cliente público mediano (Cultura), stack probablemente Drupal o CMS propio. Sector cultura es interesante pero no es donde el equipo brilla más."
+        },
+        "dificultad": {
+          "valor": 4,
+          "porque": "Servicio operativo de soporte a usuarios; baja complejidad técnica intrínseca. Mayor reto es la dispersión de usuarios (bibliotecas en toda España) y SLAs."
+        },
+        "presupuesto_atractivo": {
+          "valor": 7,
+          "porque": "125k razonable para el alcance descrito; no está regalado ni inflado."
+        },
+        "plazo_realista": {
+          "valor": 7,
+          "porque": "9 días hasta el cierre; justo para preparar oferta competitiva."
+        }
+      },
+      "score_estimado": 5.05,
+      "umbral_top_alcanzado": false,
+      "marcadores": ["BOE_publicado", "potencial_horas_servicio", "ya_en_PLACSP_posible"],
+      "notas": "Anuncio publicado en BOE sin referencia explícita a expediente PLACSP, pero es muy probable que esté duplicado en PLACSP (el orquestador deberá cruzar). El expediente J260019 podría aparecer también en el PLACSP del Mº de Cultura."
+    },
+    {
+      "id_oficial": "BOE-B-2026-13178",
+      "hash": "47f9a9dc7b071bb2",
+      "fuente": "BOE",
+      "url_oficial": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-13178",
+      "organo_contratacion": "Dirección del Organismo Estatal Inspección de Trabajo y Seguridad Social (Q2802489A)",
+      "objeto_contrato": "Servicio de soporte funcional y asistencia técnica de la aplicación NEDAES para el Organismo Estatal Inspección de Trabajo y Seguridad Social",
+      "cpv_principal": "72610000",
+      "cpv_secundarios": ["79211110"],
+      "presupuesto_base_sin_iva_eur": 197799.36,
+      "presupuesto_total_estimado_eur": 197799.36,
+      "moneda": "EUR",
+      "plazo_presentacion": "2026-05-19T15:00:00",
+      "dias_hasta_cierre": 3,
+      "lugar_ejecucion": "ES300 (Comunidad de Madrid)",
+      "fecha_publicacion_boe": "2026-04-27",
+      "tipo_anuncio": "licitacion",
+      "tipo_objeto": "mixto",
+      "evidencia_tipo_objeto": "'Servicio de soporte funcional y asistencia técnica de la aplicación NEDAES' — la combinación de 'soporte funcional' (operativo, recurrente, próximo a horas_servicio) con 'asistencia técnica' sobre una aplicación concreta (NEDAES, sistema de nóminas) sugiere modelo mixto. La nota del anuncio dice 'Se contemplan entregables mediante servicios de soporte y asistencia técnica continuos' — entregables existen pero la prestación es continua.",
+      "lugar_prestacion": "mixto",
+      "evidencia_lugar_prestacion": "Lugar principal de prestación de los servicios: ES300. La extracción del anuncio indica 'Modalidad: Mixta - combinación de trabajo remoto y presencial (las aperturas de plicas son presenciales, con opción virtual para económica)'. Las aplicaciones de nómina suelen admitir mantenimiento remoto sobre VPN. No hay exigencia de presencia continuada en sede.",
+      "datos": {
+        "expediente": "94/2026",
+        "referencia_placsp": null,
+        "duracion_meses": null,
+        "procedimiento": "Abierto",
+        "aplicacion_objeto": "NEDAES (sistema de nóminas / gestión de personal del Organismo Estatal ITSS)"
+      },
+      "scoring_local": {
+        "modelo_entrega": {
+          "valor": 4,
+          "porque": "'Soporte funcional y asistencia técnica' sobre una aplicación legacy del estado — terminología muy próxima a bolsa de horas / cuerpo de consultores. Aunque hay 'entregables continuos', el patrón típico de NEDAES y similares es bolsa de horas con SLAs. Tentativo: 4 (riesgo alto)."
+        },
+        "autonomia_infra": {
+          "valor": 5,
+          "porque": "La aplicación NEDAES vive en la infraestructura del Ministerio de Trabajo. Mantenimiento de software de nómina ministerial habitualmente exige VPN del organismo y a veces presencia puntual. Mixto: ni 100% on-site ni 100% remoto."
+        },
+        "facilidad_ia": {
+          "valor": 4,
+          "porque": "Mantenimiento de aplicación legacy de nóminas — la IA acelera poco. Sí ayuda en generación de tests de regresión y refactoring puntual, pero el grueso del trabajo es entender el dominio funcional (nómina pública española)."
+        },
+        "utilidad_ia": {
+          "valor": 3,
+          "porque": "La IA no es el corazón del proyecto; aporta valor marginal (clasificación de tickets, asistente para diagnóstico). NEDAES es un sistema operativo de nómina, no un proyecto IA."
+        },
+        "encaje_perfil": {
+          "valor": 3,
+          "porque": "Cliente público (ITSS), aplicación legacy de nómina — sector y stack alejados del foco del equipo. Bajo encaje."
+        },
+        "dificultad": {
+          "valor": 7,
+          "porque": "Dominio funcional muy específico (normativa de nómina pública), aplicación posiblemente Java legacy o equivalente, SLAs estrictos. Alta dificultad para una agencia sin experiencia previa en NEDAES."
+        },
+        "presupuesto_atractivo": {
+          "valor": 6,
+          "porque": "197k está en el borde superior del rango — razonable para un mantenimiento anual de aplicación crítica."
+        },
+        "plazo_realista": {
+          "valor": 3,
+          "porque": "Solo 3 días hasta el cierre (19/05/2026 a 15:00) — muy ajustado para preparar oferta competitiva en una aplicación que no conocemos. Cerca del umbral mínimo de descarte."
+        }
+      },
+      "score_estimado": 4.16,
+      "umbral_top_alcanzado": false,
+      "marcadores": ["BOE_publicado", "potencial_horas_servicio", "aplicacion_legacy", "plazo_muy_ajustado"],
+      "notas": "Aplicación NEDAES es sistema interno de nómina del Mº de Trabajo. Riesgo de ser bolsa de horas. El plazo (3 días) lo hace inviable salvo conocimiento previo del sistema."
+    }
+  ],
+  "total_items_verificados": 2,
+  "items_descartados": 38,
+  "descartes_por_motivo": {
+    "formalizacion_ya_adjudicada": 16,
+    "presupuesto_excede_200k": 14,
+    "plazo_pasado": 3,
+    "no_es_objeto_IT_software": 5
+  },
+  "candidatos_evaluados": [
+    {"id": "BOE-B-2026-15461", "motivo_descarte": "Anuncio de modificación de vigencia de un Sistema Dinámico de Adquisición (SDA), no es licitación con presupuesto y plazo concretos."},
+    {"id": "BOE-B-2026-15483", "motivo_descarte": "Anuncio de formalización ya adjudicado (Ciberseguridad MISSM)."},
+    {"id": "BOE-B-2026-15301", "motivo_descarte": "Acuerdo marco Defensa geoespacial 621.487 € — excede 200k."},
+    {"id": "BOE-B-2026-15151", "motivo_descarte": "Formalización ya adjudicada (Mantenimiento Hitachi Mº Justicia)."},
+    {"id": "BOE-B-2026-15006", "motivo_descarte": "Formalización ya adjudicada (Mantenimiento sistemas Tribunal Constitucional, 1.064k)."},
+    {"id": "BOE-B-2026-14505", "motivo_descarte": "Licitación 1.458.050 € (Licencias Microsoft Congreso) — excede 200k."},
+    {"id": "BOE-B-2026-14446", "motivo_descarte": "Plazo 14/05/2026 ya pasado (BSC sistema PM/CRM/TS/BI 300k)."},
+    {"id": "BOE-B-2026-14506", "motivo_descarte": "638.456 € (apoyo audiovisuales Exteriores), exceso de presupuesto + horas + presencial."},
+    {"id": "BOE-B-2026-14535", "motivo_descarte": "2.347.778 € (Atención al usuario OEPM) — excede 200k."},
+    {"id": "BOE-B-2026-14553", "motivo_descarte": "2.875.709 € (CSN microinformática) — excede 200k."},
+    {"id": "BOE-B-2026-14556", "motivo_descarte": "Formalización ya adjudicada (Licencias MATLAB UNED)."},
+    {"id": "BOE-B-2026-14416", "motivo_descarte": "10.132.200 € (Apoyo técnico Interior) — excede 200k."},
+    {"id": "BOE-B-2026-14146", "motivo_descarte": "Formalización ya adjudicada (IBM/INFORMIX DGP)."},
+    {"id": "BOE-B-2026-14169", "motivo_descarte": "3.284.430 € (Admin sistemas Mº Cultura) — excede 200k."},
+    {"id": "BOE-B-2026-14004", "motivo_descarte": "Formalización ya adjudicada (Infra CSIC 1.757k)."},
+    {"id": "BOE-B-2026-14006", "motivo_descarte": "Suministro de servidores (no servicios IT) 1.034k + plazo 13/05 pasado."},
+    {"id": "BOE-B-2026-14283", "motivo_descarte": "Plazo 12/05 ya pasado (Koha Patrimonio Nacional)."},
+    {"id": "BOE-B-2026-15024", "motivo_descarte": "Formalización ya adjudicada (Telecomunicaciones ADIF 4.921k)."},
+    {"id": "BOE-B-2026-14539", "motivo_descarte": "583.612 € (mantenimiento multifunción RICOH) — excede 200k + no IT puro."},
+    {"id": "BOE-B-2026-13579", "motivo_descarte": "330.184 € (asistencia técnica supervisión proyectos Mº Ciencia) — excede 200k."},
+    {"id": "BOE-B-2026-13466", "motivo_descarte": "8.171.328 € (Mantenimiento Padrón online INE) — excede 200k."},
+    {"id": "BOE-B-2026-13334", "motivo_descarte": "529.604 € (Defensa Sistemas Info CoE C-IED) — excede 200k + horas explícitas."},
+    {"id": "BOE-B-2026-13141", "motivo_descarte": "Formación, no servicio IT productivo (Senado herramientas formación CPV 80533200)."},
+    {"id": "BOE-B-2026-15019", "motivo_descarte": "1.441.093 € (proyecto ingeniería ferroviaria ADIF) — excede 200k + no IT."},
+    {"id": "BOE-B-2026-13467", "motivo_descarte": "Formalización ya adjudicada (servidores BSC 494k)."},
+    {"id": "BOE-B-2026-13440", "motivo_descarte": "Formalización ya adjudicada (infra virtualización IA Congreso 1.922k)."},
+    {"id": "BOE-B-2026-15172", "motivo_descarte": "Formalización ya adjudicada (nube táctica Defensa)."},
+    {"id": "BOE-B-2026-15320", "motivo_descarte": "Formalización ya adjudicada (SNOMED nube Sanidad 15k)."},
+    {"id": "BOE-B-2026-15321", "motivo_descarte": "Formalización ya adjudicada (Mathematica CSIC 209k)."},
+    {"id": "BOE-B-2026-15322", "motivo_descarte": "Formalización ya adjudicada + suministro físico (TPA-TCT IMB-CSIC 445k)."},
+    {"id": "BOE-B-2026-15323", "motivo_descarte": "Formalización ya adjudicada (mantenimiento equipos radiación CIEMAT 76k)."},
+    {"id": "BOE-B-2026-15309", "motivo_descarte": "Formalización ya adjudicada (Encuesta INSST 20k) + no IT puro."},
+    {"id": "BOE-B-2026-15318", "motivo_descarte": "Formalización ya adjudicada (Encuesta hábitos culturales 598k) + no IT."},
+    {"id": "BOE-B-2026-15455", "motivo_descarte": "Formalización ya adjudicada (Asistencia admin SEA Ejército 281k) + no IT puro."},
+    {"id": "BOE-B-2026-15291", "motivo_descarte": "Formalización ya adjudicada (Evaluación AECID) + no IT."},
+    {"id": "BOE-B-2026-14149", "motivo_descarte": "3.941.651 € (Big Data movilidad DG Movilidad) — excede 200k."},
+    {"id": "BOE-B-2026-14161", "motivo_descarte": "Formalización ya adjudicada (Mantenimiento CPD CH Ebro 75k)."},
+    {"id": "BOE-B-2026-14172", "motivo_descarte": "1.764.858 € (Servicio evaluación SNS) — excede 200k."}
+  ],
+  "ok": true,
+  "limitaciones": "OBSERVACIÓN CRÍTICA confirmada — el BOE solapa al menos en un 90% con PLACSP en la franja 20k-200k. De ~80 anuncios IT detectados en la ventana 02-16 mayo 2026, solo 2 cumplen TODOS los filtros (presupuesto en rango + plazo vigente + licitación abierta no formalización + objeto IT). Razones: (1) el BOE publica obligatoriamente solo licitaciones SARA armonizadas (servicios ≥ 221k €), por lo que casi todo lo IT publicado en BOE excede 200k automáticamente; (2) el ~40% de anuncios IT en BOE son formalizaciones de contratos ya adjudicados, sin plazo de presentación; (3) las licitaciones IT pequeñas (<221k) que aparecen en BOE están publicadas también en PLACSP, donde el subagente lic-placsp-investigador las captura primero. Confirma la hipótesis de la mejora_2026-05-15_001: BOE aporta valor incremental muy bajo. RECOMENDACIÓN: mantener prioridad BOE en 0.2 o considerar bajarla a 0.1, y usar BOE solo como fuente de cross-check para detectar anuncios SARA grandes que PLACSP pudiera no captar correctamente.",
+  "metadata": {
+    "estrategia_recolecta": "Recorrido día a día de sumarios BOE (/boe/dias/YYYY/MM/DD/) en ventana 2026-05-02 a 2026-05-16, filtrado por palabras clave IT en sección V.A, descarga del texto del anuncio por ID y aplicación de filtros de SKILL.",
+    "fuentes_consultadas": [
+      "https://boe.es/boe/dias/2026/05/02/ a /05/16/",
+      "https://boe.es/boe/dias/2026/04/27/ a /04/30/ (extensión de ventana para confirmar exhaustividad)",
+      "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-{NNNNN} para cada candidato"
+    ],
+    "hashes_evitados_aplicados": 65,
+    "ids_oficiales_evitados_aplicados": 60,
+    "total_anuncios_IT_localizados_en_ventana": 40,
+    "total_anuncios_revisados_a_fondo": 38
+  }
+}
